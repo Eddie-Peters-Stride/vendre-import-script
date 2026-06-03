@@ -2,3 +2,7 @@
 /package-lock.json
 /dist/
 .env
+
+# Ignore CSV and Excel files
+*.csv
+*.xlsx
