@@ -1,7 +1,10 @@
 /node_modules/
 /package-lock.json
 /dist/
-.env
+
+# Ignore all environment files (store-specific .env files)
+.env*
+!.env.example
 
 # Ignore CSV and Excel files
 *.csv
