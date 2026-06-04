@@ -7,7 +7,7 @@ Clean, maintainable import scripts for syncing data from Vendre to Shopify via M
 ### New Structure (Recommended)
 
 ```bash
-# Sync all data for Dragons Lair (fetch from Vendre + export to Matrixify)
+# Sync all data for Store (fetch from Vendre + export to Matrixify)
 npm run sync
 
 # Sync for second store
@@ -80,16 +80,16 @@ import_script/
 
 **Important:** Each store has its own `.env` file. The `ENV_FILE` environment variable selects which store to use.
 
-#### Dragons Lair Store
+#### Store Store
 
-Create `.env.dragonslair` in the project root:
+Create `.env.store` in the project root:
 
 ```env
 # Store Information
-STORE_NAME=dragonslair
-STORE_DISPLAY_NAME=Dragons Lair
-API_URL=https://dragonslair.se/API/1
-API_KEY=your-dragonslair-api-key-here
+STORE_NAME=store
+STORE_DISPLAY_NAME=Store
+API_URL=https://store.se/API/1
+API_KEY=your-store-api-key-here
 
 # Tax Classes
 TAX_CLASS_2=25
@@ -131,10 +131,10 @@ API_KEY=your-store2-api-key-here
 
 ### Sync Commands (Fetch + Export)
 
-| Command               | Description                    |
-| --------------------- | ------------------------------ |
-| `npm run sync`        | Sync all data for Dragons Lair |
-| `npm run sync:store2` | Sync all data for Store 2      |
+| Command               | Description               |
+| --------------------- | ------------------------- |
+| `npm run sync`        | Sync all data for Store   |
+| `npm run sync:store2` | Sync all data for Store 2 |
 
 ### Fetch Commands (From Vendre API)
 
@@ -161,7 +161,7 @@ API_KEY=your-store2-api-key-here
 
 ```bash
 # Run with custom environment file
-ENV_FILE=.env.dragonslair node src/index.js --command=fetch --type=products
+ENV_FILE=.env.store node src/index.js --command=fetch --type=products
 
 # Available options:
 #   --command=<cmd>        Command to run (sync, fetch, export)
@@ -178,9 +178,9 @@ All output files are saved to store-specific subdirectories under `results/`:
 
 ```
 results/
-├── dragonslair/           # Dragons Lair outputs
-│   ├── dragonslair-products.json
-│   ├── dragonslair-matrixify-products.xlsx
+├── store/           # Store outputs
+│   ├── store-products.json
+│   ├── store-matrixify-products.xlsx
 │   └── ...
 └── store2/                # Store 2 outputs
     ├── store2-products.json
@@ -190,33 +190,33 @@ results/
 
 ### JSON Files (Intermediate Data)
 
-- `results/dragonslair/dragonslair-products.json` - All products from Vendre
-- `results/dragonslair/dragonslair-collections.json` - All collections from Vendre
-- `results/dragonslair/dragonslair-customers.json` - All customers from Vendre
+- `results/store/store-products.json` - All products from Vendre
+- `results/store/store-collections.json` - All collections from Vendre
+- `results/store/store-customers.json` - All customers from Vendre
 
 ### Excel Files (Matrixify Format)
 
 **Products:**
 
-- `results/dragonslair/dragonslair-matrixify-products.xlsx` - Full product import
-- `results/dragonslair/dragonslair-matrixify-price-update.xlsx` - Price updates only
-- `results/dragonslair/dragonslair-vendor-update.xlsx` - Vendor updates only
+- `results/store/store-matrixify-products.xlsx` - Full product import
+- `results/store/store-matrixify-price-update.xlsx` - Price updates only
+- `results/store/store-vendor-update.xlsx` - Vendor updates only
 
 **Collections:**
 
-- `results/dragonslair/dragonslair-matrixify-collections.xlsx` - Full collection import
-- `results/dragonslair/dragonslair-collection-metafields.xlsx` - Parent-child metafields
-- `results/dragonslair/dragonslair-subcollections-update.xlsx` - Subcollection relationships
-- `results/dragonslair/dragonslair-matrixify-product-collections.xlsx` - Product assignments
+- `results/store/store-matrixify-collections.xlsx` - Full collection import
+- `results/store/store-collection-metafields.xlsx` - Parent-child metafields
+- `results/store/store-subcollections-update.xlsx` - Subcollection relationships
+- `results/store/store-matrixify-product-collections.xlsx` - Product assignments
 
 **Customers:**
 
-- `results/dragonslair/dragonslair-customers-matrixify.xlsx` - All customers
-- `results/dragonslair/dragonslair-customers-no-phone-matrixify.xlsx` - Customers without phone
+- `results/store/store-customers-matrixify.xlsx` - All customers
+- `results/store/store-customers-no-phone-matrixify.xlsx` - Customers without phone
 
 **Translations:**
 
-- `results/dragonslair/dragonslair-translations.xlsx` - Swedish → English translations (Shopify Translate & Adapt format)
+- `results/store/store-translations.xlsx` - Swedish → English translations (Shopify Translate & Adapt format)
 
 ## 🔄 Workflow
 
@@ -250,11 +250,11 @@ Translations require existing Shopify product data:
 
 1. **Export products from Shopify:**
    - Export all products as CSV (via Shopify admin or Matrixify)
-   - Save as `results/dragonslair/products_export_1.csv` (and `_2.csv` if needed)
+   - Save as `results/store/products_export_1.csv` (and `_2.csv` if needed)
 
 2. **Export translations from Shopify:**
    - Use Shopify's "Translate & Adapt" app to export translations
-   - Save as `results/dragonslair/dragonslair_translations_*.csv`
+   - Save as `results/store/store_translations_*.csv`
 
 3. **Generate translation import:**
 
@@ -263,7 +263,7 @@ Translations require existing Shopify product data:
    ```
 
 4. **Upload to Shopify:**
-   - Import `results/dragonslair/dragonslair-translations.xlsx` via Translate & Adapt app
+   - Import `results/store/store-translations.xlsx` via Translate & Adapt app
 
 **Note:** Translations map Vendre SKUs to Shopify product IDs, so you need the Shopify export files first in the store's subdirectory.
 
@@ -305,16 +305,16 @@ Matrixify Import to Shopify
 
 ```
 
-Error: API key not configured for store 'dragonslair'
+Error: API key not configured for store 'store'
 
 ```
 
-**Solution:** Add `API_KEY=your-api-key` to your `.env.dragonslair` file
+**Solution:** Add `API_KEY=your-api-key` to your `.env.store` file
 
 ### Missing Data Files
 
 ```
-Error: File not found: results/dragonslair/dragonslair-products.json
+Error: File not found: results/store/store-products.json
 ```
 
 **Solution:** Run `npm run fetch` before `npm run export`
@@ -325,7 +325,7 @@ Error: File not found: results/dragonslair/dragonslair-products.json
 Error: API_KEY appears to be a placeholder
 ```
 
-**Solution:** Replace `your-dragonslair-api-key-here` with your actual API key in the `.env` file
+**Solution:** Replace `your-store-api-key-here` with your actual API key in the `.env` file
 
 ## 🔀 Migration from Legacy Scripts
 
@@ -341,7 +341,7 @@ Both approaches can coexist indefinitely.
 
 - **Utilities:** See comments in `src/utils/*.js` for detailed API documentation
 - **Configuration:** See `.env.example` for all available environment variables
-- **Multi-Store Setup:** See `.env.dragonslair` and `.env.store2` for examples
+- **Multi-Store Setup:** See `.env.store` and `.env.store2` for examples
 - **Legacy Scripts:** Original documentation in `scripts/` folder comments
 - **Migration Guide:** See `MIGRATION.md` for detailed migration instructions
 
@@ -353,11 +353,3 @@ When adding new features:
 2. Create store-specific config in `src/config/stores.js`
 3. Follow the Transform → Export pattern
 4. Update this README with new commands
-
-## 📄 License
-
-Internal use only - Dragons Lair
-
-```
-
-```
