@@ -133,7 +133,7 @@ function getParentId(collection) {
  * @returns {boolean} True if active
  */
 function isActiveCollection(collection) {
-    return collection.is_active === true || collection.is_active === 1;
+    return collection.is_active === true || collection.is_active === 1 || collection.status === true || collection.status === 1;
 }
 
 module.exports = {

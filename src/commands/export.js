@@ -149,90 +149,93 @@ async function exportTranslations(config, dataDir, outputDir, products = null) {
     );
 
     return translationRows;
+}
+
+/**
+ * Command to export collections to Matrixify Excel files.
+ * @param {object} config - The store configuration.
+ * @param {string} dataDir - The directory containing the JSON data.
+ * @param {string} outputDir - The directory to save the Excel files to.
+ * @param {object} options - Export options.
  */
-    async function exportCollectionsCommand(config, dataDir, outputDir, options = {}) {
-        console.log('\nExporting collections...\n');
+async function exportCollectionsCommand(config, dataDir, outputDir, options = {}) {
+    console.log('\nExporting collections...\n');
 
-        // Load data
-        const collectionsPath = path.join(dataDir, `${config.outputPrefix}-collections.json`);
-        const vendreCollections = loadVendreData(collectionsPath);
+    // Load data
+    const collectionsPath = path.join(dataDir, `${config.outputPrefix}-collections.json`);
+    const vendreCollections = loadVendreData(collectionsPath);
 
-        // Transform
-        const { collections, maps } = transformCollections(vendreCollections);
+    // Transform
+    const { collections, maps } = transformCollections(vendreCollections);
 
-        ensureDirectory(outputDir);
-        const results = {};
+    ensureDirectory(outputDir);
+    const results = {};
 
-        // Full collection export
-        if (options.full !== false) {
-            const rows = exportCollections(collections, maps);
-            const outputPath = path.join(outputDir, `${config.outputPrefix}-matrixify-collections.xlsx`);
-            writeExcelFile(rows, outputPath, 'Collections');
-            console.log(`✓ Saved to ${outputPath}`);
-            results.collections = outputPath;
-        }
-
-        // Collection metafields (parent-child relationships)
-        if (options.metafields) {
-            const rows = exportCollectionMetafields(collections, maps);
-            const outputPath = path.join(outputDir, `${config.outputPrefix}-collection-metafields.xlsx`);
-            writeExcelFile(rows, outputPath, 'Collections');
-            console.log(`✓ Saved metafields to ${outputPath}`);
-            results.metafields = outputPath;
-        }
-
-        // Subcollections
-        if (options.subcollections) {
-            const rows = exportSubcollections(collections, maps);
-            const outputPath = path.join(outputDir, `${config.outputPrefix}-subcollections-update.xlsx`);
-            writeExcelFile(rows, outputPath, 'Collections');
-            console.log(`✓ Saved subcollections to ${outputPath}`);
-            results.subcollections = outputPath;
-        }
-
-        // Store maps for product-collection export
-        results._maps = maps;
-
-        return results;
+    // Full collection export
+    if (options.full !== false) {
+        const rows = exportCollections(collections, maps);
+        const outputPath = path.join(outputDir, `${config.outputPrefix}-matrixify-collections.xlsx`);
+        writeExcelFile(rows, outputPath, 'Collections');
+        console.log(`✓ Saved to ${outputPath}`);
+        results.collections = outputPath;
     }
 
-    /**
-     * Export product-collection assignments to Matrixify Excel
-     * @param {Object} config - Store configuration
-     * @param {string} dataDir - Directory with JSON data files
-     * @param {string} outputDir - Output directory for Excel files
-     * @returns {Promise<Object>} Result with file path
-     */
-    async function exportProductCollectionsCommand(config, dataDir, outputDir) {
-        console.log('\nExporting product-collection assignments...\n');
+    // Collection metafields (parent-child relationships)
+    if (options.metafields) {
+        const rows = exportCollectionMetafields(collections, maps);
+        const outputPath = path.join(outputDir, `${config.outputPrefix}-collection-metafields.xlsx`);
+        writeExcelFile(rows, outputPath, 'Collections');
+        console.log(`✓ Saved metafields to ${outputPath}`);
+        results.metafields = outputPath;
+    }
 
-        // Load data
-        const productsPath = path.join(dataDir, `${config.outputPrefix}-products.json`);
-        const collectionsPath = path.join(dataDir, `${config.outputPrefix}-collections.json`);
+    // Subcollections
+    if (options.subcollections) {
+        const rows = exportSubcollections(collections, maps);
+        const outputPath = path.join(outputDir, `${config.outputPrefix}-subcollections-update.xlsx`);
+        writeExcelFile(rows, outputPath, 'Collections');
+        console.log(`✓ Saved subcollections to ${outputPath}`);
+        results.subcollections = outputPath;
+    }
 
-        const vendreProducts = loadVendreData(productsPath);
-        const vendreCollections = loadVendreData(collectionsPath);
- and translations)
-        results.products = await exportProductsCommand(config, dataDir, outputDir, {
-            full: true,
-            priceUpdate: true,
-            vendorUpdate: true,
-            translations
+    // Store maps for product-collection export
+    results._maps = maps;
+
+    return results;
+}
+
+/**
+ * Export product-collection assignments to Matrixify Excel
+ * @param {Object} config - Store configuration
+ * @param {string} dataDir - Directory with JSON data files
+ * @param {string} outputDir - Output directory for Excel files
+ * @returns {Promise<Object>} Result with file path
+ */
+async function exportProductCollectionsCommand(config, dataDir, outputDir) {
+    console.log('\nExporting product-collection assignments...\n');
+
+    // Load data
+    const productsPath = path.join(dataDir, `${config.outputPrefix}-products.json`);
+    const collectionsPath = path.join(dataDir, `${config.outputPrefix}-collections.json`);
+
+    const vendreProducts = loadVendreData(productsPath);
+    const vendreCollections = loadVendreData(collectionsPath);
+
     // Transform
-    const products = vendreProducts.map(p => transformProduct(p, config, tagsMap));
-            const { maps } = transformCollections(vendreCollections);
+    const { maps } = transformCollections(vendreCollections);
+    const products = vendreProducts.map(p => transformProduct(p, config));
 
-            // Export
-            const rows = exportProductCollections(products, maps);
+    // Export
+    const rows = exportProductCollections(products, maps);
 
-            ensureDirectory(outputDir);
+    ensureDirectory(outputDir);
     const outputPath = path.join(outputDir, `${config.outputPrefix}-matrixify-product-collections.xlsx`);
-            writeExcelFile(rows, outputPath, 'Products');
+    writeExcelFile(rows, outputPath, 'Products');
 
     console.log(`✓ Saved to ${outputPath}`);
 
-            return { productCollections: outputPath };
-        }
+    return { productCollections: outputPath };
+}
 
 /**
  * Export customers to Matrixify Excel
@@ -243,36 +246,36 @@ async function exportTranslations(config, dataDir, outputDir, products = null) {
  * @returns {Promise<Object>} Result with file paths
  */
 async function exportCustomersCommand(config, dataDir, outputDir, options = {}) {
-                console.log('\nExporting customers...\n');
+    console.log('\nExporting customers...\n');
 
-                // Load data
-                const customersPath = path.join(dataDir, `${config.outputPrefix}-customers.json`);
-                const vendreCustomers = loadVendreData(customersPath);
+    // Load data
+    const customersPath = path.join(dataDir, `${config.outputPrefix}-customers.json`);
+    const vendreCustomers = loadVendreData(customersPath);
 
-                // Transform
-                const customers = vendreCustomers.map(c => transformCustomer(c, config));
+    // Transform
+    const customers = vendreCustomers.map(c => transformCustomer(c, config));
 
-                ensureDirectory(outputDir);
-                const results = {};
+    ensureDirectory(outputDir);
+    const results = {};
 
-                // Full customer export
-                const rows = exportCustomers(customers);
-                const outputPath = path.join(outputDir, `${config.outputPrefix}-customers-matrixify.xlsx`);
-                writeExcelFile(rows, outputPath, 'Customers');
-                console.log(`✓ Saved to ${outputPath}`);
-                results.customers = outputPath;
+    // Full customer export
+    const rows = exportCustomers(customers);
+    const outputPath = path.join(outputDir, `${config.outputPrefix}-customers-matrixify.xlsx`);
+    writeExcelFile(rows, outputPath, 'Customers');
+    console.log(`✓ Saved to ${outputPath}`);
+    results.customers = outputPath;
 
-                // Customers without phone
-                if (options.noPhone) {
-                    const noPhoneRows = exportCustomersWithoutPhone(customers);
-                    const noPhonePath = path.join(outputDir, `${config.outputPrefix}-customers-no-phone-matrixify.xlsx`);
-                    writeExcelFile(noPhoneRows, noPhonePath, 'Customers');
-                    console.log(`✓ Saved customers without phone to ${noPhonePath}`);
-                    results.customersNoPhone = noPhonePath;
-                }
+    // Customers without phone
+    if (options.noPhone) {
+        const noPhoneRows = exportCustomersWithoutPhone(customers);
+        const noPhonePath = path.join(outputDir, `${config.outputPrefix}-customers-no-phone-matrixify.xlsx`);
+        writeExcelFile(noPhoneRows, noPhonePath, 'Customers');
+        console.log(`✓ Saved customers without phone to ${noPhonePath}`);
+        results.customersNoPhone = noPhonePath;
+    }
 
-                return results;
-            }
+    return results;
+}
 
 /**
  * Export all data types to Matrixify Excel
@@ -282,41 +285,41 @@ async function exportCustomersCommand(config, dataDir, outputDir, options = {}) 
  * @returns {Promise<Object>} Results for all exports
  */
 async function exportAll(config, dataDir, outputDir) {
-                console.log(`\nExporting all data for ${config.name}...\n`);
+    console.log(`\nExporting all data for ${config.name}...\n`);
 
-                const results = {};
+    const results = {};
 
-                // Products (with price and vendor updates)
-                results.products = await exportProductsCommand(config, dataDir, outputDir, {
-                    full: true,
-                    priceUpdate: true,
-                    vendorUpdate: true,
-                });
+    // Products (with price and vendor updates)
+    results.products = await exportProductsCommand(config, dataDir, outputDir, {
+        full: true,
+        priceUpdate: true,
+        vendorUpdate: true,
+    });
 
-                // Collections (with metafields and subcollections)
-                results.collections = await exportCollectionsCommand(config, dataDir, outputDir, {
-                    full: true,
-                    metafields: true,
-                    subcollections: true,
-                });
+    // Collections (with metafields and subcollections)
+    results.collections = await exportCollectionsCommand(config, dataDir, outputDir, {
+        full: true,
+        metafields: true,
+        subcollections: true,
+    });
 
-                // Product-collection assignments
-                results.productCollections = await exportProductCollectionsCommand(config, dataDir, outputDir);
+    // Product-collection assignments
+    results.productCollections = await exportProductCollectionsCommand(config, dataDir, outputDir);
 
-                // Customers (with no-phone variant)
-                results.customers = await exportCustomersCommand(config, dataDir, outputDir, {
-                    noPhone: true,
-                });
+    // Customers (with no-phone variant)
+    results.customers = await exportCustomersCommand(config, dataDir, outputDir, {
+        noPhone: true,
+    });
 
-                console.log('\n✓ Export complete!\n');
-                return results;
-            }
+    console.log('\n✓ Export complete!\n');
+    return results;
+}
 
 module.exports = {
-                exportProductsCommand,
-                exportCollectionsCommand,
-                exportProductCollectionsCommand,
-                exportTranslations,
-                exportCustomersCommand,
-                exportAll,
-            };
+    exportProductsCommand,
+    exportCollectionsCommand,
+    exportProductCollectionsCommand,
+    exportTranslations,
+    exportCustomersCommand,
+    exportAll,
+};

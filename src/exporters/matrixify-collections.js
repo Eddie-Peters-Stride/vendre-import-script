@@ -87,7 +87,7 @@ function exportProductCollections(products, collectionMaps) {
     const rows = [];
 
     for (const product of products) {
-        if (!product.isActive || !product.categoryIds || product.categoryIds.length === 0) {
+        if (!product.isActive || !product.show || !product.categoryIds || product.categoryIds.length === 0) {
             continue;
         }
 

@@ -58,8 +58,12 @@ function transformProduct(product, config, tagsMap = {}) {
         seoTitle: extractSeoTitle(product),
         seoDescription: extractSeoDescription(product),
 
+        // Associations
+        associatedProductIds: (product.associated_products || []).map(p => p.id),
+
         // Status
-        isActive: product.is_active === true || product.is_active === 1,
+        isActive: product.is_active === true || product.is_active === 1 || product.status === true || product.status === 1,
+        show: product.show === true || product.show === 1,
 
         // Raw data (for debugging)
         _raw: product,
@@ -139,9 +143,9 @@ function extractImages(product) {
     }
 
     return product.images.map((img, index) => ({
-        src: img.url || img.src || '',
+        src: (img.url && img.url.full) || img.url || img.src || '',
         position: index + 1,
-        altText: img.alt_text || '',
+        altText: img.alt_text || img.description || '',
     }));
 }
 

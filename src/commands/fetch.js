@@ -96,8 +96,13 @@ async function fetchAll(config, outputDir) {
     const results = {};
 
     results.products = await fetchProducts(config, outputDir);
+    console.log(`Fetched ${results.products?.length || 0} products.`);
+
     results.collections = await fetchCollections(config, outputDir);
+    console.log(`Fetched ${results.collections?.length || 0} collections.`);
+
     results.customers = await fetchCustomers(config, outputDir);
+    console.log(`Fetched ${results.customers?.length || 0} customers.`);
 
     console.log('\n✓ Fetch complete!\n');
     return results;

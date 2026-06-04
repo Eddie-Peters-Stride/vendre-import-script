@@ -17,9 +17,15 @@ function exportProducts(products, config) {
     const rows = [];
     let skipped = 0;
 
+    // Build a map of Vendre ID to handle for all products
+    const idToHandleMap = {};
+    for (const product of products) {
+        idToHandleMap[product.vendreId] = product.handle;
+    }
+
     for (const product of products) {
         try {
-            const row = buildProductRow(product, config);
+            const row = buildProductRow(product, config, idToHandleMap);
             if (row) {
                 rows.push(row);
             } else {
@@ -39,13 +45,14 @@ function exportProducts(products, config) {
  * Build a single Matrixify product row
  * @param {Object} product - Normalized product
  * @param {Object} config - Store configuration
+ * @param {Object} idToHandleMap - Map of Vendre product ID to handle
  * @returns {Object|null} Matrixify row or null if should skip
  */
-function buildProductRow(product, config) {
+function buildProductRow(product, config, idToHandleMap) {
     // Skip inactive products
-    if (!product.isActive) {
-        return null;
-    }
+    // if (!product.isActive || !product.show) {
+    //     return null;
+    // }
 
     const pricing = calculatePricing(product, config);
     const C = PRODUCT_COLUMNS;
@@ -57,7 +64,7 @@ function buildProductRow(product, config) {
         [C.VENDOR]: product.vendor || '',
         [C.TYPE]: product.productType || '',
         [C.TAGS]: product.tags.join(', '),
-        [C.PUBLISHED]: 'TRUE',
+        [C.PUBLISHED]: product.isActive || product.show ? 'TRUE' : 'FALSE',
         [C.VARIANT_SKU]: product.sku,
         [C.VARIANT_PRICE]: pricing.price,
         [C.VARIANT_COMPARE_AT_PRICE]: pricing.compareAtPrice || '',
@@ -74,6 +81,21 @@ function buildProductRow(product, config) {
         [C.SEO_TITLE]: product.seoTitle,
         [C.SEO_DESCRIPTION]: product.seoDescription,
     };
+
+    // Add dynamic metafields from specifications
+    for (const [key, value] of Object.entries(product.specifications)) {
+        const metafieldKey = `Metafield: custom.${key.toLowerCase()} [string]`;
+        row[metafieldKey] = value;
+    }
+
+    // Add related products metafield
+    if (product.associatedProductIds && product.associatedProductIds.length > 0) {
+        const relatedHandles = product.associatedProductIds
+            .map(id => idToHandleMap[id])
+            .filter(Boolean) // Filter out any IDs that couldn't be mapped
+            .join(',');
+        row['Metafield: custom.related_products [list.product_reference]'] = relatedHandles;
+    }
 
     // Add additional image rows
     const imageRows = [];

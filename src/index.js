@@ -72,7 +72,15 @@ DIRECTORIES:
 SETUP:
   1. Create a .env file for your store (e.g., .env.dragonslair)
   2. Set required environment variables (see .env.example)
-  3. Run commands with ENV_command) {
+  3. Run commands with ENV_FILE set (e.g., ENV_FILE=.env.dragonslair npm run sync)
+`);
+}
+
+async function main() {
+    const args = parseArgs();
+
+    // Show usage if no command or --help is provided
+    if (args.help || !args.command) {
         showUsage();
         process.exit(args.help ? 0 : 1);
     }
@@ -81,9 +89,9 @@ SETUP:
     const validation = validateStoreConfig();
     if (!validation.valid) {
         console.error(`\n❌ Configuration errors: \n`);
-        validation.errors.forEach(err => console.error(`  - ${ err }`));
-        console.error(`\nMake sure ENV_FILE is set and points to a valid.env file with all required variables.\n`);
-        console.error(`Example: ENV_FILE =.env.dragonslair node src / index.js--command = sync\n`);
+        validation.errors.forEach(err => console.error(`  - ${err}`));
+        console.error(`\nMake sure ENV_FILE is set and points to a valid .env file with all required variables.\n`);
+        console.error(`Example: ENV_FILE=.env.dragonslair node src/index.js --command=sync\n`);
         process.exit(1);
     }
 
@@ -93,79 +101,70 @@ SETUP:
 
     // Set up directories - use store-specific subdirectories
     const dataDir = path.join(__dirname, '..', 'results', storeName);
-    const outputDir = path.join(__dirname, '..', 'results', storeNamerequired API keys.\n`);
-    process.exit(1);
-}
+    const outputDir = path.join(__dirname, '..', 'results', storeName);
 
-// Get store config
-const config = getStoreConfig(args.store);
+    const type = args.type || 'all';
 
-// Set up directories
-const dataDir = path.join(__dirname, '..', 'results');
-const outputDir = path.join(__dirname, '..', 'results');
+    try {
+        switch (args.command) {
+            case 'sync':
+                await syncAll(config, dataDir, outputDir);
+                break;
 
-const type = args.type || 'all';
+            case 'fetch':
+                if (type === 'all') {
+                    await fetchAll(config, dataDir);
+                } else if (type === 'products') {
+                    await fetchProducts(config, dataDir);
+                } else if (type === 'collections') {
+                    await fetchCollections(config, dataDir);
+                } else if (type === 'customers') {
+                    await fetchCustomers(config, dataDir);
+                } else {
+                    throw new Error(`Unknown type: ${type}`);
+                }
+                break;
 
-try {
-    switch (args.command) {
-        case 'sync':
-            await syncAll(config, dataDir, outputDir);
-            break;
+            case 'export':
+                if (type === 'all') {
+                    await exportAll(config, dataDir, outputDir);
+                } else if (type === 'products') {
+                    await exportProductsCommand(config, dataDir, outputDir, {
+                        full: true,
+                        priceUpdate: true,
+                        vendorUpdate: true,
+                    });
+                } else if (type === 'collections') {
+                    await exportCollectionsCommand(config, dataDir, outputDir, {
+                        full: true,
+                        metafields: true,
+                        subcollections: true,
+                    });
+                } else if (type === 'customers') {
+                    await exportCustomersCommand(config, dataDir, outputDir, {
+                        noPhone: true,
+                    });
+                } else if (type === 'translations') {
+                    await exportTranslations(config, dataDir, outputDir);
+                } else {
+                    throw new Error(`Unknown type: ${type}`);
+                }
+                break;
 
-        case 'fetch':
-            if (type === 'all') {
-                await fetchAll(config, dataDir);
-            } else if (type === 'products') {
-                await fetchProducts(config, dataDir);
-            } else if (type === 'collections') {
-                await fetchCollections(config, dataDir);
-            } else if (type === 'customers') {
-                await fetchCustomers(config, dataDir);
-            } else {
-                throw new Error(`Unknown type: ${type}`);
-            }
-            break;
+            default:
+                throw new Error(`Unknown command: ${args.command}`);
+        }
 
-        case 'export':
-            if (type === 'all') {
-                await exportAll(config, dataDir, outputDir);
-            } else if (type === 'products') {
-                await exportProductsCommand(config, dataDir, outputDir, {
-                    full: true,
-                    priceUpdate: true,
-                    vendorUpdate: true,
-                });
-            } else if (type === 'collections') {
-                await exportCollectionsCommand(config, dataDir, outputDir, {
-                    full: true,
-                    metafields: true,
-                    subcollections: true,
-                });
-            } else if (type === 'customers') {
-                await exportCustomersCommand(config, dataDir, outputDir, {
-                    noPhone: true,
-                });
-            } else if (type === 'translations') {
-                await exportTranslations(config, dataDir, outputDir);
-            } else {
-                throw new Error(`Unknown type: ${type}`);
-            }
-            break;
+        console.log('✓ Done!\n');
+        process.exit(0);
 
-        default:
-            throw new Error(`Unknown command: ${args.command}`);
+    } catch (error) {
+        console.error(`\n❌ Error: ${error.message}\n`);
+        if (error.stack && process.env.DEBUG) {
+            console.error(error.stack);
+        }
+        process.exit(1);
     }
-
-    console.log('✓ Done!\n');
-    process.exit(0);
-
-} catch (error) {
-    console.error(`\n❌ Error: ${error.message}\n`);
-    if (error.stack && process.env.DEBUG) {
-        console.error(error.stack);
-    }
-    process.exit(1);
-}
 }
 
 // Run if called directly

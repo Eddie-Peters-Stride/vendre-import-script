@@ -13,14 +13,14 @@ function transformCustomer(customer, config) {
     return {
         // Identity
         vendreId: customer.id,
-        email: customer.email || '',
+        email: customer.email || customer.email_address || '',
 
         // Name
-        firstName: customer.first_name || '',
-        lastName: customer.last_name || '',
+        firstName: customer.first_name || customer.name_first || '',
+        lastName: customer.last_name || customer.name_last || '',
 
         // Contact
-        phone: formatPhone(customer.phone, config),
+        phone: formatPhone(customer.phone || customer.phone_default || customer.phone_mobile, config),
         company: customer.company || '',
 
         // Address
@@ -32,7 +32,7 @@ function transformCustomer(customer, config) {
 
         // Status
         isActive: customer.status === true || customer.status === 1,
-        acceptsMarketing: customer.accepts_marketing === true || customer.accepts_marketing === 1,
+        acceptsMarketing: customer.accepts_marketing === true || customer.accepts_marketing === 1 || customer.newsletter === true || customer.newsletter === 1,
         taxExempt: customer.tax_exempt === true || customer.tax_exempt === 1,
 
         // Notes
@@ -73,14 +73,14 @@ function formatPhone(phone, config) {
  */
 function extractAddress(customer) {
     return {
-        address1: customer.address1 || customer.street || '',
-        address2: customer.address2 || '',
-        city: customer.city || '',
+        address1: customer.address1 || customer.street || customer.address_street || '',
+        address2: customer.address2 || customer.address_street2 || '',
+        city: customer.city || customer.address_city || '',
         province: customer.province || customer.state || '',
         provinceCode: customer.province_code || '',
         country: customer.country || 'Sweden',
-        countryCode: customer.country_code || 'SE',
-        zip: customer.zip || customer.postal_code || '',
+        countryCode: customer.country_code || customer.address_country_code_alpha2 || 'SE',
+        zip: customer.zip || customer.postal_code || customer.postcode || customer.address_postcode || '',
     };
 }
 
