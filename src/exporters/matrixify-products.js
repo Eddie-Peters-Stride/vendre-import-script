@@ -84,7 +84,7 @@ function buildProductRow(product, config, idToHandleMap) {
 
     // Add dynamic metafields from specifications
     for (const [key, value] of Object.entries(product.specifications)) {
-        const metafieldKey = `Metafield: custom.${key.toLowerCase()} [string]`;
+        const metafieldKey = `Metafield: custom.${key.toLowerCase()} [single_line_text_field]`;
         row[metafieldKey] = value;
     }
 
