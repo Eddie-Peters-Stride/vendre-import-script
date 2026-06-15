@@ -15,6 +15,7 @@ const PRODUCT_COLUMNS = {
     TAGS: 'Tags',
     PUBLISHED: 'Published',
     VARIANT_SKU: 'Variant SKU',
+    VARIANT_BARCODE: 'Variant Barcode',
     VARIANT_PRICE: 'Variant Price',
     VARIANT_COMPARE_AT_PRICE: 'Variant Compare At Price',
     VARIANT_INVENTORY_QTY: 'Variant Inventory Qty',
@@ -52,6 +53,7 @@ const VENDOR_UPDATE_COLUMNS = {
  * Collection export columns
  */
 const COLLECTION_COLUMNS = {
+    COMMAND: 'Command',
     HANDLE: 'Handle',
     TITLE: 'Title',
     BODY_HTML: 'Body HTML',
@@ -59,13 +61,11 @@ const COLLECTION_COLUMNS = {
     PUBLISHED_SCOPE: 'Published Scope',
     SORT_ORDER: 'Sort Order',
     TEMPLATE_SUFFIX: 'Template Suffix',
-    DISJUNCTIVE: 'Disjunctive',
-    RULES: 'Rules',
     PUBLISHED_AT: 'Published At',
     IMAGE_SRC: 'Image Src',
     IMAGE_ALT_TEXT: 'Image Alt Text',
-    SEO_TITLE: 'SEO Title',
-    SEO_DESCRIPTION: 'SEO Description',
+    SEO_TITLE: 'Metafield: title_tag',
+    SEO_DESCRIPTION: 'Metafield: description_tag',
 };
 
 /**

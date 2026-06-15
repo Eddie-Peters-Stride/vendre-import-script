@@ -23,7 +23,13 @@ function transformProduct(product, config, tagsMap = {}) {
         vendreId: product.id,
         handle,
         title: name,
-        sku: product.sku || '',
+        sku: product.sku || product.article_number || '',
+
+        // Manufacturer & Product Info
+        manufacturerName: product.manufacturer_name || '',
+        manufacturerModel: product.manufacturer_model || '',
+        ean: product.ean1 || '',
+        externalId: product.external_id || '',
 
         // Pricing
         price: product.price || 0,
@@ -46,6 +52,7 @@ function transformProduct(product, config, tagsMap = {}) {
         // Inventory
         stock: product.stock || 0,
         stockStatus: product.stock_status,
+        quantity: product.quantity || 0,
 
         // Specifications (for metafields)
         specifications: extractSpecifications(product, config),

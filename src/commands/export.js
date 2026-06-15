@@ -166,14 +166,14 @@ async function exportCollectionsCommand(config, dataDir, outputDir, options = {}
     const vendreCollections = loadVendreData(collectionsPath);
 
     // Transform
-    const { collections, maps } = transformCollections(vendreCollections);
+    const { collections, maps } = transformCollections(vendreCollections, config);
 
     ensureDirectory(outputDir);
     const results = {};
 
     // Full collection export
     if (options.full !== false) {
-        const rows = exportCollections(collections, maps);
+        const rows = exportCollections(collections, maps, config);
         const outputPath = path.join(outputDir, `${config.outputPrefix}-matrixify-collections.xlsx`);
         writeExcelFile(rows, outputPath, 'Collections');
         console.log(`✓ Saved to ${outputPath}`);
@@ -191,7 +191,7 @@ async function exportCollectionsCommand(config, dataDir, outputDir, options = {}
 
     // Subcollections
     if (options.subcollections) {
-        const rows = exportSubcollections(collections, maps);
+        const rows = exportSubcollections(collections, config);
         const outputPath = path.join(outputDir, `${config.outputPrefix}-subcollections-update.xlsx`);
         writeExcelFile(rows, outputPath, 'Collections');
         console.log(`✓ Saved subcollections to ${outputPath}`);
@@ -222,11 +222,11 @@ async function exportProductCollectionsCommand(config, dataDir, outputDir) {
     const vendreCollections = loadVendreData(collectionsPath);
 
     // Transform
-    const { maps } = transformCollections(vendreCollections);
+    const { collections, maps } = transformCollections(vendreCollections, config);
     const products = vendreProducts.map(p => transformProduct(p, config));
 
     // Export
-    const rows = exportProductCollections(products, maps);
+    const rows = exportProductCollections(products, collections, config);
 
     ensureDirectory(outputDir);
     const outputPath = path.join(outputDir, `${config.outputPrefix}-matrixify-product-collections.xlsx`);

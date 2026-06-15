@@ -65,10 +65,11 @@ function buildProductRow(product, config, idToHandleMap) {
         [C.TYPE]: product.productType || '',
         [C.TAGS]: product.tags.join(', '),
         [C.PUBLISHED]: product.isActive || product.show ? 'TRUE' : 'FALSE',
-        [C.VARIANT_SKU]: product.sku,
+        [C.VARIANT_SKU]: product.sku || product.article_number,
+        [C.VARIANT_BARCODE]: product.ean || '',
         [C.VARIANT_PRICE]: pricing.price,
         [C.VARIANT_COMPARE_AT_PRICE]: pricing.compareAtPrice || '',
-        [C.VARIANT_INVENTORY_QTY]: product.stock || 0,
+        [C.VARIANT_INVENTORY_QTY]: product.quantity || product.stock || 0,
         [C.VARIANT_INVENTORY_POLICY]: 'deny', // Don't allow overselling
         [C.VARIANT_FULFILLMENT_SERVICE]: 'manual',
         [C.VARIANT_REQUIRES_SHIPPING]: 'TRUE',
@@ -81,6 +82,17 @@ function buildProductRow(product, config, idToHandleMap) {
         [C.SEO_TITLE]: product.seoTitle,
         [C.SEO_DESCRIPTION]: product.seoDescription,
     };
+
+    // Add manufacturer metafields
+    if (product.manufacturerName) {
+        row['Metafield: custom.manufacturer_name [single_line_text_field]'] = product.manufacturerName;
+    }
+    if (product.manufacturerModel) {
+        row['Metafield: custom.manufacturer_model [single_line_text_field]'] = product.manufacturerModel;
+    }
+    if (product.externalId) {
+        row['Metafield: custom.external_id [single_line_text_field]'] = product.externalId;
+    }
 
     // Add dynamic metafields from specifications
     for (const [key, value] of Object.entries(product.specifications)) {

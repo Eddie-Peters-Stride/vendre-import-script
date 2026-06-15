@@ -62,6 +62,10 @@ function loadStoreConfigFromEnv() {
             countryCode: process.env.PHONE_COUNTRY_CODE || '+46',
             removeLeadingZero: process.env.PHONE_REMOVE_LEADING_ZERO === 'true',
         },
+
+        exportSettings: {
+            includeVendreData: process.env.INCLUDE_VENDRE_DATA === 'true',
+        },
     };
 
     return config;

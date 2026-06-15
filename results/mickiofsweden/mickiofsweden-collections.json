@@ -15983,8 +15983,8 @@
       }
     },
     {
-      "id": 491,
-      "date_added": 1780038906,
+      "id": 499,
+      "date_added": 1781136924,
       "date_modified": 0,
       "customer_groups": [],
       "description": {
@@ -16054,24 +16054,24 @@
         "gb": ""
       },
       "name": {
-        "sv": "Dockhus & Dockskåp",
-        "en": "Dockhus & Dockskåp",
-        "nb": "Dockhus & Dockskåp",
-        "de": "Dockhus & Dockskåp",
-        "da": "Dockhus & Dockskåp",
-        "fi": "Dockhus & Dockskåp",
-        "gb": "Dockhus & Dockskåp"
+        "sv": "Kökslek",
+        "en": "Kökslek",
+        "nb": "Kökslek",
+        "de": "Kökslek",
+        "da": "Kökslek",
+        "fi": "Kökslek",
+        "gb": "Kökslek"
       },
       "parent_external_id": null,
-      "parent_id": 231,
+      "parent_id": 208,
       "seo_link": {
-        "sv": "sv/leksaker/dockhus-dockhustillbehor/dockhus-dockskap-c491/",
-        "en": "en/toys/doll-houses-doll-house-accessories/dockhus-dockskap-c491/",
-        "nb": "nb/leketoy/dukkehus-og-dukkehustilbehor/dockhus-dockskap-c491/",
-        "de": "de/spielzeug/puppenhauser-puppenhauszubehor/dockhus-dockskap-c491/",
-        "da": "da/legetoj/dukkehuse-dukkehustilbehor/dockhus-dockskap-c491/",
-        "fi": "fi/lelut/nukkekodit-nukkekodin-tarvikkeet/dockhus-dockskap-c491/",
-        "gb": "gb/toys/doll-houses-doll-house-accessories/dockhus-dockskap-c491/"
+        "sv": "sv/leksaker/utkladnad-rollek/kokslek/",
+        "en": "en/toys/kids-costumes-fancy-dress/kokslek/",
+        "nb": "nb/leketoy/utkledning-og-rollelek/kokslek/",
+        "de": "de/spielzeug/verkleidung-kostme/kokslek/",
+        "da": "da/legetoj/udklaedning-rolleleg/kokslek/",
+        "fi": "fi/lelut/rooliasut-roolileikit/kokslek/",
+        "gb": "gb/toys/kids-costumes-fancy-dress/kokslek/"
       },
       "seo_text": {
         "sv": "",
@@ -16096,9 +16096,247 @@
       "sort_order": 0,
       "status": true,
       "actions": {
-        "category_url": "https://mickiofsweden.com/API/1/categories/491",
-        "category_delete_url": "https://mickiofsweden.com/API/1/categories/491",
-        "category_save_url": "https://mickiofsweden.com/API/1/categories/491"
+        "category_url": "https://mickiofsweden.com/API/1/categories/499",
+        "category_delete_url": "https://mickiofsweden.com/API/1/categories/499",
+        "category_save_url": "https://mickiofsweden.com/API/1/categories/499"
+      }
+    },
+    {
+      "id": 500,
+      "date_added": 1781136954,
+      "date_modified": 0,
+      "customer_groups": [],
+      "description": {
+        "sv": "",
+        "en": "",
+        "nb": "",
+        "de": "",
+        "da": "",
+        "fi": "",
+        "gb": ""
+      },
+      "external_id": null,
+      "extra": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": {
+          "sv": "",
+          "en": "",
+          "nb": "",
+          "de": "",
+          "da": "",
+          "fi": "",
+          "gb": ""
+        },
+        "5": {
+          "sv": "",
+          "en": "",
+          "nb": "",
+          "de": "",
+          "da": "",
+          "fi": "",
+          "gb": ""
+        }
+      },
+      "filters": [],
+      "google_product_category": null,
+      "icon_image_id": null,
+      "icon_image_url": null,
+      "image_id": null,
+      "image_url": null,
+      "meta_description": {
+        "sv": "",
+        "en": "",
+        "nb": "",
+        "de": "",
+        "da": "",
+        "fi": "",
+        "gb": ""
+      },
+      "meta_keywords": {
+        "sv": "",
+        "en": "",
+        "nb": "",
+        "de": "",
+        "da": "",
+        "fi": "",
+        "gb": ""
+      },
+      "meta_title": {
+        "sv": "",
+        "en": "",
+        "nb": "",
+        "de": "",
+        "da": "",
+        "fi": "",
+        "gb": ""
+      },
+      "name": {
+        "sv": "Pyssel",
+        "en": "Pyssel",
+        "nb": "Pyssel",
+        "de": "Pyssel",
+        "da": "Pyssel",
+        "fi": "Pyssel",
+        "gb": "Pyssel"
+      },
+      "parent_external_id": null,
+      "parent_id": 86,
+      "seo_link": {
+        "sv": "sv/leksaker/pyssel-c500/",
+        "en": "en/toys/pyssel-c500/",
+        "nb": "nb/leketoy/pyssel-c500/",
+        "de": "de/spielzeug/pyssel-c500/",
+        "da": "da/legetoj/pyssel-c500/",
+        "fi": "fi/lelut/pyssel-c500/",
+        "gb": "gb/toys/pyssel-c500/"
+      },
+      "seo_text": {
+        "sv": "",
+        "en": "",
+        "nb": "",
+        "de": "",
+        "da": "",
+        "fi": "",
+        "gb": ""
+      },
+      "seo_title": {
+        "sv": "",
+        "en": "",
+        "nb": "",
+        "de": "",
+        "da": "",
+        "fi": "",
+        "gb": ""
+      },
+      "show_in_listing": true,
+      "show_sub_categories": null,
+      "sort_order": 0,
+      "status": true,
+      "actions": {
+        "category_url": "https://mickiofsweden.com/API/1/categories/500",
+        "category_delete_url": "https://mickiofsweden.com/API/1/categories/500",
+        "category_save_url": "https://mickiofsweden.com/API/1/categories/500"
+      }
+    },
+    {
+      "id": 501,
+      "date_added": 1781136954,
+      "date_modified": 0,
+      "customer_groups": [],
+      "description": {
+        "sv": "",
+        "en": "",
+        "nb": "",
+        "de": "",
+        "da": "",
+        "fi": "",
+        "gb": ""
+      },
+      "external_id": null,
+      "extra": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": {
+          "sv": "",
+          "en": "",
+          "nb": "",
+          "de": "",
+          "da": "",
+          "fi": "",
+          "gb": ""
+        },
+        "5": {
+          "sv": "",
+          "en": "",
+          "nb": "",
+          "de": "",
+          "da": "",
+          "fi": "",
+          "gb": ""
+        }
+      },
+      "filters": [],
+      "google_product_category": null,
+      "icon_image_id": null,
+      "icon_image_url": null,
+      "image_id": null,
+      "image_url": null,
+      "meta_description": {
+        "sv": "",
+        "en": "",
+        "nb": "",
+        "de": "",
+        "da": "",
+        "fi": "",
+        "gb": ""
+      },
+      "meta_keywords": {
+        "sv": "",
+        "en": "",
+        "nb": "",
+        "de": "",
+        "da": "",
+        "fi": "",
+        "gb": ""
+      },
+      "meta_title": {
+        "sv": "",
+        "en": "",
+        "nb": "",
+        "de": "",
+        "da": "",
+        "fi": "",
+        "gb": ""
+      },
+      "name": {
+        "sv": "Övriga",
+        "en": "Övriga",
+        "nb": "Övriga",
+        "de": "Övriga",
+        "da": "Övriga",
+        "fi": "Övriga",
+        "gb": "Övriga"
+      },
+      "parent_external_id": null,
+      "parent_id": 500,
+      "seo_link": {
+        "sv": "sv/leksaker/pyssel-c500/ovriga-c501/",
+        "en": "en/toys/pyssel-c500/ovriga-c501/",
+        "nb": "nb/leketoy/pyssel-c500/ovriga-c501/",
+        "de": "de/spielzeug/pyssel-c500/ovriga-c501/",
+        "da": "da/legetoj/pyssel-c500/ovriga-c501/",
+        "fi": "fi/lelut/pyssel-c500/ovriga-c501/",
+        "gb": "gb/toys/pyssel-c500/ovriga-c501/"
+      },
+      "seo_text": {
+        "sv": "",
+        "en": "",
+        "nb": "",
+        "de": "",
+        "da": "",
+        "fi": "",
+        "gb": ""
+      },
+      "seo_title": {
+        "sv": "",
+        "en": "",
+        "nb": "",
+        "de": "",
+        "da": "",
+        "fi": "",
+        "gb": ""
+      },
+      "show_in_listing": true,
+      "show_sub_categories": null,
+      "sort_order": 0,
+      "status": true,
+      "actions": {
+        "category_url": "https://mickiofsweden.com/API/1/categories/501",
+        "category_delete_url": "https://mickiofsweden.com/API/1/categories/501",
+        "category_save_url": "https://mickiofsweden.com/API/1/categories/501"
       }
     }
   ]
