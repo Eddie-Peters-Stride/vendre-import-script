@@ -4,14 +4,15 @@
 
 const path = require('path');
 const fs = require('fs');
-const { loadVendreData, writeExcelFile, safeReadJson, ensureDirectory } = require('../utils/file-io');
+const { loadVendreData, writeExcelFile, safeReadJson, safeWriteJson, ensureDirectory } = require('../utils/file-io');
 const { transformProduct } = require('../transformers/product-transformer');
 const { transformCollections } = require('../transformers/collection-transformer');
 const { transformCustomer } = require('../transformers/customer-transformer');
-const { exportProducts, exportPriceUpdate, exportVendorUpdate } = require('../exporters/matrixify-products');
+const { exportProducts, buildProductRow, exportPriceUpdate, exportVendorUpdate } = require('../exporters/matrixify-products');
 const { exportCollections, exportCollectionMetafields, exportProductCollections, exportSubcollections } = require('../exporters/matrixify-collections');
 const { exportCustomers, exportCustomersWithoutPhone } = require('../exporters/matrixify-customers');
 const { exportProductTranslations, buildSkuToHandleMap, buildHandleToIdMap, parseShopifyCsv } = require('../exporters/matrixify-translations');
+const { compareProducts, loadShopifyProductKeysFromFiles } = require('../utils/topup-compare');
 
 /**
  * Export products to Matrixify Excel
@@ -315,6 +316,290 @@ async function exportAll(config, dataDir, outputDir) {
     return results;
 }
 
+/**
+ * Normalize a Matrixify list field value to the comma-separated format Matrixify expects.
+ * @param {string} value - Raw semicolon-separated value
+ * @returns {string} Normalized list value
+ */
+function formatTopupListValue(value) {
+    if (!value) return '';
+
+    return String(value)
+        .split(/;/)
+        .map(part => part.trim())
+        .filter(Boolean)
+        .join(', ');
+}
+
+/**
+ * Map the store's Vendre warehouse ids to Matrixify inventory column names.
+ * @returns {Array<{externalId: string, column: string}>}
+ */
+function getTopupInventoryLocationColumns() {
+    return [
+        { externalId: 'svea', column: 'Inventory Available: Sveavägen 118' },
+        { externalId: 'kung', column: 'Inventory Available: Kungsholmstorg 8' },
+    ];
+}
+
+/**
+ * Read inventory quantity for a warehouse from the raw Vendre product.
+ * @param {Object} product - Normalized product with _raw data
+ * @param {string} externalId - Vendre warehouse external id
+ * @returns {number|string} Quantity or empty string if missing
+ */
+function getTopupWarehouseQuantity(product, externalId) {
+    const warehouses = product?._raw?.warehouses;
+    if (!Array.isArray(warehouses)) return '';
+
+    const warehouse = warehouses.find(w => w.external_id === externalId);
+    if (!warehouse || warehouse.quantity == null) return '';
+
+    return warehouse.quantity;
+}
+
+/**
+ * Build the full collection handle set for a product, including ancestor collections.
+ * Uses the same collection hierarchy logic as the collection/product collection scripts.
+ * @param {Object} product - Normalized product
+ * @param {Object} collectionMaps - Maps from transformCollections
+ * @returns {string} Comma-separated collection handles
+ */
+function getTopupCollectionHandles(product, collectionMaps) {
+    const categoryIds = product.categoryIds || [];
+    if (categoryIds.length === 0) return '';
+
+    const assignedHandles = new Set();
+    const visited = new Set();
+
+    for (const categoryId of categoryIds) {
+        let current = collectionMaps.idToCollection[categoryId];
+
+        while (current && !visited.has(current.id)) {
+            visited.add(current.id);
+
+            const title = collectionMaps.idToTitle[current.id];
+            const handle =
+                (title && collectionMaps.titleToHandle && collectionMaps.titleToHandle[title]) ||
+                collectionMaps.idToHandle[current.id];
+
+            if (handle) {
+                assignedHandles.add(handle);
+            }
+
+            current = current.parent_id ? collectionMaps.idToCollection[current.parent_id] : null;
+        }
+    }
+
+    return [...assignedHandles].join(', ');
+}
+
+/**
+ * Rewrite the product main row to match top-up requirements.
+ * @param {Object} row - Matrixify product row from the base exporter
+ * @param {Object} product - Normalized product
+ * @param {Object} collectionMaps - Maps for resolving collection handles
+ * @returns {Object} Adjusted Matrixify row
+ */
+function adjustTopupProductRow(row, product, collectionMaps) {
+    const customCollections = getTopupCollectionHandles(product, collectionMaps);
+    const adjustedRow = {};
+    const inventoryLocations = getTopupInventoryLocationColumns();
+
+    for (const [key, value] of Object.entries(row)) {
+        if (key === 'Variant Inventory Qty') {
+            // Replace the generic stock column with per-location inventory columns
+            // so Matrixify can import multi-location quantities without warnings.
+            continue;
+        }
+
+        if (key === 'Published' && customCollections) {
+            adjustedRow[key] = value;
+            adjustedRow['Custom Collections'] = customCollections;
+            continue;
+        }
+
+        if (key === 'Metafield: custom.designers [single_line_text_field]') {
+            adjustedRow['Metafield: custom.designers [list.single_line_text_field]'] = formatTopupListValue(value);
+            continue;
+        }
+
+        if (key === 'Metafield: custom.mechanics [single_line_text_field]') {
+            adjustedRow['Metafield: custom.mechanics [list.single_line_text_field]'] = formatTopupListValue(value);
+            continue;
+        }
+
+        if (key === 'Metafield: custom.publishers [single_line_text_field]') {
+            adjustedRow['Metafield: custom.publishers [list.single_line_text_field]'] = formatTopupListValue(value);
+            continue;
+        }
+
+        adjustedRow[key] = value;
+    }
+
+    for (const location of inventoryLocations) {
+        adjustedRow[location.column] = getTopupWarehouseQuantity(product, location.externalId);
+    }
+
+    if (!adjustedRow['Custom Collections'] && customCollections) {
+        adjustedRow['Custom Collections'] = customCollections;
+    }
+
+    return adjustedRow;
+}
+
+/**
+ * Remove the generic inventory quantity column from a Matrixify row.
+ * Top-up exports must use location-specific inventory columns instead.
+ * @param {Object} row - Matrixify product row
+ * @returns {Object} Row without the generic quantity field
+ */
+function stripTopupVariantInventoryQty(row) {
+    const adjustedRow = {};
+
+    for (const [key, value] of Object.entries(row)) {
+        if (key === 'Variant Inventory Qty') {
+            continue;
+        }
+
+        adjustedRow[key] = value;
+    }
+
+    return adjustedRow;
+}
+
+/**
+ * Export top-up products (new products not yet in Shopify)
+ * @param {Object} config - Store configuration
+ * @param {string} dataDir - Directory with JSON data files
+ * @param {string} outputDir - Output directory for Excel files
+ * @returns {Promise<Object>} Result with file paths and comparison info
+ */
+async function exportTopupCommand(config, dataDir, outputDir) {
+    console.log('\nComparing Vendre products with Shopify exports...\n');
+
+    // Load Vendre products
+    const productsPath = path.join(dataDir, `${config.outputPrefix}-products.json`);
+    const vendreProducts = loadVendreData(productsPath);
+    console.log(`Loaded ${vendreProducts.length} products from Vendre`);
+
+    // Load Shopify SKUs from the two exported product CSVs
+    const shopifyExportFiles = ['products_export_1.csv', 'products_export_2.csv'];
+    console.log(`Reading Shopify product exports: ${shopifyExportFiles.join(', ')}`);
+    const shopifyProducts = loadShopifyProductKeysFromFiles(outputDir, shopifyExportFiles);
+    console.log(
+        `Loaded ${shopifyProducts.skus.size} SKUs and ${shopifyProducts.handles.size} handles from Shopify exports\n`
+    );
+
+    // Compare products
+    const comparison = compareProducts(vendreProducts, shopifyProducts);
+    console.log(`Comparison Results:`);
+    console.log(`  - New products (to migrate): ${comparison.newProducts.length}`);
+    console.log(`  - Already in Shopify: ${comparison.existingProducts.length}`);
+    console.log(`  - Matched by SKU: ${comparison.matchedBySku}`);
+    console.log(`  - Matched by handle: ${comparison.matchedByHandle}`);
+    console.log(`  - Skipped (no SKU): ${comparison.skipped}\n`);
+
+    if (comparison.newProducts.length === 0) {
+        console.log('No new products to export.');
+        return { newProducts: [] };
+    }
+
+    const results = {};
+
+    // Load collections so the top-up workbook assigns products to the same
+    // collection handles used by the existing Shopify collection import.
+    const collectionsPath = path.join(dataDir, `${config.outputPrefix}-collections.json`);
+    const vendreCollections = loadVendreData(collectionsPath);
+    const { collections: normalizedCollections, maps: collectionMaps } = transformCollections(vendreCollections, config);
+    collectionMaps.titleToHandle = {};
+    for (const collection of normalizedCollections) {
+        if (collection.title && collection.handle) {
+            collectionMaps.titleToHandle[collection.title] = collection.handle;
+        }
+    }
+
+    // Persist the raw top-up product batch for downstream workflows.
+    const topupJsonPath = path.join(outputDir, `${config.outputPrefix}-topup-products.json`);
+    safeWriteJson(topupJsonPath, { list: comparison.newProducts });
+    console.log(`✓ Saved raw top-up products to ${topupJsonPath}`);
+    results.topupJson = topupJsonPath;
+
+    // Keep a compatibility copy at the legacy root path so the translation
+    // workflow can continue to consume the same filename if needed.
+    const legacyTopupJsonPath = path.join(__dirname, '..', '..', 'results', 'products-topup.json');
+    safeWriteJson(legacyTopupJsonPath, { list: comparison.newProducts });
+    console.log(`✓ Saved compatibility copy to ${legacyTopupJsonPath}`);
+    results.legacyTopupJson = legacyTopupJsonPath;
+
+    // Load tags map
+    const tagsPath = path.join(__dirname, '..', '..', 'tags.json');
+    const tagsMap = safeReadJson(tagsPath);
+
+    // Transform new products only
+    console.log(`Transforming ${comparison.newProducts.length} new products...\n`);
+    const newProducts = comparison.newProducts.map(p => transformProduct(p, config, tagsMap));
+
+    // Build the Matrixify rows with collection assignments and correct list metafields.
+    const idToHandleMap = {};
+    for (const product of newProducts) {
+        idToHandleMap[product.vendreId] = product.handle;
+    }
+
+    ensureDirectory(outputDir);
+
+    // Export products using the same Matrixify "Products" layout as the full export.
+    const productRows = [];
+    for (const product of newProducts) {
+        const rowsForProduct = buildProductRow(product, config, idToHandleMap);
+        if (!rowsForProduct || rowsForProduct.length === 0) {
+            continue;
+        }
+
+        const [mainRow, ...imageRows] = rowsForProduct;
+        productRows.push(
+            adjustTopupProductRow(mainRow, product, collectionMaps),
+            ...imageRows.map(stripTopupVariantInventoryQty)
+        );
+    }
+
+    const outputPath = path.join(outputDir, `${config.outputPrefix}-topup-products.xlsx`);
+    writeExcelFile(productRows, outputPath, 'Products');
+    console.log(`✓ Saved to ${outputPath}`);
+    results.topupProducts = outputPath;
+
+    // Export price update
+    const priceRows = exportPriceUpdate(newProducts, config);
+    const priceOutputPath = path.join(outputDir, `${config.outputPrefix}-topup-price-update.xlsx`);
+    writeExcelFile(priceRows, priceOutputPath, 'Price Update');
+    console.log(`✓ Saved to ${priceOutputPath}`);
+    results.topupPriceUpdate = priceOutputPath;
+
+    // Export vendor update
+    const vendorRows = exportVendorUpdate(newProducts);
+    const vendorOutputPath = path.join(outputDir, `${config.outputPrefix}-topup-vendor-update.xlsx`);
+    writeExcelFile(vendorRows, vendorOutputPath, 'Vendor Update');
+    console.log(`✓ Saved to ${vendorOutputPath}`);
+    results.topupVendorUpdate = vendorOutputPath;
+
+    console.log('\n✓ Top-up export complete!\n');
+
+    // Print summary
+    console.log('Summary:');
+    console.log(`  New products exported: ${newProducts.length}`);
+    console.log(`  Output files:`);
+    console.log(`    - ${path.basename(outputPath)}`);
+    console.log(`    - ${path.basename(priceOutputPath)}`);
+    console.log(`    - ${path.basename(vendorOutputPath)}\n`);
+
+    return {
+        newProducts: newProducts.length,
+        existingProducts: comparison.existingProducts.length,
+        skipped: comparison.skipped,
+        ...results,
+    };
+}
+
 module.exports = {
     exportProductsCommand,
     exportCollectionsCommand,
@@ -322,4 +607,5 @@ module.exports = {
     exportTranslations,
     exportCustomersCommand,
     exportAll,
+    exportTopupCommand,
 };

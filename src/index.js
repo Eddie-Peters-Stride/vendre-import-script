@@ -11,7 +11,7 @@
 const path = require('path');
 const { getStoreConfig, getStoreName, validateStoreConfig } = require('./config/stores');
 const { fetchAll, fetchProducts, fetchCollections, fetchCustomers } = require('./commands/fetch');
-const { exportAll, exportProductsCommand, exportCollectionsCommand, exportCustomersCommand, exportTranslations } = require('./commands/export');
+const { exportAll, exportProductsCommand, exportCollectionsCommand, exportCustomersCommand, exportTranslations, exportTopupCommand } = require('./commands/export');
 const { syncAll } = require('./commands/sync');
 
 // Parse command line arguments
@@ -44,6 +44,7 @@ COMMANDS:
   sync              Fetch from Vendre and export to Matrixify (recommended)
   fetch             Fetch data from Vendre API and save to JSON
   export            Export JSON data to Matrixify Excel files
+  topup             Compare Shopify exports with fetched products and export new products
 
 OPTIONS:
   --type=<type>     Specify data type: products, collections, customers, translations, all (default: all)
@@ -64,6 +65,9 @@ EXAMPLES:
 
   # Full sync for second store
   ENV_FILE=.env.store2 node src/index.js --command=sync
+
+  # Top-up migration for Dragons Lair
+  ENV_FILE=.env.dragonslair node src/index.js --command=topup
 
 DIRECTORIES:
   Data files:    results/<storeName>/
@@ -149,6 +153,12 @@ async function main() {
                 } else {
                     throw new Error(`Unknown type: ${type}`);
                 }
+                break;
+
+            case 'topup':
+                // Top-up export: export only products not yet in Shopify
+                // Requires Shopify product exports in the output directory
+                await exportTopupCommand(config, dataDir, outputDir);
                 break;
 
             default:

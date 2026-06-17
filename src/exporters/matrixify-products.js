@@ -65,7 +65,7 @@ function buildProductRow(product, config, idToHandleMap) {
         [C.TYPE]: product.productType || '',
         [C.TAGS]: product.tags.join(', '),
         [C.PUBLISHED]: product.isActive || product.show ? 'TRUE' : 'FALSE',
-        [C.VARIANT_SKU]: product.sku || product.article_number,
+        [C.VARIANT_SKU]: product.externalId || product.external_id || product.sku || product.article_number || '',
         [C.VARIANT_BARCODE]: product.ean || '',
         [C.VARIANT_PRICE]: pricing.price,
         [C.VARIANT_COMPARE_AT_PRICE]: pricing.compareAtPrice || '',
@@ -177,6 +177,7 @@ function exportVendorUpdate(products) {
 
 module.exports = {
     exportProducts,
+    buildProductRow,
     exportPriceUpdate,
     exportVendorUpdate,
 };
