@@ -346,14 +346,14 @@ function getTopupInventoryLocationColumns() {
  * Read inventory quantity for a warehouse from the raw Vendre product.
  * @param {Object} product - Normalized product with _raw data
  * @param {string} externalId - Vendre warehouse external id
- * @returns {number|string} Quantity or empty string if missing
+ * @returns {number|string} Quantity or 0 if missing
  */
 function getTopupWarehouseQuantity(product, externalId) {
     const warehouses = product?._raw?.warehouses;
-    if (!Array.isArray(warehouses)) return '';
+    if (!Array.isArray(warehouses)) return 0;
 
     const warehouse = warehouses.find(w => w.external_id === externalId);
-    if (!warehouse || warehouse.quantity == null) return '';
+    if (!warehouse || warehouse.quantity == null) return 0;
 
     return warehouse.quantity;
 }

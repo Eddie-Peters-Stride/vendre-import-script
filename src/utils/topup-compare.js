@@ -6,6 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 const { getProductHandle } = require('./handles');
+const { getVendreSku } = require('./sku');
 
 /**
  * Normalize SKU-like values so Shopify export CSVs and Vendre data can be
@@ -113,12 +114,12 @@ function parseCSVLine(line) {
 }
 
 /**
- * Get SKU from a Vendre product (handles both sku and article_number fields)
+ * Get SKU from a Vendre product.
  * @param {Object} product - Vendre product
  * @returns {string} SKU value or empty string
  */
 function getProductSku(product) {
-    return normalizeSku(product.sku || product.article_number || '');
+    return normalizeSku(getVendreSku(product));
 }
 
 /**

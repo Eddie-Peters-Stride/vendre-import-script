@@ -1,14 +1,9 @@
 #!/usr/bin/env node
 /**
- * Build a Matrixify workbook that updates only product SKU, EAN, and price.
+ * Build a single Matrixify workbook that updates product SKU, EAN, and price.
  *
- * The workbook uses separate row sets so each Matrixify row only touches the
- * intended field:
- * - SKU rows: Handle + Command + Variant SKU
- * - Price rows: Handle + Command + Variant Price + Variant Compare At Price
- * - EAN rows: Handle + Command + Variant Barcode
- *
- * This avoids blank cells from clearing unrelated Shopify fields.
+ * Each product is written as one row in a single worksheet so the import only
+ * needs one file.
  */
 
 require('dotenv').config({
@@ -21,9 +16,18 @@ const XLSX = require('xlsx');
 const { loadVendreData, ensureDirectory } = require('../../src/utils/file-io');
 const { getProductHandle } = require('../../src/utils/handles');
 const { calculatePricing } = require('../../src/transformers/product-transformer');
+const { getVendreSku } = require('../../src/utils/sku');
 
 const RESULTS_DIR = path.join(__dirname, '..', '..', 'results');
 const OUTPUT_BASENAME = 'matrixify-sku-ean-price-update.xlsx';
+const UPDATE_COLUMNS = [
+    'Handle',
+    'Command',
+    'Variant SKU',
+    'Variant Barcode',
+    'Variant Price',
+    'Variant Compare At Price',
+];
 
 function toText(value) {
     if (value == null) return '';
@@ -81,10 +85,9 @@ function resolveOutputPath(storeName) {
     return path.join(RESULTS_DIR, OUTPUT_BASENAME);
 }
 
-function autoFitColumns(worksheet, rows) {
+function autoFitColumns(worksheet, rows, headers) {
     if (!rows || rows.length === 0) return;
 
-    const headers = Object.keys(rows[0]);
     worksheet['!cols'] = headers.map((header) => {
         const maxLen = Math.max(
             header.length,
@@ -98,93 +101,77 @@ function autoFitColumns(worksheet, rows) {
     });
 }
 
-function appendSheet(workbook, sheetName, rows) {
-    if (rows.length === 0) {
+function buildUpdateRows(products, config) {
+    const rows = [];
+    let skipped = 0;
+    let skuCount = 0;
+    let barcodeCount = 0;
+    let priceCount = 0;
+
+    for (const product of products) {
+        const handle = getProductHandle(product);
+        if (!handle) {
+            skipped++;
+            continue;
+        }
+
+        const row = {
+            Handle: handle,
+            Command: 'MERGE',
+        };
+
+        const sku = getVendreSku(product);
+        if (sku) {
+            row['Variant SKU'] = sku;
+            skuCount++;
+        }
+
+        const ean = toText(product.ean1);
+        if (ean) {
+            row['Variant Barcode'] = ean;
+            barcodeCount++;
+        }
+
+        if (product.price != null && product.tax_class_id) {
+            const pricing = calculatePricing(
+                {
+                    vendreId: product.id,
+                    price: product.price,
+                    priceSpecial: product.price_special ?? null,
+                    taxClassId: product.tax_class_id,
+                },
+                config
+            );
+
+            row['Variant Price'] = pricing.price;
+            row['Variant Compare At Price'] = pricing.compareAtPrice || '';
+            priceCount++;
+        }
+
+        if (
+            row['Variant SKU'] == null &&
+            row['Variant Barcode'] == null &&
+            row['Variant Price'] == null &&
+            row['Variant Compare At Price'] == null
+        ) {
+            skipped++;
+            continue;
+        }
+
+        rows.push(row);
+    }
+
+    return { rows, skipped, skuCount, barcodeCount, priceCount };
+}
+
+function buildWorksheet(workbook, sheetName, rows, headers) {
+    if (!rows || rows.length === 0) {
         return;
     }
 
-    const worksheet = XLSX.utils.json_to_sheet(rows);
-    autoFitColumns(worksheet, rows);
+    const worksheet = XLSX.utils.json_to_sheet(rows, { header: headers });
+    autoFitColumns(worksheet, rows, headers);
     XLSX.utils.book_append_sheet(workbook, worksheet, sheetName);
-}
-
-function buildSkuRows(products) {
-    const rows = [];
-    let skipped = 0;
-
-    for (const product of products) {
-        const handle = getProductHandle(product);
-        const sku = toText(product.external_id);
-
-        if (!handle || !sku) {
-            skipped++;
-            continue;
-        }
-
-        rows.push({
-            Handle: handle,
-            Command: 'MERGE',
-            'Variant SKU': sku,
-        });
-    }
-
-    return { rows, skipped };
-}
-
-function buildPriceRows(products, config) {
-    const rows = [];
-    let skipped = 0;
-
-    for (const product of products) {
-        const handle = getProductHandle(product);
-
-        if (!handle || product.price == null) {
-            skipped++;
-            continue;
-        }
-
-        const pricing = calculatePricing(
-            {
-                vendreId: product.id,
-                price: product.price,
-                priceSpecial: product.price_special ?? null,
-                taxClassId: product.tax_class_id,
-            },
-            config
-        );
-
-        rows.push({
-            Handle: handle,
-            Command: 'MERGE',
-            'Variant Price': pricing.price,
-            'Variant Compare At Price': pricing.compareAtPrice || '',
-        });
-    }
-
-    return { rows, skipped };
-}
-
-function buildEanRows(products) {
-    const rows = [];
-    let skipped = 0;
-
-    for (const product of products) {
-        const handle = getProductHandle(product);
-        const ean = toText(product.ean1);
-
-        if (!handle || !ean) {
-            skipped++;
-            continue;
-        }
-
-        rows.push({
-            Handle: handle,
-            Command: 'MERGE',
-            'Variant Barcode': ean,
-        });
-    }
-
-    return { rows, skipped };
 }
 
 async function main() {
@@ -195,20 +182,18 @@ async function main() {
     const products = loadVendreData(productsPath);
     console.log(`Loaded ${products.length} products from ${productsPath}`);
 
-    const skuRows = buildSkuRows(products);
-    const priceRows = buildPriceRows(products, config);
-    const eanRows = buildEanRows(products);
+    const updateRows = buildUpdateRows(products, config);
 
     const workbook = XLSX.utils.book_new();
-    appendSheet(workbook, 'SKU Updates', skuRows.rows);
-    appendSheet(workbook, 'Price Updates', priceRows.rows);
-    appendSheet(workbook, 'EAN Updates', eanRows.rows);
+    buildWorksheet(workbook, 'Updates', updateRows.rows, UPDATE_COLUMNS);
 
     XLSX.writeFile(workbook, outputPath);
 
-    console.log(`SKU rows   : ${skuRows.rows.length} written, ${skuRows.skipped} skipped`);
-    console.log(`Price rows : ${priceRows.rows.length} written, ${priceRows.skipped} skipped`);
-    console.log(`EAN rows   : ${eanRows.rows.length} written, ${eanRows.skipped} skipped`);
+    console.log(`Rows written: ${updateRows.rows.length}`);
+    console.log(`SKU values   : ${updateRows.skuCount}`);
+    console.log(`EAN values   : ${updateRows.barcodeCount}`);
+    console.log(`Price values : ${updateRows.priceCount}`);
+    console.log(`Skipped      : ${updateRows.skipped}`);
     console.log(`Done. Matrixify workbook written to ${outputPath}`);
 }
 

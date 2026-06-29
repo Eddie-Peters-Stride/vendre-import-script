@@ -1,202 +1,310 @@
+/**
+ * updateProductCollections.js
+ *
+ * Builds a Matrixify product-collection assignment workbook from:
+ * - Vendre products/collections JSON for category hierarchy
+ * - Shopify product export CSV for the real Shopify product handles
+ *
+ * Output format:
+ *   Handle, Collection
+ *
+ * Usage:
+ *   node scripts/products/updateProductCollections.js
+ *
+ * If STORE_NAME is set, the script uses results/<STORE_NAME>/.
+ * Otherwise it auto-detects the store folder that contains products_export_1.csv.
+ */
+
 const fs = require('fs');
 const path = require('path');
 const XLSX = require('xlsx');
 
-// ─── Paths ────────────────────────────────────────────────────────────────────
-const collectionsPath = path.join(__dirname, '../results/collections.json');
-const collectionsXlsxPath = path.join(__dirname, '../results/collections.xlsx');
-const productsPath = path.join(__dirname, '../results/products.json');
-const outputXlsxPath = path.join(__dirname, '../results/matrixify-product-collections.xlsx');
+const RESULTS_DIR = path.join(__dirname, '..', '..', 'results');
+const SHOPIFY_EXPORT_FILES = ['products_export_1.csv', 'products_export_2.csv'];
 
-// ─── Load data ─────────────────────────────────────────────────────────────────
-const collectionsRaw = JSON.parse(fs.readFileSync(collectionsPath, 'utf8'));
-const collections = Array.isArray(collectionsRaw)
-    ? collectionsRaw
-    : (Array.isArray(collectionsRaw.list) ? collectionsRaw.list : []);
+function fileExists(filePath) {
+    return fs.existsSync(filePath);
+}
 
-const productsRaw = JSON.parse(fs.readFileSync(productsPath, 'utf8'));
-const products = Array.isArray(productsRaw)
-    ? productsRaw
-    : (Array.isArray(productsRaw.list) ? productsRaw.list : []);
+function readJsonList(filePath) {
+    const raw = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    return Array.isArray(raw) ? raw : (Array.isArray(raw.list) ? raw.list : []);
+}
 
-// ─── Load authoritative Shopify handles from collections.xlsx ─────────────────
-// collections.xlsx was the file imported into Shopify, so its Handle column is
-// the ground truth. Build title → shopifyHandle from it.
-const titleToShopifyHandle = {};
-{
-    const wb = XLSX.readFile(collectionsXlsxPath);
-    const ws = wb.Sheets['Custom Collections'];
-    const rows = XLSX.utils.sheet_to_json(ws);
-    for (const row of rows) {
-        if (row['Handle'] && row['Title']) {
-            titleToShopifyHandle[row['Title'].trim()] = row['Handle'].trim();
+function inferStoreDir() {
+    if (process.env.STORE_NAME) {
+        const candidate = path.join(RESULTS_DIR, process.env.STORE_NAME);
+        if (fileExists(candidate)) {
+            return candidate;
+        }
+    }
+
+    if (SHOPIFY_EXPORT_FILES.some(file => fileExists(path.join(RESULTS_DIR, file)))) {
+        return RESULTS_DIR;
+    }
+
+    const subdirs = fs.readdirSync(RESULTS_DIR, { withFileTypes: true })
+        .filter(entry => entry.isDirectory())
+        .map(entry => path.join(RESULTS_DIR, entry.name));
+
+    const candidates = [];
+    for (const dir of subdirs) {
+        const exportFile = path.join(dir, 'products_export_1.csv');
+        if (!fileExists(exportFile)) {
+            continue;
+        }
+
+        const stat = fs.statSync(exportFile);
+        candidates.push({
+            dir,
+            mtimeMs: stat.mtimeMs,
+        });
+    }
+
+    if (candidates.length > 0) {
+        candidates.sort((a, b) => b.mtimeMs - a.mtimeMs);
+        return candidates[0].dir;
+    }
+
+    return RESULTS_DIR;
+}
+
+function inferStoreName(storeDir) {
+    if (process.env.STORE_NAME) {
+        return process.env.STORE_NAME;
+    }
+
+    const prefixMatch = fs.readdirSync(storeDir).find(file => /^(.+)-products\.json$/i.test(file));
+    if (prefixMatch) {
+        return prefixMatch.replace(/-products\.json$/i, '');
+    }
+
+    return path.basename(storeDir) === 'results' ? 'store' : path.basename(storeDir);
+}
+
+function configureEnvFile(storeName) {
+    if (process.env.ENV_FILE) {
+        return;
+    }
+
+    const exactEnvFile = `.env.${storeName}`;
+    if (fileExists(path.join(process.cwd(), exactEnvFile))) {
+        process.env.ENV_FILE = exactEnvFile;
+        return;
+    }
+
+    const envFiles = fs.readdirSync(process.cwd())
+        .filter(file => /^\.env\./i.test(file));
+
+    for (const file of envFiles) {
+        const fullPath = path.join(process.cwd(), file);
+        try {
+            const content = fs.readFileSync(fullPath, 'utf8');
+            const match = content.match(/^\s*STORE_NAME\s*=\s*(.+)\s*$/m);
+            if (match && match[1].trim() === storeName) {
+                process.env.ENV_FILE = file;
+                return;
+            }
+        } catch (error) {
+            // Ignore unreadable env files and keep searching.
         }
     }
 }
-console.log(`Loaded ${Object.keys(titleToShopifyHandle).length} existing Shopify collection handles from collections.xlsx`);
 
-// ─── Build collection ID → collection map ────────────────────────────────────
-const idToCollection = {};
-for (const col of collections) {
-    idToCollection[col.id] = col;
-}
+function loadStoreConfig(storeName) {
+    configureEnvFile(storeName);
 
-// ─── Helpers (mirrors exportMatrixifyCollections.js exactly) ─────────────────
-function slugify(str) {
-    return str
-        .toLowerCase()
-        .replace(/å/g, 'a').replace(/ä/g, 'a').replace(/ö/g, 'o')
-        .replace(/[^a-z0-9]+/g, '-')
-        .replace(/^-|-$/g, '');
-}
-
-function rawName(col) {
-    return ((col.name && (col.name.sv || col.name.en)) || '').trim();
-}
-
-function ancestorPath(col) {
-    const parts = [];
-    let current = col;
-    const visited = new Set();
-    while (current && !visited.has(current.id)) {
-        visited.add(current.id);
-        const name = rawName(current);
-        if (name) parts.unshift(name);
-        current = current.parent_id ? idToCollection[current.parent_id] : null;
+    try {
+        const { getStoreConfig } = require('../../src/config/stores');
+        return getStoreConfig();
+    } catch (error) {
+        console.warn(`Warning: using fallback config because store config could not be loaded: ${error.message}`);
+        return {
+            name: storeName,
+            outputPrefix: storeName,
+            exportSettings: {
+                includeVendreData: false,
+            },
+        };
     }
-    return parts;
 }
 
-const leafNameToIds = {};
-for (const col of collections) {
-    const name = rawName(col);
-    if (!name) continue;
-    if (!leafNameToIds[name]) leafNameToIds[name] = [];
-    leafNameToIds[name].push(col.id);
-}
-
-function collectionTitle(col) {
-    const name = rawName(col);
-    if (!name) return '';
-    const p = ancestorPath(col);
-    if (p.length <= 1) return name;
-    const sameNameIds = (leafNameToIds[name] || []).filter(id => id !== col.id);
-    for (let depth = 2; depth <= p.length; depth++) {
-        const candidate = p.slice(p.length - depth).join(' - ');
-        const hasConflict = sameNameIds.some(id => {
-            const other = idToCollection[id];
-            if (!other) return false;
-            const otherPath = ancestorPath(other);
-            return otherPath.slice(otherPath.length - depth).join(' - ') === candidate;
-        });
-        if (!hasConflict) return candidate;
+function parseShopifyCsv(csvPath) {
+    if (!fileExists(csvPath)) {
+        return [];
     }
-    return p.join(' - ') + ' (' + col.id + ')';
+
+    const { parseShopifyCsv: parseCsvContent } = require('../../src/exporters/matrixify-translations');
+    const content = fs.readFileSync(csvPath, 'utf8');
+    return parseCsvContent(content);
 }
 
-// ─── Build ID → disambiguated title (used to look up Shopify handles) ──────────
-const idToTitle = {};
+function buildSkuToHandleMap(csvFiles) {
+    const skuToHandle = {};
 
-for (const col of collections) {
-    const title = collectionTitle(col);
-    if (!title) continue;
-    idToTitle[col.id] = title;
+    for (const csvFile of csvFiles) {
+        const rows = parseShopifyCsv(csvFile);
+
+        for (const row of rows) {
+            const handle = (row.Handle || '').trim();
+            const sku = (row['Variant SKU'] || '').replace(/^'+/, '').trim();
+
+            if (handle && sku && !skuToHandle[sku]) {
+                skuToHandle[sku] = handle;
+            }
+        }
+    }
+
+    return skuToHandle;
 }
 
-console.log(`Total Vendre collections : ${collections.length}`);
-
-// ─── Walk up ancestry chain for a collection ID ──────────────────────────────
-function getAncestorIds(catId) {
+function getAncestorIds(collectionId, idToCollection) {
     const ids = [];
-    let current = idToCollection[catId];
     const visited = new Set();
+    let current = idToCollection[collectionId];
+
     while (current && !visited.has(current.id)) {
         visited.add(current.id);
         ids.push(current.id);
-        current = current.parent_id ? idToCollection[current.parent_id] : null;
+        current = current.parentId ? idToCollection[current.parentId] : null;
     }
+
     return ids;
 }
 
-// ─── Product handle ───────────────────────────────────────────────────────────
-function productHandle(product) {
-    const seoLink = (product.seo_link && (product.seo_link.sv || product.seo_link.en)) || '';
-    if (seoLink) {
-        const parts = seoLink.replace(/\/+$/, '').split('/');
-        const slug = parts[parts.length - 1];
-        if (slug) return slug;
+function buildProductHandle(product, skuToHandle) {
+    const { getVendreSku } = require('../../src/utils/sku');
+    const { getProductHandle } = require('../../src/utils/handles');
+
+    const sku = getVendreSku(product);
+    if (sku && skuToHandle[sku]) {
+        return skuToHandle[sku];
     }
-    const name = (product.name && (product.name.sv || product.name.en)) || 'product-' + product.id;
-    return name
-        .toLowerCase()
-        .replace(/å/g, 'a').replace(/ä/g, 'a').replace(/ö/g, 'o')
-        .replace(/[^a-z0-9]+/g, '-')
-        .replace(/^-|-$/g, '');
+
+    return getProductHandle(product);
 }
 
-// ─── Build product ID → handle map (for complementary_products lookup) ────────
-const productIdToHandle = {};
-for (const product of products) {
-    const h = productHandle(product);
-    if (h) productIdToHandle[product.id] = h;
-}
+function buildAssignments() {
+    const storeDir = inferStoreDir();
+    const storeName = inferStoreName(storeDir);
+    const config = loadStoreConfig(storeName);
 
-// ─── Build Products rows — only assign to existing Shopify collections ────────
-const productRows = [];
-let skippedProducts = 0;
+    const productsJsonPath = path.join(storeDir, `${storeName}-products.json`);
+    const collectionsJsonPath = path.join(storeDir, `${storeName}-collections.json`);
 
-for (const product of products) {
-    const handle = productHandle(product);
-    if (!handle) { skippedProducts++; continue; }
+    if (!fileExists(productsJsonPath)) {
+        throw new Error(`Missing product JSON file: ${productsJsonPath}`);
+    }
+    if (!fileExists(collectionsJsonPath)) {
+        throw new Error(`Missing collection JSON file: ${collectionsJsonPath}`);
+    }
 
-    const catIds = product.category_ids;
-    if (!catIds || catIds.length === 0) { skippedProducts++; continue; }
+    const productExportFiles = SHOPIFY_EXPORT_FILES
+        .map(file => path.join(storeDir, file))
+        .filter(fileExists);
 
-    // Collect this collection + all ancestors; resolve handle directly from collections.xlsx
-    const assignedHandles = new Set();
-    for (const catId of catIds) {
-        for (const ancestorId of getAncestorIds(catId)) {
-            const title = idToTitle[ancestorId];
-            const h = title && titleToShopifyHandle[title];
-            if (h) assignedHandles.add(h);
+    if (productExportFiles.length === 0) {
+        throw new Error(
+            `Missing Shopify product export CSV file(s) in ${storeDir}: ${SHOPIFY_EXPORT_FILES.join(', ')}`
+        );
+    }
+
+    const products = readJsonList(productsJsonPath);
+    const collections = readJsonList(collectionsJsonPath);
+    const { collections: normalizedCollections, maps } = require('../../src/transformers/collection-transformer').transformCollections(
+        collections,
+        config
+    );
+
+    const includeVendreData = config.exportSettings?.includeVendreData === true;
+    const collectionHandleById = {};
+    for (const collection of normalizedCollections) {
+        collectionHandleById[collection.vendreId] = includeVendreData
+            ? collection.vendreRawHandle
+            : collection.handle;
+    }
+
+    const skuToHandle = buildSkuToHandleMap(productExportFiles);
+    console.log(`Loaded ${Object.keys(skuToHandle).length} SKU -> handle mappings from Shopify export(s).`);
+
+    const idToCollection = maps.idToCollection || {};
+    const rows = [];
+    const seen = new Set();
+    let skippedProducts = 0;
+
+    for (const product of products) {
+        const productHandle = buildProductHandle(product, skuToHandle);
+        const categoryIds = Array.isArray(product.category_ids) ? product.category_ids : [];
+
+        if (!productHandle || categoryIds.length === 0) {
+            skippedProducts++;
+            continue;
+        }
+
+        const assignedHandles = new Set();
+
+        for (const categoryId of categoryIds) {
+            for (const ancestorId of getAncestorIds(categoryId, idToCollection)) {
+                const collectionHandle = collectionHandleById[ancestorId];
+                if (collectionHandle) {
+                    assignedHandles.add(collectionHandle);
+                }
+            }
+        }
+
+        if (assignedHandles.size === 0) {
+            skippedProducts++;
+            continue;
+        }
+
+        for (const collectionHandle of assignedHandles) {
+            const key = `${productHandle}::${collectionHandle}`;
+            if (seen.has(key)) {
+                continue;
+            }
+            seen.add(key);
+            rows.push({
+                Handle: productHandle,
+                Collection: collectionHandle,
+            });
         }
     }
 
-    if (assignedHandles.size === 0) { skippedProducts++; continue; }
+    const outPath = path.join(storeDir, `${storeName}-matrixify-product-collections.xlsx`);
+    const worksheet = XLSX.utils.json_to_sheet(rows);
 
-    // Build complementary_products list from associated_products IDs
-    const complementaryHandles = [];
-    if (Array.isArray(product.associated_products)) {
-        for (const assoc of product.associated_products) {
-            const h = productIdToHandle[assoc.id];
-            if (h) complementaryHandles.push(h);
-        }
+    if (rows.length > 0) {
+        worksheet['!cols'] = Object.keys(rows[0]).map(key => ({
+            wch: Math.max(
+                key.length,
+                ...rows.slice(0, 200).map(row => String(row[key] || '').length)
+            ),
+        }));
     }
 
-    const row = {
-        'Handle': handle,
-        'Custom Collections': [...assignedHandles].join(', '),
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, 'Products');
+    XLSX.writeFile(workbook, outPath);
+
+    return {
+        storeDir,
+        storeName,
+        outPath,
+        rows,
+        skippedProducts,
     };
-    if (complementaryHandles.length > 0) {
-        row['Metafield: shopify--discovery--product_recommendation.complementary_products [list.product_reference]'] = complementaryHandles.join(', ');
-    }
-
-    productRows.push(row);
 }
 
-// ─── Write XLSX (Products sheet only) ────────────────────────────────────────
-const ws = XLSX.utils.json_to_sheet(productRows);
-if (productRows.length > 0) {
-    ws['!cols'] = Object.keys(productRows[0]).map(key => ({
-        wch: Math.max(key.length, ...productRows.slice(0, 200).map(r => String(r[key] || '').length)),
-    }));
+try {
+    const result = buildAssignments();
+
+    console.log(`\nStore directory : ${result.storeDir}`);
+    console.log(`Store name      : ${result.storeName}`);
+    console.log(`Assigned rows   : ${result.rows.length}`);
+    console.log(`Skipped products : ${result.skippedProducts}`);
+    console.log(`Output          : ${result.outPath}`);
+    console.log('\nImport this workbook into Matrixify to update product collection assignments.');
+} catch (error) {
+    console.error(error.message);
+    process.exit(1);
 }
-
-const wb = XLSX.utils.book_new();
-XLSX.utils.book_append_sheet(wb, ws, 'Products');
-XLSX.writeFile(wb, outputXlsxPath);
-
-console.log(`\nProducts assigned : ${productRows.length}`);
-console.log(`Skipped products  : ${skippedProducts} (no handle, no category, or no matching Shopify collection)`);
-console.log(`Output            : ${outputXlsxPath}`);
-console.log('\nImport this file via Matrixify (Products sheet only) to update collection assignments.');

@@ -1,6 +1,7 @@
 const XLSX = require("xlsx");
 const fs = require("fs");
 const path = require("path");
+const { getVendreSku } = require("../../src/utils/sku");
 
 const tagsMap = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "tags.json"), "utf8"));
 
@@ -137,7 +138,7 @@ function toMatrixifyRow(product) {
             ? product.images[0].description || title
             : "";
 
-    const sku = product.external_id || "";
+    const sku = getVendreSku(product);
     const barcode = product.ean1 || "";
     const { variantPrice, compareAtPrice } = getPricing(product);
     const weight = product.weight || "";
@@ -228,9 +229,9 @@ function toMatrixifyRow(product) {
         "Variant Taxable": "TRUE",
         "Variant Fulfillment Service": "manual",
         "Inventory Available: Sveavägen 118":
-            warehouseSvea != null ? warehouseSvea.quantity : "",
+            warehouseSvea != null && warehouseSvea.quantity != null ? warehouseSvea.quantity : 0,
         "Inventory Available: Kungsholmstorg 8":
-            warehouseKung != null ? warehouseKung.quantity : "",
+            warehouseKung != null && warehouseKung.quantity != null ? warehouseKung.quantity : 0,
         "Metafield: title_tag [string]": metaTitle,
         "Metafield: description_tag [string]": metaDescription,
         "Metafield: custom.description_short [multi_line_text_field]":
@@ -407,7 +408,7 @@ const rows = products.map(toMatrixifyRow);
 const translationRows = [];
 let skippedTranslations = 0;
 products.forEach((product) => {
-    const sku = product.external_id || "";
+    const sku = getVendreSku(product);
     const shopifyHandle = skuToShopifyHandle[sku];
     if (!shopifyHandle) { skippedTranslations++; return; }
     const shopifyId = handleToShopifyId[shopifyHandle];

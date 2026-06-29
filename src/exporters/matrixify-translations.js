@@ -5,6 +5,7 @@
 
 const { TRANSLATION_COLUMNS } = require('../config/matrixify');
 const { getShortDesc } = require('../utils/html');
+const { getVendreSku } = require('../utils/sku');
 
 /**
  * Export product translations for Shopify Translate & Adapt
@@ -24,7 +25,7 @@ function exportProductTranslations(products, shopifyMappings, options = {}) {
 
     for (const product of products) {
         try {
-            const sku = product.sku;
+            const sku = getVendreSku(product);
             if (!sku) {
                 skipped++;
                 continue;

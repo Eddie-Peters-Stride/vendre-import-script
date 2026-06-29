@@ -1305,7 +1305,7 @@
     {
       "id": 198,
       "date_added": 1612181765,
-      "date_modified": 1757485156,
+      "date_modified": 1782202477,
       "customer_groups": [
         {
           "id": 1,
@@ -1505,12 +1505,12 @@
       },
       "seo_title": {
         "sv": "",
-        "en": "Figurines & play worlds",
-        "nb": "Figurer og lekeverdener",
+        "en": "",
+        "nb": "",
         "de": "",
-        "da": "Figurer & Legeverdener",
-        "fi": "Figuurit ja leikkisetit",
-        "gb": "Figurines & play worlds"
+        "da": "",
+        "fi": "",
+        "gb": ""
       },
       "show_in_listing": true,
       "show_sub_categories": null,
@@ -2347,7 +2347,7 @@
     {
       "id": 204,
       "date_added": 1612182247,
-      "date_modified": 1761206082,
+      "date_modified": 1782463809,
       "customer_groups": [
         {
           "id": 1,
@@ -2445,13 +2445,13 @@
       "image_id": 2238,
       "image_url": "/04.Grafiskt-material/Skrallan/I_13101200_13101400_13101500_16111900_Skrallan-outside-play-1_1.jpg",
       "meta_description": {
-        "sv": "Dockvagnar för barn – välj mellan flera modeller från Lillan & Friends och barnens favoriter. Svensk design, säker konstruktion och funktioner som gör leken roligare.",
-        "en": "Doll prams and doll accessories. Doll prams, pushchairs, bicycle seats, beds, and more. Doll accessories from well-known brands.\r\n",
-        "nb": "Kjøp dukkevogner og dukkeutstyr online fra Micki. Dukkevogn, triller, sykkelsete, dukkeseng osv. Dukketilbehør fra kjente merker.\r\n",
-        "de": "Mit dem Puppen Kinderwagen von Micki können kleine Entdecker ihre Fantasie ausleben! Liebevoll gestaltet, stabil und perfekt für stundenlangen Spielspaß. ",
-        "da": "Køb dukkevogne & dukketilbehør online fra Micki. Dukkevogne, dukkesenge, cykelsæder m.m. Dukketilbehør fra kendte varemærker. \r\n",
-        "fi": "Osta nuken vaunut ja tarvikkeet verkosta Mickiltä. Nukenvaunut, rattaat, pyöränistuimet, nuken sängyt ym. tunnetuilta tuotemerkeiltä.\r\n",
-        "gb": "Doll prams and doll accessories. Doll prams, pushchairs, bicycle seats, beds, and more. Doll accessories from well-known brands.\r\n"
+        "sv": "Hitta fina dockvagnar & docktillbehör för barnens alla äventyr! Vi har ett brett utbud av dockvagnar, docktillbehör och och sulkyvagnar. Beställ idag!",
+        "en": "Discover beautiful doll prams and doll accessories for every adventure! Explore our wide range of doll prams, doll accessories and doll strollers. Shop today!",
+        "nb": "Finn flotte dukkevogner og dukketilbehør til barnas eventyr! Vi har et bredt utvalg av dukkevogner, dukketilbehør, sulkyer og dukkesenger. Bestill i dag!",
+        "de": "Entdecke schöne Puppenwagen und Puppenzubehör für jedes Abenteuer! Bei uns findest du eine große Auswahl an Puppenwagen, Puppenzubehör, Puppenbuggys und Puppenbetten. Jetzt bestellen!",
+        "da": "Find flotte dukkevogne og dukketilbehør til børnenes eventyr! Vi har et stort udvalg af dukkevogne, dukketilbehør, dukkeklapvogne og dukkesenge. Bestil i dag!",
+        "fi": "Löydä ihanat nukenvaunut ja nukketarvikkeet lasten kaikkiin seikkailuihin! Valikoimastamme löydät nukenvaunuja, nukketarvikkeita, nukenrattaita ja nukkesänkyjä. Tilaa omasi jo tänään!",
+        "gb": "Discover beautiful doll prams and doll accessories for every adventure! Explore our wide range of doll prams, doll accessories and doll strollers. Shop today!"
       },
       "meta_keywords": {
         "sv": "",
@@ -2463,13 +2463,13 @@
         "gb": ""
       },
       "meta_title": {
-        "sv": "Dockvagnar för barn - köp dockvagnar från Lillan & Friends | Micki",
-        "en": "Doll prams and doll pushchairs | Micki Official Site",
-        "nb": "Dukkevogner og dukkeutstyr | Micki",
-        "de": "Puppen Kinderwagen – Bezaubernder wagen für kleine Entdecker",
-        "da": "Dukkevogne og dukketilbehør | Micki",
-        "fi": "Nuken vaunut ja tarvikkeet | Micki",
-        "gb": "Doll prams and doll pushchairs | Micki Official Site"
+        "sv": "Dockvagnar & docktillbehör – Sulkys & docksängar | Micki",
+        "en": "Doll Prams & Doll Accessories – Doll Strollers & Doll Cots | Micki",
+        "nb": "Dukkevogner og dukketilbehør – Sulkyer og dukkesenger | Micki",
+        "de": "Puppenwagen & Puppenzubehör – Buggys & Puppenbetten | Micki",
+        "da": "Dukkevogne og dukketilbehør – Klapvogne og dukkesenge | Micki",
+        "fi": "Nukenvaunut ja nukketarvikkeet – Nukenrattaat ja nukkesängyt | Micki",
+        "gb": "Doll Prams & Doll Accessories – Doll Strollers & Doll Cots | Micki"
       },
       "name": {
         "sv": "Dockvagnar & docktillbehör",
@@ -2501,10 +2501,10 @@
         "gb": "<p>With doll prams, doll beds, bicycle seats, play tents, and other <a href=\"/gb/toys/dolls-doll-accessories/\">doll accessories</a>, the fun with dolls never stops. Now, your child’s doll can look forward to all the next adventures! Let your child take their doll for a walk in their doll pram. We have a wide range of doll prams. <em><strong>A simple doll pram is easy to take on holiday, and our realistic premium prams have all the details that a real pram has. Your child can take their doll pram</strong></em> out while you push their little sibling in their real pram alongside them. Every doll needs a bicycle seat so they can come on a bike ride! Our dolls’ bicycle seats can be attached to either the back or the front of your child’s bike. Why not match a doll’s bicycle seat with their own dolls’ bicycle helmet, so you’re truly prepared for an exciting cycling adventure!</p>\r\n<h2>Doll pushchairs allow fun play at home</h2>\r\n<p>Back at home, your child can take their doll into their doll's play tent. And of course, to get a good night’s sleep, every doll needs a bed. Even the naughtiest of dolls need to rest every now and then! With a cozy bed and bed linen, your child can make sure their favorite doll is comfortable. Here at mickiofsweden.com, you’ll find beautiful, well-made doll pushchairs and other doll prams for dolls of all sizes. Whether you buy a doll pram for a fashion doll, talking doll, or soft doll, our beautiful doll accessories make playing with their very best friend so much more fun for your child. We have doll pushchairs for dolls from lots of well-known brands.</p>\r\n<h3>A wide assortment of doll prams</h3>\r\n<p><em><strong>We have lots of doll prams in our assortment. A simple doll pram to bring on a trip, a bigger doll pushchair for a cozy walk or maybe a premium doll pram to spoil your favorite doll?</strong></em> The child can have fun with their doll pram on your family walks, while you drive the smaller sibling in their baby carriage. Doll prams promote active play and family time!</p>\r\n<h4>Adjustable doll prams in trendy designs</h4>\r\n<p>Every member of the family can go out and enjoy nature with our trendy doll prams! <em><strong>The doll pushchair is easy to drive thanks to the spinable front wheels. There are a lot of settings on our doll prams that fit both yours and the doll’s needs.</strong></em> For example, our premium doll pram can adjust its seat from laying down to sitting up with the press of a button – depending on if the doll wants to lie down and sleep or sit up and enjoy the surroundings. The doll pram is spacious, has a modern look, adjustable jumper, steady grip, foldable hood and a shopping basket. Flexible and trendy design with high quality for all our doll prams!</p>\r\n<h5>Doll prams for our beloved talking dolls</h5>\r\n<p>Talking dolls loved by generations! Imaginative doll play is always close by with Victoria and her friends. The talking doll’s playful nature and speaking ability make them very enjoyable playmates, that’ll happily follow along on any adventure in a doll pram! Together with the doll, children can host fun parties, become a hero in an exciting story, go treasure hunting in the garden and much, much more. Anything can happen, as long as Victoria is involved! There are lots of doll prams and other fun accessories that go well with the dolls. With them, the doll and the child are ready for any adventure that await them!</p>\r\n<h5>Welcome to Micki’s world of doll pushchairs &amp; doll accessories</h5>\r\n<p><em><strong>On mickiofsweden.com, you’ll find carefully crafted doll prams and other doll accessories</strong></em> that fit dolls in different shapes and sizes. Even if you purchase a doll pram for a fashion doll, a talking doll or a soft doll, our doll accessories make the play with dolls so much greater. We have fitting doll prams for dolls from tons of famous brands.</p>"
       },
       "seo_title": {
-        "sv": "",
+        "sv": "Dockvagnar & docktillbehör",
         "en": "Doll prams and other playful accessories",
         "nb": "Dukkevogner og tilbehør",
-        "de": "",
+        "de": "Puppenwagen & Puppenzubehör",
         "da": "Dukkevogne & tilbehør",
         "fi": "Nukenvaunut ja tarvikkeet",
         "gb": "Doll prams and other playful accessories"
@@ -8624,7 +8624,7 @@
     {
       "id": 380,
       "date_added": 1694788546,
-      "date_modified": 1757485320,
+      "date_modified": 1782201656,
       "customer_groups": [
         {
           "id": 1,
@@ -8683,13 +8683,13 @@
         }
       ],
       "description": {
-        "sv": "<p>En av våra mest populära produkter är lektältet, som ger barnen en rolig och fantasifull plats att leka och utforska utomhusmiljön på. Våra lektält finns i olika storlekar och mönster, från Pippis populära värld till Babblarnas pratglada lekmiljöer.</p>",
-        "en": "<p>One of our most popular products is the play tent, which provides children with a fun and imaginative place to play and explore the outdoor environment. Our play tents come in various sizes and patterns, from Pippi's popular world to the Babblarna's chatty play environments.</p>",
-        "nb": "<p>En av våre mest populære produkter er leketeltet, som gir barna et morsomt og fantasifullt sted å leke og utforske utendørsmiljøet. Våre leketelt finnes i forskjellige størrelser og mønstre, fra Pippis populære verden til Babblarnas pratsomme lekeomgivelser.</p>",
-        "de": "<p>Eines unserer beliebtesten Produkte ist das Spielzelt, das Kindern einen lustigen und fantasievollen Ort zum Spielen und Erkunden der Außenumgebung bietet. Unsere Spielzelte gibt es in verschiedenen Größen und Mustern, von Pippis beliebter Welt bis zu den gesprächigen Spielumgebungen der Babblarna.</p>",
-        "da": "<p>Et af vores mest populære produkter er legeteltet, som giver børnene et sjovt og fantasifuldt sted at lege og udforske udemiljøet. Vores legetelte findes i forskellige størrelser og mønstre, fra Pippis populære verden til Babblarnas snakkesalige legeområder.</p>",
-        "fi": "<p>Yksi suosituimmista tuotteistamme on leikkiteltta, joka tarjoaa lapsille hauskan ja mielikuvituksellisen paikan leikkiä ja tutkia ulkoympäristöä. Leikkitelttamme ovat saatavilla eri kokoisina ja kuvioina, Pippin suositusta maailmasta Babblarna-hahmojen puheliaisiin leikkiympäristöihin.</p>",
-        "gb": "<p>One of our most popular products is the play tent, which provides children with a fun and imaginative place to play and explore the outdoor environment. Our play tents come in various sizes and patterns, from Pippi's popular world to the Babblarna's chatty play environments.</p>"
+        "sv": "<p>En av våra mest populära produkter är lektältet. Ett lektält ger barn en egen plats för lek, fantasi och vila, både inomhus och utomhus. Våra lektält finns i olika storlekar och mönster, från Pippis populära värld till Babblarnas pratglada lekmiljöer. Våra tält är så kallade pop-up-tält som fälls ut på några sekunder och viks ihop platt när leken är slut.</p>",
+        "en": "<p>One of our most popular products is the play tent. A play tent gives children a space of their own for play, imagination and relaxation, both indoors and outdoors. Our play tents come in different sizes and designs, from the popular world of PAW Patrol to Pippi’s Villa Villekulla. The tents are pop-up tents that unfold in just a few seconds and fold flat when playtime is over.</p>",
+        "nb": "<p>Et av våre mest populære produkter er leketeltet. Et leketelt gir barn sitt eget sted for lek, fantasi og avslapning, både inne og ute. Våre leketelt finnes i ulike størrelser og mønstre, fra PAW Patrols populære verden til Pippis Villa Villekulla. Teltene er såkalte pop-up-telt som slås opp på få sekunder og foldes flatt sammen når leken er over.</p>",
+        "de": "<p>Eines unserer beliebtesten Produkte ist das Spielzelt. Ein Spielzelt bietet Kindern einen eigenen Ort zum Spielen, Träumen und Ausruhen – sowohl drinnen als auch draußen. Unsere Spielzelte sind in verschiedenen Größen und Designs erhältlich, von der beliebten Welt von PAW Patrol bis hin zu Pippis Villa Kunterbunt. Die Zelte sind praktische Pop-up-Zelte, die sich in wenigen Sekunden aufstellen lassen und nach dem Spielen flach zusammengefaltet werden können.</p>",
+        "da": "<p>Et af vores mest populære produkter er legeteltet. Et legetelt giver børn deres eget sted til leg, fantasi og afslapning, både indendørs og udendørs. Vores legetelte findes i forskellige størrelser og mønstre, fra PAW Patrols populære verden til Pippis Villa Villekulla. Teltene er såkaldte pop-up-telte, som foldes ud på få sekunder og foldes fladt sammen, når legen er slut.</p>",
+        "fi": "<p>Yksi suosituimmista tuotteistamme on leikkiteltta. Leikkiteltta tarjoaa lapselle oman paikan leikkiin, mielikuvitukseen ja rauhoittumiseen sekä sisällä että ulkona. Leikkitelttojamme on saatavilla eri kokoisina ja kuvioisina, aina PAW Patrolin suositusta maailmasta Pepin Huvikumpuun. Teltat ovat käteviä pop-up-telttoja, jotka avautuvat muutamassa sekunnissa ja taittuvat litteiksi leikin päätyttyä.<br> <br> <br> </p>",
+        "gb": "<p>One of our most popular products is the play tent. A play tent gives children a space of their own for play, imagination and relaxation, both indoors and outdoors. Our play tents come in different sizes and designs, from the popular world of PAW Patrol to Pippi’s Villa Villekulla. The tents are pop-up tents that unfold in just a few seconds and fold flat when playtime is over.</p>"
       },
       "external_id": 0,
       "extra": {
@@ -8722,13 +8722,13 @@
       "image_id": 7938,
       "image_url": "/04.Grafiskt-material/Babblarna/cropped/0A6A3063_retusch_1.jpg",
       "meta_description": {
-        "sv": "",
-        "en": "",
-        "nb": "",
-        "de": "",
-        "da": "",
-        "fi": "",
-        "gb": ""
+        "sv": "Letar du efter ett roligt lektält till barn? Utforska våra populära pop-up tält med Pippi, Babblarna och PAW Patrol för lek ute och inne. Köp idag!",
+        "en": "Looking for a fun play tent for kids? Discover our popular pop-up tents with Pippi, PAW Patrol and Hello Kitty. Buy today!",
+        "nb": "Leder du efter et sjovt legetelt til børn? Udforsk vores populære pop op-telte med Pippi, Babblarna og PAW Patrol til leg både inde og ude. Køb i dag!",
+        "de": "Suchst du ein tolles Spielzelt für Kinder? Entdecke unsere beliebten Pop-up-Zelte mit Pippi, Babblarna und PAW Patrol – für Spielspaß drinnen und draußen. Jetzt kaufen!",
+        "da": "Leter du etter et morsomt leketelt for barn? Utforsk våre populære pop-up-telt med Pippi, Babblarna og PAW Patrol for lek både inne og ute. Kjøp i dag!",
+        "fi": "Etsitkö hauskaa leikkitelttaa lapsille? Tutustu suosittuihin pop-up-telttoihimme, joissa seikkailevat Pippi, Babblarna ja PAW Patrol. Sopivat leikkiin sekä sisällä että ulkona. Osta jo tänään!",
+        "gb": "Letar du efter ett roligt lektält till barn? Utforska våra populära pop-up tält med Pippi, Babblarna och PAW Patrol för lek ute och inne. Köp idag!"
       },
       "meta_keywords": {
         "sv": "",
@@ -8740,33 +8740,33 @@
         "gb": ""
       },
       "meta_title": {
-        "sv": "Lektält",
-        "en": "Play tents",
-        "nb": "Leketelt",
-        "de": "Spielzelt",
-        "da": "Legetelt",
-        "fi": "Leikkiteltta",
-        "gb": "Play tents"
+        "sv": "Lektält barn – Roliga leksakstält & pop-up-tält | Micki",
+        "en": "Children's Play tents - Fun play Tents & Pop-up-Tent | Micki",
+        "nb": "Leketelt for barn – Morsomme leketelt og pop-up-telt | Micki",
+        "de": "Spielzelte für Kinder – Lustige Spielzelte & Pop-up-Zelte | Micki",
+        "da": "Legetelt til børn – Sjove legetelt og pop op-telte | Micki",
+        "fi": "Lasten leikkiteltat – Hauskat leikkiteltat ja pop-up-teltat | Micki",
+        "gb": "Children's Play tents - Fun play Tents & Pop-up-Tent | Micki"
       },
       "name": {
-        "sv": "Lektält",
-        "en": "Play tents",
-        "nb": "Leketelt",
-        "de": "Spielzelt",
-        "da": "Legetelt",
-        "fi": "Leikkiteltta",
-        "gb": "Play tents"
+        "sv": "Lektält för barn",
+        "en": "Children's Play tents",
+        "nb": "Leketelt for barn",
+        "de": "Spielzelt für Kinder",
+        "da": "Legetelt til børn",
+        "fi": "Lasten leikkiteltta",
+        "gb": "Children's Play tents"
       },
       "parent_external_id": null,
       "parent_id": 86,
       "seo_link": {
-        "sv": "sv/leksaker/lektalt/",
-        "en": "en/toys/play-tents/",
-        "nb": "nb/leketoy/leketelt/",
-        "de": "de/spielzeug/spielzelt/",
-        "da": "da/legetoj/legetelt/",
-        "fi": "fi/lelut/leikkiteltta/",
-        "gb": "gb/toys/play-tents/"
+        "sv": "sv/leksaker/lektalt-for-barn/",
+        "en": "en/toys/childrens-play-tents/",
+        "nb": "nb/leketoy/leketelt-for-barn/",
+        "de": "de/spielzeug/spielzelt-fr-kinder/",
+        "da": "da/legetoj/legetelt-til-born/",
+        "fi": "fi/lelut/lasten-leikkiteltta/",
+        "gb": "gb/toys/childrens-play-tents/"
       },
       "seo_text": {
         "sv": "",
@@ -9221,7 +9221,7 @@
     {
       "id": 400,
       "date_added": 1701764882,
-      "date_modified": 1769678367,
+      "date_modified": 1782458962,
       "customer_groups": [
         {
           "id": 1,
@@ -9280,13 +9280,13 @@
         }
       ],
       "description": {
-        "sv": "<p>Lundby är en klassisk dockhusvärld från Micki där barn kan skapa egna berättelser genom lek. Dockhusen är modulära, byggs i skala 1:18 och kan kombineras med möbler, belysning och dockor som passar perfekt ihop. Med avtagbara och vändbara bakväggar går det att leka från flera håll och enkelt förnya rummens utseende. Lundby dockhus är designade i Sverige och uppmuntrar till kreativ, inkluderande och långvarig lek där fantasin får ta plats.</p>",
-        "en": "<p>Dollhouse play with room for everyone! Here, children can create their own dream worlds and imagine fun stories! What's happening in the dollhouse today? Maybe grandma is visiting, or perhaps all the bunnies have escaped and are hiding around the house! Lundby's Swedish-designed dollhouses are developed in Sweden by us at Micki. Lundby is loved for all its playful, lifelike details that children recognize from their own lives. Together, you can continue to build on Lundby's dollhouse with all the accessories, furniture, and dolls available for purchase. In Lundby's world, the door is always open!</p>",
-        "nb": "<p>Dukkehuslek med plass for alle! Her kan barna skape sine egne drømmeverdener og fantasere sammen morsomme historier! Hva skjer i dukkehuset i dag? Kanskje er bestemor på besøk, eller kanskje har alle kaninene rømt og gjemmer seg rundt i huset! Lundbys svenskdesignede dukkehus utvikles i Sverige av oss på Micki. Lundby elskes for alle lekne, realistiske detaljer som barna kjenner igjen fra sine egne liv. Dere kan sammen bygge videre på Lundbys dukkehus med alle tilbehørene, møblene og dukkene som er tilgjengelige for kjøp. I Lundbys verden står døren alltid åpen!</p>",
-        "de": "<p>Die Lundby-Seite zeigt eine spielerische Puppenhauswelt, in der Kinder eigene Geschichten erfinden und ihr Traumhaus gestalten können. Lundby Puppenhäuser werden bei Micki in Schweden entwickelt und sind für detailreiche, realistische Zubehörteile bekannt. Auf der Seite findest du Puppenhäuser, Möbel, Beleuchtung und Puppen, mit denen das Spiel Schritt für Schritt wachsen kann. Besonders praktisch: Rückwände lassen sich entfernen oder wenden, sodass das Puppenhaus von zwei Seiten bespielbar ist – und neue Tapeten entstehen im Handumdrehen.</p>",
-        "da": "<p>Dukkehusleg med plads til alle! Her kan børn skabe deres egne drømmeverdener og forestille sig sjove historier sammen! Hvad sker der i dukkehuset i dag? Måske besøger bedstemor, eller måske er alle kaninerne stukket af og gemmer sig rundt omkring i huset! Lundbys svenske designede dukkehuse udvikles i Sverige af os hos Micki. Lundby elskes for alle de legende, realistiske detaljer, som børn genkender fra deres eget liv. I kan sammen bygge videre på Lundbys dukkehus med alle tilbehørene, møblerne og dukkerne, der kan købes. I Lundbys verden står døren altid åben!</p>",
-        "fi": "<p>Nukkekotileikit, joissa on tilaa kaikille! Lapset voivat luoda omia unelmamaailmojaan nukkekoteihin keksien hauskoja tarinoita! Mitä nukkekodissa tapahtuu tänään? Ehkäpä mummo on saapunut vierailulle tai kanit ovat karanneet ja piiloutuneet ympäri taloa! Ruotsissa suunnitellut Lundbyn nukkekodit ovat Mickin kehittämiä. Lundby on suosittu leikkisien, todentuntuisten yksityiskohtiensa ansiosta, jotka lapset tunnistavat omasta elämästään. Voitte yhdessä täydentää Lundbyn nukkekoteja erikseen ostettavilla tarvikkeilla, kalusteilla ja nukkekodin nukeilla. Lundbyn maailmassa ovi on aina avoinna!</p>",
-        "gb": "<p>Dollhouse play with room for everyone! Here, children can create their own dream worlds and imagine fun stories! What's happening in the dollhouse today? Maybe grandma is visiting, or perhaps all the bunnies have escaped and are hiding around the house! Lundby's Swedish-designed dollhouses are developed in Sweden by us at Micki. Lundby is loved for all its playful, lifelike details that children recognize from their own lives. Together, you can continue to build on Lundby's dollhouse with all the accessories, furniture, and dolls available for purchase. In Lundby's world, the door is always open!</p>"
+        "sv": "<p>Lundby är ett av världens mest ikoniska dockhus och det äldsta dockhusföretaget i Sverige. En förtrollande plats där dockhus, dockhustillbehör, dockhusdockor och fantasi möts. Lundbys dockhus har alltid varit en plats för små och stora att skapa hem, berättelser och minnen. En värld där fantasin aldrig tar slut och där varje detalj får liv. Välkommen till Lundbys fantastiska värld!</p>",
+        "en": "<p>One of the world's most iconic doll's houses and the oldest doll's house company in Sweden. An enchanting place where our doll's houses, doll's house accessories, doll's house dolls and imagination come together. LUNDBY doll's houses have always been a place for young and old to create homes, stories and memories. A world where imagination never ends and where every detail comes to life. Carefully developed by Micki in Sweden.</p>",
+        "nb": "<p>Et av verdens mest ikoniske dukkehus og den eldste dukkehusprodusenten i Sverige. Et fortryllende sted der våre dukkehus, dukkehustilbehør, dukkehusdukker og fantasien forenes. LUNDBY dukkehus har alltid vært et sted for små og store til å skape hjem, historier og minner. En verden der fantasien aldri tar slutt, og der hver detalj får liv. Omsorgsfullt utviklet av Micki i Sverige.</p>",
+        "de": "<p>Eines der ikonischsten Puppenhäuser der Welt und das älteste Puppenhausunternehmen Schwedens. Ein verzaubernder Ort, an dem unsere Puppenhäuser, Puppenhauszubehör, Puppenhausfiguren und die Fantasie zusammenfinden. LUNDBY Puppenhäuser waren schon immer ein Ort für Klein und Groß, um Zuhause, Geschichten und Erinnerungen zu schaffen. Eine Welt, in der die Fantasie niemals endet und jedes Detail zum Leben erwacht. Sorgfältig entwickelt von Micki in Schweden.</p>",
+        "da": "<p>Et af verdens mest ikoniske dukkehuse og den ældste dukkehusproducent i Sverige. Et fortryllende sted hvor vores dukkehuse, dukkehustilbehør, dukkehusdukker og fantasien forenes. LUNDBY dukkehuse har altid været et sted for små og store til at skabe hjem, historier og minder. En verden hvor fantasien aldrig slutter, og hvor hver detalje får liv. Omsorgsfuldt udviklet af Micki i Sverige.</p>",
+        "fi": "<p>Yksi maailman ikonisimmista nukkekodeista ja Ruotsin vanhin nukkekotiyritys. Lumottu paikka, jossa nukkekotimme, nukkekotitarvikkeet, nukkekotihahmot ja mielikuvitus yhdistyvät. LUNDBY nukkekoti on aina ollut paikka, jossa pienet ja suuret voivat luoda koteja, tarinoita ja muistoja. Maailma, jossa mielikuvitus ei lopu koskaan ja jossa jokainen yksityiskohta herää eloon. Huolella kehitetty Mickin toimesta Ruotsissa.</p>",
+        "gb": "<p>One of the world's most iconic doll's houses and the oldest doll's house company in Sweden. An enchanting place where our doll's houses, doll's house accessories, doll's house dolls and imagination come together. LUNDBY doll's houses have always been a place for young and old to create homes, stories and memories. A world where imagination never ends and where every detail comes to life. Carefully developed by Micki in Sweden.</p>"
       },
       "external_id": 0,
       "extra": {
@@ -9356,8 +9356,8 @@
       "google_product_category": 0,
       "icon_image_id": 0,
       "icon_image_url": null,
-      "image_id": 9042,
-      "image_url": "/products/l/Lundby-1.jpg",
+      "image_id": 10277,
+      "image_url": "/04.Grafiskt-material/Lundby/Lansering/Lundby-vanlig-landningssida/Lundby-header-1400x700.jpg",
       "meta_description": {
         "sv": "Upptäck Lundby dockhus i skala 1:18 – dockhus, möbler, belysning och dockor för kreativ och inkluderande lek. Designade i Sverige.",
         "en": "Lundby's dollhouses have everything children need for hours of fun play! With Lundby, children can continue their play with furniture, accessories, and dollhouse dolls. Experience Lundby!",
@@ -9380,7 +9380,7 @@
         "sv": "Lundby dockhus - möbler & tillbehör för dockhus | Micki Leksaker",
         "en": "Lundby dollhouses - Dollhouse play with room for everyone",
         "nb": "Lundby dukkehus - Dukkehuslek med plass til alle",
-        "de": "Lundby Puppenhäuser 1:18 – Möbel & Zubehör online | Micki Leksaker",
+        "de": "Lundby Puppenhäuser – Möbel & Zubehör online | Micki Leksaker",
         "da": "Lundby dukkehuse - Dukkehusleg med plads til alle",
         "fi": "Lundbyn nukkekodit - Nukkekotileikki, jossa on tilaa kaikille",
         "gb": "Lundby dollhouses - Dollhouse play with room for everyone"
@@ -12366,7 +12366,7 @@
     {
       "id": 431,
       "date_added": 1711032977,
-      "date_modified": 1757485684,
+      "date_modified": 1782461016,
       "customer_groups": [
         {
           "id": 1,
@@ -12425,7 +12425,7 @@
         }
       ],
       "description": {
-        "sv": "<p>Utforska mängder av uteleksaker - perfekt för våren och sommaren! Hos oss hittar du barnväskor, paraplyer, lektält och sandleksaker från populära varumärken som barnet säkert känner igen. Vi har uteleksaker från bland annat Bluey, Hello Kitty och Pippi Långstrump! När barn leker utomhus utvecklar dom sin finmotorik, grovmotorik och balans. Dom hoppar över stenar, kryper under grenar och springer så fort som benen bär dom. För dom mindre barnen är det utmaning nog att lära sej hålla balansen på gräsmattans lite ojämna underlag. Gå på äventyr utomhus med barnens favoritkaraktärer idag!</p>",
+        "sv": "<p>Utforska mängder av leksaker, både för vår och sommar! Hos Micki hittar du barnväskor, paraplyer, lektält, sandleksaker och vår populära skrinda i trä. Här finns uteleksaker från populära karaktärer som Bluey, Hello Kitty och Pippi Långstrump. Utomhuslek stärker motorik, balans och kondition. Världshälsoorganisationen (WHO) rekommenderar att barn mellan 5 och 17 år rör sig minst 60 minuter per dag, och uteleksaker gör den rörelsen till lek snarare än träning. När barn leker utomhus utvecklas deras fin- och grovmotorik och balans. De hoppar över stenar, kryper under grenar och springer så fort benen bär dem, och ibland snabbare än så. För de mindre barnen är gräsmattans ojämnheter tillräcklig utmaning. </p>",
         "en": "<p>Explore loads of outdoor toys - perfect for spring and summer! Here, you will find children's bags, umbrellas, play tents and sand toys from popular brands that your child will surely recognize. We have outdoor toys from Bluey, Hello Kitty and Pippi Longstocking, among others! When children play outside, they develop their fine motor skills, gross motor skills and balance. They jump over rocks, crawl under branches and run as fast as their legs can carry them. For the smaller children, it is challenging enough to learn to keep their balance on the slightly uneven surface of the lawn. Go on outdoor adventures with kids' favorite characters today!</p>",
         "nb": "<p>Utforsk massevis av utendørs leker - perfekt for våren og sommeren! Hos oss finner du barnevesker, paraplyer, leketelt og sandleker fra populære merker som barnet sikkert vil kjenne igjen. Vi har uteleker fra blant annet Bluey, Hello Kitty og Pippi Langstrømpe! Når barn leker ute, utvikler de finmotorikken, grovmotorikken og balansen. De hopper over steiner, kryper under greiner og løper så fort bena deres kan bære dem. For de mindre barna er det utfordrende nok å lære å holde balansen på plenens litt ujevne overflate. Dra på utendørseventyr med barnas favorittkarakterer i dag!</p>",
         "de": "<p>Entdecken Sie eine Vielzahl von Outdoor-Spielzeugen – perfekt für Frühling und Sommer! Bei uns finden Sie Kinderkoffer, Regenschirme, Spielzelte und Sandspielzeug von beliebten Marken, die die Kinder sicher wiedererkennen. Wir haben Outdoor-Spielzeug von unter anderem Bluey, Hello Kitty und Pippi Langstrumpf! Wenn Kinder draußen spielen, entwickeln sie ihre Feinmotorik, Grobmotorik und ihr Gleichgewicht. Sie springen über Steine, kriechen unter Ästen hindurch und rennen, so schnell ihre Beine sie tragen. Für die kleineren Kinder ist es Herausforderung genug, das Gleichgewicht auf der leicht unebenen Oberfläche des Rasens zu halten. Gehen Sie heute mit den Lieblingscharakteren der Kinder auf ein Abenteuer im Freien!</p>",
@@ -12464,7 +12464,7 @@
       "image_id": 7124,
       "image_url": "/04.Grafiskt-material/Micki/cropped/uteleksak-skrinda.jpg",
       "meta_description": {
-        "sv": "Utforska mängder av uteleksaker - perfekt för våren och sommaren! Hos oss hittar du allt från väskor och paraplyer till sandleksaker från Hello Kitty. Låt äventyret börja med våra uteleksaker! ",
+        "sv": "Uppmuntra till aktiv lek med roliga uteleksaker för barn! Vårt sortiment av uteleksaker bidrar till rolig lek stärker både motorik och balans. Köp idag!",
         "en": "Explore loads of outdoor toys - perfect for spring and summer! With us you will find everything from bags and umbrellas to sand toys from Hello Kitty. Let the adventure begin with our outdoor toys!",
         "nb": "Utforsk massevis av utendørs leker - perfekt for våren og sommeren! Hos oss finner du alt fra vesker og paraplyer til sandleker fra Hello Kitty. La eventyret begynne med våre utendørs leker!",
         "de": "",
@@ -12482,33 +12482,33 @@
         "gb": ""
       },
       "meta_title": {
-        "sv": "Uteleksaker - Lekfulla uteleksaker från populära varumärken",
-        "en": "Outdoor toys - Playful outdoor toys from popular brands",
-        "nb": "Uteleker - Leke uteleker fra populære merker",
-        "de": "",
-        "da": "Udendørs legetøj - Legesygt udendørslegetøj fra populære mærker",
-        "fi": "",
-        "gb": "Outdoor toys - Playful outdoor toys from popular brands"
+        "sv": "Uteleksaker barn – Stärk motoriken med utomhuslek | Micki",
+        "en": "Outdoor Toys for Kids – Develop Motor Skills Through Outdoor Play | Micki",
+        "nb": "Uteleker for barn – Styrk motorikken med utelek | Micki",
+        "de": "Outdoor-Spielzeug für Kinder – Motorik mit Spielen im Freien fördern | Micki",
+        "da": "Udendørs legetøj til børn – Styrk motorikken med udendørs leg | Micki",
+        "fi": "Ulkolelut lapsille – Kehitä motoriikkaa ulkoleikin avulla | Micki",
+        "gb": "Outdoor Toys for Kids – Develop Motor Skills Through Outdoor Play | Micki"
       },
       "name": {
-        "sv": "Uteleksaker",
-        "en": "Outdoor toys",
-        "nb": "Uteleker",
-        "de": "Spielzeug für draußen",
-        "da": "Udendørs legetøj",
-        "fi": "Ulkolelut",
-        "gb": "Outdoor toys"
+        "sv": "Uteleksaker för barn",
+        "en": "Outdoor toys for children",
+        "nb": "Uteleker for barn",
+        "de": "Outdoor-Spielzeug für Kinder",
+        "da": "Udendørs legetøj til børn",
+        "fi": "Ulkolelut lapsille",
+        "gb": "Outdoor toys for children"
       },
       "parent_external_id": null,
       "parent_id": 86,
       "seo_link": {
-        "sv": "sv/leksaker/uteleksaker/",
-        "en": "en/toys/outdoor-toys/",
-        "nb": "nb/leketoy/uteleker/",
-        "de": "de/spielzeug/spielzeug-fr-drauen/",
-        "da": "da/legetoj/udendors-legetoj/",
-        "fi": "fi/lelut/ulkolelut/",
-        "gb": "gb/toys/outdoor-toys/"
+        "sv": "sv/leksaker/uteleksaker-for-barn/",
+        "en": "en/toys/outdoor-toys-for-children/",
+        "nb": "nb/leketoy/uteleker-for-barn/",
+        "de": "de/spielzeug/outdoor-spielzeug-fr-kinder/",
+        "da": "da/legetoj/udendors-legetoj-til-born/",
+        "fi": "fi/lelut/ulkolelut-lapsille/",
+        "gb": "gb/toys/outdoor-toys-for-children/"
       },
       "seo_text": {
         "sv": "",
@@ -16099,244 +16099,6 @@
         "category_url": "https://mickiofsweden.com/API/1/categories/499",
         "category_delete_url": "https://mickiofsweden.com/API/1/categories/499",
         "category_save_url": "https://mickiofsweden.com/API/1/categories/499"
-      }
-    },
-    {
-      "id": 500,
-      "date_added": 1781136954,
-      "date_modified": 0,
-      "customer_groups": [],
-      "description": {
-        "sv": "",
-        "en": "",
-        "nb": "",
-        "de": "",
-        "da": "",
-        "fi": "",
-        "gb": ""
-      },
-      "external_id": null,
-      "extra": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": {
-          "sv": "",
-          "en": "",
-          "nb": "",
-          "de": "",
-          "da": "",
-          "fi": "",
-          "gb": ""
-        },
-        "5": {
-          "sv": "",
-          "en": "",
-          "nb": "",
-          "de": "",
-          "da": "",
-          "fi": "",
-          "gb": ""
-        }
-      },
-      "filters": [],
-      "google_product_category": null,
-      "icon_image_id": null,
-      "icon_image_url": null,
-      "image_id": null,
-      "image_url": null,
-      "meta_description": {
-        "sv": "",
-        "en": "",
-        "nb": "",
-        "de": "",
-        "da": "",
-        "fi": "",
-        "gb": ""
-      },
-      "meta_keywords": {
-        "sv": "",
-        "en": "",
-        "nb": "",
-        "de": "",
-        "da": "",
-        "fi": "",
-        "gb": ""
-      },
-      "meta_title": {
-        "sv": "",
-        "en": "",
-        "nb": "",
-        "de": "",
-        "da": "",
-        "fi": "",
-        "gb": ""
-      },
-      "name": {
-        "sv": "Pyssel",
-        "en": "Pyssel",
-        "nb": "Pyssel",
-        "de": "Pyssel",
-        "da": "Pyssel",
-        "fi": "Pyssel",
-        "gb": "Pyssel"
-      },
-      "parent_external_id": null,
-      "parent_id": 86,
-      "seo_link": {
-        "sv": "sv/leksaker/pyssel-c500/",
-        "en": "en/toys/pyssel-c500/",
-        "nb": "nb/leketoy/pyssel-c500/",
-        "de": "de/spielzeug/pyssel-c500/",
-        "da": "da/legetoj/pyssel-c500/",
-        "fi": "fi/lelut/pyssel-c500/",
-        "gb": "gb/toys/pyssel-c500/"
-      },
-      "seo_text": {
-        "sv": "",
-        "en": "",
-        "nb": "",
-        "de": "",
-        "da": "",
-        "fi": "",
-        "gb": ""
-      },
-      "seo_title": {
-        "sv": "",
-        "en": "",
-        "nb": "",
-        "de": "",
-        "da": "",
-        "fi": "",
-        "gb": ""
-      },
-      "show_in_listing": true,
-      "show_sub_categories": null,
-      "sort_order": 0,
-      "status": true,
-      "actions": {
-        "category_url": "https://mickiofsweden.com/API/1/categories/500",
-        "category_delete_url": "https://mickiofsweden.com/API/1/categories/500",
-        "category_save_url": "https://mickiofsweden.com/API/1/categories/500"
-      }
-    },
-    {
-      "id": 501,
-      "date_added": 1781136954,
-      "date_modified": 0,
-      "customer_groups": [],
-      "description": {
-        "sv": "",
-        "en": "",
-        "nb": "",
-        "de": "",
-        "da": "",
-        "fi": "",
-        "gb": ""
-      },
-      "external_id": null,
-      "extra": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": {
-          "sv": "",
-          "en": "",
-          "nb": "",
-          "de": "",
-          "da": "",
-          "fi": "",
-          "gb": ""
-        },
-        "5": {
-          "sv": "",
-          "en": "",
-          "nb": "",
-          "de": "",
-          "da": "",
-          "fi": "",
-          "gb": ""
-        }
-      },
-      "filters": [],
-      "google_product_category": null,
-      "icon_image_id": null,
-      "icon_image_url": null,
-      "image_id": null,
-      "image_url": null,
-      "meta_description": {
-        "sv": "",
-        "en": "",
-        "nb": "",
-        "de": "",
-        "da": "",
-        "fi": "",
-        "gb": ""
-      },
-      "meta_keywords": {
-        "sv": "",
-        "en": "",
-        "nb": "",
-        "de": "",
-        "da": "",
-        "fi": "",
-        "gb": ""
-      },
-      "meta_title": {
-        "sv": "",
-        "en": "",
-        "nb": "",
-        "de": "",
-        "da": "",
-        "fi": "",
-        "gb": ""
-      },
-      "name": {
-        "sv": "Övriga",
-        "en": "Övriga",
-        "nb": "Övriga",
-        "de": "Övriga",
-        "da": "Övriga",
-        "fi": "Övriga",
-        "gb": "Övriga"
-      },
-      "parent_external_id": null,
-      "parent_id": 500,
-      "seo_link": {
-        "sv": "sv/leksaker/pyssel-c500/ovriga-c501/",
-        "en": "en/toys/pyssel-c500/ovriga-c501/",
-        "nb": "nb/leketoy/pyssel-c500/ovriga-c501/",
-        "de": "de/spielzeug/pyssel-c500/ovriga-c501/",
-        "da": "da/legetoj/pyssel-c500/ovriga-c501/",
-        "fi": "fi/lelut/pyssel-c500/ovriga-c501/",
-        "gb": "gb/toys/pyssel-c500/ovriga-c501/"
-      },
-      "seo_text": {
-        "sv": "",
-        "en": "",
-        "nb": "",
-        "de": "",
-        "da": "",
-        "fi": "",
-        "gb": ""
-      },
-      "seo_title": {
-        "sv": "",
-        "en": "",
-        "nb": "",
-        "de": "",
-        "da": "",
-        "fi": "",
-        "gb": ""
-      },
-      "show_in_listing": true,
-      "show_sub_categories": null,
-      "sort_order": 0,
-      "status": true,
-      "actions": {
-        "category_url": "https://mickiofsweden.com/API/1/categories/501",
-        "category_delete_url": "https://mickiofsweden.com/API/1/categories/501",
-        "category_save_url": "https://mickiofsweden.com/API/1/categories/501"
       }
     }
   ]

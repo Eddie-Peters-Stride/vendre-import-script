@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { getVendreSku } = require('../../src/utils/sku');
 
 // ─── Paths ────────────────────────────────────────────────────────────────────
 const RESULTS_DIR = path.join(__dirname, '..', 'results');
@@ -196,7 +197,7 @@ const translationRows = [];
 let skipped = 0;
 
 products.forEach(product => {
-    const sku = product.external_id || '';
+    const sku = getVendreSku(product);
     const shopifyHandle = skuToShopifyHandle[sku];
     if (!shopifyHandle) { skipped++; return; }
     const shopifyId = handleToShopifyId[shopifyHandle];

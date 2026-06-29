@@ -30,6 +30,7 @@ All original scripts in the `scripts/` folder continue to work as before:
 ```bash
 npm run fetch-products
 npm run export-products
+npm run update-inventory
 npm run export-collections
 # ... etc
 ```
@@ -201,6 +202,7 @@ results/
 - `results/store/store-matrixify-products.xlsx` - Full product import
 - `results/store/store-matrixify-price-update.xlsx` - Price updates only
 - `results/store/store-vendor-update.xlsx` - Vendor updates only
+- `results/store/store-matrixify-inventory-update.xlsx` - Inventory tracker and stock counts
 
 **Collections:**
 
@@ -265,7 +267,7 @@ Translations require existing Shopify product data:
 4. **Upload to Shopify:**
    - Import `results/store/store-translations.xlsx` via Translate & Adapt app
 
-**Note:** Translations map Vendre SKUs to Shopify product IDs, so you need the Shopify export files first in the store's subdirectory.
+**Note:** Translations map Vendre external IDs, which are used as SKUs, to Shopify product IDs, so you need the Shopify export files first in the store's subdirectory.
 
 ## 🏗️ Architecture
 
