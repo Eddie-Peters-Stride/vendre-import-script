@@ -26,6 +26,15 @@ function fileExists(filePath) {
     return fs.existsSync(filePath);
 }
 
+function normalizeLookupKey(value) {
+    return String(value || '')
+        .normalize('NFKD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '')
+        .trim();
+}
+
 function readJsonList(filePath) {
     const raw = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     return Array.isArray(raw) ? raw : (Array.isArray(raw.list) ? raw.list : []);
@@ -172,11 +181,11 @@ function getAncestorIds(collectionId, idToCollection) {
     return ids;
 }
 
-function buildProductHandle(product, skuToHandle) {
-    const { getVendreSku } = require('../../src/utils/sku');
+function buildProductHandle(product, skuToHandle, storeName) {
+    const { getStoreSku } = require('../../src/utils/sku');
     const { getProductHandle } = require('../../src/utils/handles');
 
-    const sku = getVendreSku(product);
+    const sku = getStoreSku(product, storeName);
     if (sku && skuToHandle[sku]) {
         return skuToHandle[sku];
     }
@@ -216,12 +225,9 @@ function buildAssignments() {
         config
     );
 
-    const includeVendreData = config.exportSettings?.includeVendreData === true;
     const collectionHandleById = {};
     for (const collection of normalizedCollections) {
-        collectionHandleById[collection.vendreId] = includeVendreData
-            ? collection.vendreRawHandle
-            : collection.handle;
+        collectionHandleById[collection.vendreId] = collection.vendreRawHandle || collection.handle;
     }
 
     const skuToHandle = buildSkuToHandleMap(productExportFiles);
@@ -233,7 +239,7 @@ function buildAssignments() {
     let skippedProducts = 0;
 
     for (const product of products) {
-        const productHandle = buildProductHandle(product, skuToHandle);
+        const productHandle = buildProductHandle(product, skuToHandle, config.name);
         const categoryIds = Array.isArray(product.category_ids) ? product.category_ids : [];
 
         if (!productHandle || categoryIds.length === 0) {
@@ -264,13 +270,14 @@ function buildAssignments() {
             }
             seen.add(key);
             rows.push({
+                Command: 'MERGE',
                 Handle: productHandle,
-                Collection: collectionHandle,
+                'Custom Collections': collectionHandle,
             });
         }
     }
 
-    const outPath = path.join(storeDir, `${storeName}-matrixify-product-collections.xlsx`);
+    const outPath = path.join(storeDir, `${storeName}-matrixify-product-custom-collections.xlsx`);
     const worksheet = XLSX.utils.json_to_sheet(rows);
 
     if (rows.length > 0) {

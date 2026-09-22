@@ -1,7 +1,7 @@
 const XLSX = require("xlsx");
 const fs = require("fs");
 const path = require("path");
-const { getVendreSku } = require("../../src/utils/sku");
+const { getStoreSku } = require("../../src/utils/sku");
 
 const tagsMap = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "tags.json"), "utf8"));
 
@@ -122,7 +122,7 @@ function toMatrixifyRow(product) {
         (product.description &&
             (product.description.sv || product.description.en)) ||
         "";
-    const descShortHtml = getShortDesc(product, "sv");
+    const descShortText = getShortDesc(product, "sv");
     const vendor = "dragonslair-se";
     const customCollections = getCustomCollections(product);
 
@@ -138,7 +138,7 @@ function toMatrixifyRow(product) {
             ? product.images[0].description || title
             : "";
 
-    const sku = getVendreSku(product);
+    const sku = getStoreSku(product, process.env.STORE_NAME);
     const barcode = product.ean1 || "";
     const { variantPrice, compareAtPrice } = getPricing(product);
     const weight = product.weight || "";
@@ -232,10 +232,10 @@ function toMatrixifyRow(product) {
             warehouseSvea != null && warehouseSvea.quantity != null ? warehouseSvea.quantity : 0,
         "Inventory Available: Kungsholmstorg 8":
             warehouseKung != null && warehouseKung.quantity != null ? warehouseKung.quantity : 0,
-        "Metafield: title_tag [string]": metaTitle,
-        "Metafield: description_tag [string]": metaDescription,
-        "Metafield: custom.description_short [multi_line_text_field]":
-            descShortHtml,
+        "SEO Title": metaTitle,
+        "SEO Description": metaDescription,
+        "Metafield: custom.description_short [single_line_text_field]":
+            descShortText,
         "Metafield: custom.manufacturer_sku [single_line_text_field]":
             product.manufacturer_model || "",
         "Metafield: custom.bgg_id [single_line_text_field]": getSpec(
@@ -408,7 +408,7 @@ const rows = products.map(toMatrixifyRow);
 const translationRows = [];
 let skippedTranslations = 0;
 products.forEach((product) => {
-    const sku = getVendreSku(product);
+    const sku = getStoreSku(product, process.env.STORE_NAME);
     const shopifyHandle = skuToShopifyHandle[sku];
     if (!shopifyHandle) { skippedTranslations++; return; }
     const shopifyId = handleToShopifyId[shopifyHandle];

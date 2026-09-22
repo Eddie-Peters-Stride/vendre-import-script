@@ -492,7 +492,9 @@ async function exportTopupCommand(config, dataDir, outputDir) {
     );
 
     // Compare products
-    const comparison = compareProducts(vendreProducts, shopifyProducts);
+    const comparison = compareProducts(vendreProducts, shopifyProducts, {
+        storeName: config.name,
+    });
     console.log(`Comparison Results:`);
     console.log(`  - New products (to migrate): ${comparison.newProducts.length}`);
     console.log(`  - Already in Shopify: ${comparison.existingProducts.length}`);

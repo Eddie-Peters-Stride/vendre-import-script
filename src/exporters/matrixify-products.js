@@ -6,7 +6,6 @@
 const { PRODUCT_COLUMNS } = require('../config/matrixify');
 const { sanitizeForShopify } = require('../utils/html');
 const { calculatePricing } = require('../transformers/product-transformer');
-const { getVendreSku } = require('../utils/sku');
 
 /**
  * Export products to Matrixify format
@@ -57,7 +56,8 @@ function buildProductRow(product, config, idToHandleMap) {
 
     const pricing = calculatePricing(product, config);
     const C = PRODUCT_COLUMNS;
-    const sku = getVendreSku(product);
+    const sku = product.sku || '';
+    const externalId = product.externalId || '';
 
     const row = {
         [C.HANDLE]: product.handle,
@@ -83,6 +83,9 @@ function buildProductRow(product, config, idToHandleMap) {
         [C.IMAGE_ALT_TEXT]: product.images.length > 0 ? product.images[0].altText : '',
         [C.SEO_TITLE]: product.seoTitle,
         [C.SEO_DESCRIPTION]: product.seoDescription,
+        'Metafield: custom.description_short [single_line_text_field]': product.descriptionShort
+            ? String(product.descriptionShort).replace(/\s+/g, ' ').trim()
+            : '',
     };
 
     // Add manufacturer metafields
@@ -92,8 +95,8 @@ function buildProductRow(product, config, idToHandleMap) {
     if (product.manufacturerModel) {
         row['Metafield: custom.manufacturer_model [single_line_text_field]'] = product.manufacturerModel;
     }
-    if (sku) {
-        row['Metafield: custom.external_id [single_line_text_field]'] = sku;
+    if (externalId) {
+        row['Metafield: custom.external_id [single_line_text_field]'] = externalId;
     }
 
     // Add dynamic metafields from specifications

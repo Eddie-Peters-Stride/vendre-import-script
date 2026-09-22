@@ -16,7 +16,7 @@ const XLSX = require('xlsx');
 const { loadVendreData, ensureDirectory } = require('../../src/utils/file-io');
 const { getProductHandle } = require('../../src/utils/handles');
 const { calculatePricing } = require('../../src/transformers/product-transformer');
-const { getVendreSku } = require('../../src/utils/sku');
+const { getStoreSku } = require('../../src/utils/sku');
 
 const RESULTS_DIR = path.join(__dirname, '..', '..', 'results');
 const OUTPUT_BASENAME = 'matrixify-sku-ean-price-update.xlsx';
@@ -120,7 +120,7 @@ function buildUpdateRows(products, config) {
             Command: 'MERGE',
         };
 
-        const sku = getVendreSku(product);
+        const sku = getStoreSku(product, config.storeName);
         if (sku) {
             row['Variant SKU'] = sku;
             skuCount++;

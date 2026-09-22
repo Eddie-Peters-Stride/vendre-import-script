@@ -6,7 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 const { getProductHandle } = require('./handles');
-const { getVendreSku } = require('./sku');
+const { getStoreSku } = require('./sku');
 
 /**
  * Normalize SKU-like values so Shopify export CSVs and Vendre data can be
@@ -116,10 +116,15 @@ function parseCSVLine(line) {
 /**
  * Get SKU from a Vendre product.
  * @param {Object} product - Vendre product
+ * @param {Object|string} [options] - Store-specific SKU resolution options
  * @returns {string} SKU value or empty string
  */
-function getProductSku(product) {
-    return normalizeSku(getVendreSku(product));
+function getProductSku(product, options = {}) {
+    if (product?.sku) {
+        return normalizeSku(product.sku);
+    }
+
+    return normalizeSku(getStoreSku(product, options.storeName || options));
 }
 
 /**
@@ -135,9 +140,10 @@ function getProductTopupHandle(product) {
  * Compare Vendre products with Shopify exports
  * @param {Array} vendreProducts - Array of Vendre products
  * @param {Object|Set} shopifyProducts - Shopify SKU/handle sets or legacy SKU set
+ * @param {Object} [options] - Store-specific SKU resolution options
  * @returns {Object} { newProducts, existingProducts, skipped }
  */
-function compareProducts(vendreProducts, shopifyProducts) {
+function compareProducts(vendreProducts, shopifyProducts, options = {}) {
     const shopifySKUs = shopifyProducts instanceof Set
         ? shopifyProducts
         : (shopifyProducts?.skus || new Set());
@@ -153,7 +159,7 @@ function compareProducts(vendreProducts, shopifyProducts) {
     let matchedByBoth = 0;
 
     for (const product of vendreProducts) {
-        const sku = getProductSku(product);
+        const sku = getProductSku(product, options);
         const handle = getProductTopupHandle(product);
 
         if (!sku) {

@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { getVendreSku } = require('../../src/utils/sku');
+const { getStoreSku } = require('../../src/utils/sku');
 
 // ─── Paths ────────────────────────────────────────────────────────────────────
 const RESULTS_DIR = path.join(__dirname, '..', 'results');
@@ -197,7 +197,7 @@ const translationRows = [];
 let skipped = 0;
 
 products.forEach(product => {
-    const sku = getVendreSku(product);
+    const sku = getStoreSku(product, process.env.STORE_NAME);
     const shopifyHandle = skuToShopifyHandle[sku];
     if (!shopifyHandle) { skipped++; return; }
     const shopifyId = handleToShopifyId[shopifyHandle];

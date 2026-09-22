@@ -11,7 +11,8 @@
 const path = require('path');
 const { getStoreConfig, getStoreName, validateStoreConfig } = require('./config/stores');
 const { fetchAll, fetchProducts, fetchCollections, fetchCustomers } = require('./commands/fetch');
-const { exportAll, exportProductsCommand, exportCollectionsCommand, exportCustomersCommand, exportTranslations, exportTopupCommand } = require('./commands/export');
+const { exportAll, exportProductsCommand, exportCollectionsCommand, exportCustomersCommand, exportTopupCommand } = require('./commands/export');
+const { exportTranslationsCommand } = require('./commands/translations');
 const { syncAll } = require('./commands/sync');
 
 // Parse command line arguments
@@ -149,7 +150,7 @@ async function main() {
                         noPhone: true,
                     });
                 } else if (type === 'translations') {
-                    await exportTranslations(config, dataDir, outputDir);
+                    await exportTranslationsCommand(config, dataDir, outputDir);
                 } else {
                     throw new Error(`Unknown type: ${type}`);
                 }

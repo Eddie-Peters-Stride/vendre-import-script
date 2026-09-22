@@ -5,7 +5,7 @@
 
 const { getName, getSeoLink, getDescription, getShortDescription } = require('../utils/fields');
 const { getProductHandle } = require('../utils/handles');
-const { getVendreSku } = require('../utils/sku');
+const { getStoreSku, getVendreExternalId } = require('../utils/sku');
 const { stripHtml, getShortDesc } = require('../utils/html');
 
 /**
@@ -24,13 +24,13 @@ function transformProduct(product, config, tagsMap = {}) {
         vendreId: product.id,
         handle,
         title: name,
-        sku: getVendreSku(product),
+        sku: getStoreSku(product, config),
 
         // Manufacturer & Product Info
         manufacturerName: product.manufacturer_name || '',
         manufacturerModel: product.manufacturer_model || '',
         ean: product.ean1 || '',
-        externalId: getVendreSku(product),
+        externalId: getVendreExternalId(product),
 
         // Pricing
         price: product.price || 0,

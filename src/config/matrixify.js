@@ -108,18 +108,24 @@ const CUSTOMER_COLUMNS = {
 };
 
 /**
- * Translation export columns (for Shopify Translate & Adapt)
+ * Translation export columns (Matrixify "Translations" sheet)
  */
 const TRANSLATION_COLUMNS = {
-    TYPE: 'Type',
-    IDENTIFICATION: 'Identification',
+    ENTITY: 'Entity',
+    ENTITY_ID: 'Entity ID',
+    ENTITY_HANDLE: 'Entity Handle',
     FIELD: 'Field',
-    LOCALE: 'Locale',
-    MARKET: 'Market',
-    STATUS: 'Status',
-    DEFAULT_CONTENT: 'Default content',
-    TRANSLATED_CONTENT: 'Translated content',
+    ORIGINAL_VALUE: 'Original Value',
 };
+
+/**
+ * Build the Matrixify translation value column header for a locale
+ * @param {string} locale - Locale code (e.g. "en")
+ * @returns {string} Column header
+ */
+function getTranslationValueColumn(locale) {
+    return `Translation Value: ${locale}`;
+}
 
 /**
  * Get column headers for a specific export type
@@ -171,6 +177,7 @@ module.exports = {
     COLLECTION_METAFIELD_COLUMNS,
     CUSTOMER_COLUMNS,
     TRANSLATION_COLUMNS,
+    getTranslationValueColumn,
     getColumns,
     createEmptyRow,
 };

@@ -156,7 +156,7 @@ API_KEY=your-store2-api-key-here
 | `npm run export:products`     | Export products only                           |
 | `npm run export:collections`  | Export collections only                        |
 | `npm run export:customers`    | Export customers only                          |
-| `npm run export:translations` | Export translations (requires Shopify exports) |
+| `npm run export:translations` | Export Matrixify translations for products and collections |
 
 ### Advanced Usage
 
@@ -218,7 +218,7 @@ results/
 
 **Translations:**
 
-- `results/store/store-translations.xlsx` - Swedish → English translations (Shopify Translate & Adapt format)
+- `results/store/store-translations.xlsx` - Swedish to English Matrixify `Translations` workbook for products and collections
 
 ## 🔄 Workflow
 
@@ -248,26 +248,34 @@ npm run sync
 
 ### Translation Workflow
 
-Translations require existing Shopify product data:
+Translations are generated directly from the multilingual Vendre product and collection data:
 
-1. **Export products from Shopify:**
-   - Export all products as CSV (via Shopify admin or Matrixify)
-   - Save as `results/store/products_export_1.csv` (and `_2.csv` if needed)
+1. **Fetch the latest Vendre data:**
 
-2. **Export translations from Shopify:**
-   - Use Shopify's "Translate & Adapt" app to export translations
-   - Save as `results/store/store_translations_*.csv`
+   ```bash
+   npm run fetch
+   ```
 
-3. **Generate translation import:**
+2. **Optional: add Shopify product export CSVs**
+   - Save them as `results/store/products_export_1.csv` (and `_2.csv` if needed)
+   - This lets the exporter reuse your live Shopify product handles when they differ from the normalized Vendre handles
+
+3. **Optional: add Matrixify translation export CSVs**
+   - Save any translation export CSVs in `results/store/`
+   - If present, the exporter fills `Entity ID` for matching products and collections automatically
+
+4. **Generate translation import:**
 
    ```bash
    npm run export:translations
    ```
 
-4. **Upload to Shopify:**
-   - Import `results/store/store-translations.xlsx` via Translate & Adapt app
+5. **Upload to Shopify via Matrixify:**
+   - Import `results/store/store-translations.xlsx`
+   - The workbook contains a `Translations` sheet with Matrixify columns:
+     `Entity`, `Entity ID`, `Entity Handle`, `Field`, `Original Value`, and `Translation Value: en`
 
-**Note:** Translations map Vendre external IDs, which are used as SKUs, to Shopify product IDs, so you need the Shopify export files first in the store's subdirectory.
+**Note:** `Entity Handle` is always populated and is the primary import key. `Entity ID` is optional and will be filled when matching translation export CSVs are available.
 
 ## 🏗️ Architecture
 
