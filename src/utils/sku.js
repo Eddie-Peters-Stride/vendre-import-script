@@ -1,7 +1,7 @@
 /**
  * SKU helpers
  * Most stores use `external_id` as the product SKU source of truth.
- * Mickiofsweden uses `article_number` instead.
+ * Mickiofsweden and Fyrklövern use `article_number` instead.
  */
 
 /**
@@ -32,7 +32,7 @@ function getVendreSku(entity) {
 
 /**
  * Read the product SKU for a store-specific export.
- * Mickiofsweden uses `article_number` as the Shopify Variant SKU.
+ * Mickiofsweden and Fyrklövern use `article_number` as the Shopify Variant SKU.
  * Normalized products can also pass through their precomputed `sku` field.
  * @param {Object} entity - Raw Vendre entity or normalized product
  * @param {Object|string} [storeOrConfig] - Store name or config object
@@ -49,7 +49,7 @@ function getStoreSku(entity, storeOrConfig) {
         ? storeOrConfig
         : storeOrConfig?.storeName || storeOrConfig?.outputPrefix || storeOrConfig?.name;
 
-    if (storeName === 'mickiofsweden') {
+    if (storeName === 'mickiofsweden' || storeName === 'fyrklovern') {
         return normalizeSku(
             entity.article_number ??
             entity.articleNumber ??

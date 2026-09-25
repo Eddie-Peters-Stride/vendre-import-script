@@ -3,7 +3,7 @@
  * Converts Vendre category data to normalized collection format
  */
 
-const { getName, getSeoLink, getDescription } = require('../utils/fields');
+const { getName, getSeoLink, getDescription, getMultilingualField } = require('../utils/fields');
 const { buildCollectionMaps, getParentId, isActiveCollection } = require('../utils/collections');
 const { sanitizeForShopify } = require('../utils/html');
 
@@ -15,7 +15,7 @@ const { sanitizeForShopify } = require('../utils/html');
  */
 function transformCollections(collections, config = {}) {
     // Build disambiguation maps
-    const { idToTitle, idToHandle, idToCollection } = buildCollectionMaps(collections);
+    const { idToTitle, idToHandle, idToCollection } = buildCollectionMaps(collections, config);
 
     // Transform each collection
     const transformed = collections.map(col => transformCollection(
@@ -40,12 +40,13 @@ function transformCollections(collections, config = {}) {
  * @returns {Object|null} Normalized collection or null if invalid
  */
 function transformCollection(collection, idToTitle, idToHandle, config = {}) {
-    const title = idToTitle[collection.id];
+    const sourceTitle = getName(collection);
+    const title = config.preserveCollectionTitles ? sourceTitle : idToTitle[collection.id];
     if (!title) return null;
 
     const handle = idToHandle[collection.id];
     const description = getDescription(collection);
-    const vendreRawName = getName(collection);
+    const vendreRawName = sourceTitle;
 
     // Build Vendre handle from full path, excluding language prefix
     // Example: sv/leksaker/utkladnad-rollek/kokslek/ -> leksaker-utkladnad-rollek-kokslek
@@ -84,7 +85,7 @@ function transformCollection(collection, idToTitle, idToHandle, config = {}) {
 
         // SEO
         seoLink: getSeoLink(collection),
-        seoTitle: title,
+        seoTitle: getMultilingualField(collection, 'meta_title') || title,
         seoDescription: extractCollectionSeoDescription(collection),
 
         // Status
@@ -146,6 +147,9 @@ function extractCollectionImage(collection, config = {}) {
  * @returns {string} SEO description
  */
 function extractCollectionSeoDescription(collection) {
+    const metaDescription = getMultilingualField(collection, 'meta_description');
+    if (metaDescription) return metaDescription;
+
     const description = getDescription(collection);
     if (!description) return '';
 

@@ -82,9 +82,11 @@ function buildCollectionTitle(collection, idToCollection, leafNameToIds) {
 /**
  * Build maps of collection ID to title and handle for ALL collections
  * @param {Array} collections - Array of Vendre collections
+ * @param {Object} [options] Collection mapping options
+ * @param {boolean} [options.resolveHandleCollisions=true] Append IDs to duplicate handles
  * @returns {Object} { idToTitle, idToHandle } maps
  */
-function buildCollectionMaps(collections) {
+function buildCollectionMaps(collections, options = {}) {
     const idToCollection = buildCollectionMap(collections);
 
     // Group collections by leaf name to identify duplicates
@@ -109,7 +111,9 @@ function buildCollectionMaps(collections) {
     }
 
     // Resolve handle collisions
-    const uniqueHandles = resolveHandleCollisions(idToHandle);
+    const uniqueHandles = options.resolveHandleCollisions === false
+        ? idToHandle
+        : resolveHandleCollisions(idToHandle);
 
     return {
         idToTitle,

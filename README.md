@@ -128,6 +128,59 @@ API_KEY=your-store2-api-key-here
    ```
 4. Run `npm run sync:yourstore`
 
+### Fyrklövern migration template
+
+Fyrklövern uses a custom Excel export rather than the Vendre API format. The
+initial template imports `productdata (standard sv-SE)` and joins its Swedish
+(`sv-SE`) `dynamicfields` values by `ProductID`. It maps `ArticleNumber` to the
+Shopify SKU. Each `ItemName` becomes an individual `custom.*` metafield;
+multiple values are retained as Shopify list metafields.
+
+```bash
+# Uses ../Fyrklövern/fyrklovern_custom_export.xlsx by default
+npm run import:fyrklovern:productdata
+
+# Or specify the workbook explicitly
+npm run import:fyrklovern:productdata -- --input="C:\path\to\fyrklovern_custom_export.xlsx"
+```
+
+This creates `results/fyrklovern/fyrklovern-products.json`. Mapping of the
+remaining worksheets (prices, localization, relations and categories) is
+deliberately not included yet.
+
+The Swedish category template can be staged separately:
+
+```bash
+npm run import:fyrklovern:categories
+```
+
+This creates `results/fyrklovern/fyrklovern-categories.json` from the
+`categorieslocalized` sheet filtered to `sv-SE`. The `category structure`
+worksheet is retained for the staged hierarchy. Handles use the complete
+Swedish category permalink path with `/` converted to `-`, and never include
+source IDs.
+
+Create the collections-only Matrixify import workbook with:
+
+```bash
+npm run export:fyrklovern:collections
+```
+
+This creates `results/fyrklovern/fyrklovern-matrixify-collections.xlsx` with a
+single `Collections` sheet. It does not read, include, or assign products.
+Fyrklövern category handles are title-based; category IDs are not appended to
+them.
+
+Create the Matrixify product import with its linked collection handles:
+
+```bash
+npm run export:fyrklovern:products
+```
+
+This creates `results/fyrklovern/fyrklovern-matrixify-products.xlsx`. The
+product rows use Matrixify's `Custom Collections` column, populated with the
+handles from `fyrklovern-categories.json`.
+
 ## 📝 Available Commands
 
 ### Sync Commands (Fetch + Export)

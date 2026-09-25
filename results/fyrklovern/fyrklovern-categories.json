@@ -1,0 +1,7829 @@
+{
+  "list": [
+    {
+      "id": "1",
+      "category_level": "1",
+      "handle": "kampanjer",
+      "parent_id": null,
+      "name": {
+        "sv": "Kampanjer"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Tallrikar och porslin på REA | Fyrklövern Kampanj"
+      },
+      "meta_description": {
+        "sv": "Förnya ditt hem med Fyrklöverns kampanjer på inredning, porslin, glas & design till rabatterade priser. Skynda dig – erbjudandena är tidsbegränsade!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Kampanjer"
+      },
+      "status": true
+    },
+    {
+      "id": "149",
+      "category_level": "2",
+      "handle": "dukning-servering-tallrikar",
+      "parent_id": "166",
+      "name": {
+        "sv": "Tallrikar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Tallrikar | Köp fina & snygga tallrikar online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina tallrikar i traditionell och skandinavisk design. Perfekta för både fest och vardag. Se fina och snygga tallrikar hos Fyrklövern här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Tallrikar"
+      },
+      "status": true
+    },
+    {
+      "id": "151",
+      "category_level": "3",
+      "handle": "dukning-servering-tallrikar-mattallrikar",
+      "parent_id": "149",
+      "name": {
+        "sv": "Mattallrikar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Mattallrikar | Köp fina & stora mattallrikar online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina mattallrikar i traditionell och skandinavisk design. Perfekta för både fest och vardag. Se fina och stora mattallrikar hos Fyrklövern här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Mattallrikar"
+      },
+      "status": true
+    },
+    {
+      "id": "154",
+      "category_level": "3",
+      "handle": "dukning-servering-tallrikar-djupa-tallrikar",
+      "parent_id": "149",
+      "name": {
+        "sv": "Djupa tallrikar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Djupa tallrikar | Köp fina, djupa tallrikar i set | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina djupa tallrikar i traditionell och skandinavisk design. Passar till både frukost och middagar. Se djupa tallrikar i set hos Fyrklövern här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Djupa tallrikar"
+      },
+      "status": true
+    },
+    {
+      "id": "155",
+      "category_level": "1",
+      "handle": "kollektioner-serviser",
+      "parent_id": null,
+      "name": {
+        "sv": "Kollektioner & Serviser"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Serviser | Köp matserviser & servisset online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina serviser i traditionell och skandinavisk design. Komplettera din matservis eller upptäck något nytt. Se servisset hos Fyrklövern här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Serviser"
+      },
+      "status": true
+    },
+    {
+      "id": "156",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-vardag-fest-pepper",
+      "parent_id": "1777",
+      "name": {
+        "sv": "Pepper"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp servisen Pepper online | Skandinavisk design | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina servisen Pepper i traditionell och skandinavisk design. Komplettera din Pepper servis från Fyrklövern eller upptäck något nytt."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Pepper"
+      },
+      "status": true
+    },
+    {
+      "id": "157",
+      "category_level": "3",
+      "handle": "outlet-kollektioner-serviser-tomtarnas-jul-1",
+      "parent_id": null,
+      "name": {
+        "sv": "Tomtarnas Jul"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp servisen Tomtarnas Jul online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina servisen Tomtarnas Jul i traditionell och skandinavisk design. Komplettera din Tomtarnas Jul servis från Fyrklövern eller upptäck något nytt."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Tomtarnas Jul"
+      },
+      "status": true
+    },
+    {
+      "id": "163",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-vardag-fest-aspvik-1",
+      "parent_id": "1777",
+      "name": {
+        "sv": "Aspvik"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Servis Aspvik av Micael Bindefeld | Fyrklövern Serviser"
+      },
+      "meta_description": {
+        "sv": "Det finns egentligen inga rätt eller fel när det kommer till dukning tycker designern Micael. Se servisen Aspvik hos Fyrklövern här!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Aspvik"
+      },
+      "status": true
+    },
+    {
+      "id": "165",
+      "category_level": "1",
+      "handle": "inredning",
+      "parent_id": null,
+      "name": {
+        "sv": "Inredning"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Inredning | Köp snygg inredning online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fin inredning i traditionell och skandinavisk design. Vi har snygg inredning för hela hemmet. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Inredning"
+      },
+      "status": true
+    },
+    {
+      "id": "166",
+      "category_level": "1",
+      "handle": "dukning-servering",
+      "parent_id": null,
+      "name": {
+        "sv": "Dukning & Servering"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Dukning & servering | Köp duknings- och serveringsprodukter"
+      },
+      "meta_description": {
+        "sv": "Upptäck vårt breda och unika utbud av duknings- och serveringsprodukter av högsta kvalitet. Vi har allt för en härlig stämning!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Dukning & Servering"
+      },
+      "status": true
+    },
+    {
+      "id": "167",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-vardag-fest-bla-herrgard",
+      "parent_id": "1777",
+      "name": {
+        "sv": "Blå Herrgård"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp servisen Blå Herrgård online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina servisen Blå Herrgård i traditionell och skandinavisk design. Komplettera din Blå Herrgård servis från Fyrklövern eller upptäck något nytt."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Blå Herrgård"
+      },
+      "status": true
+    },
+    {
+      "id": "168",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-vardag-fest-moments",
+      "parent_id": "1777",
+      "name": {
+        "sv": "Moments"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp Moments servis online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Moments servis i traditionell och skandinavisk design. Komplettera din Moments servis från Fyrklövern eller upptäck något nytt."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Moments"
+      },
+      "status": true
+    },
+    {
+      "id": "172",
+      "category_level": "3",
+      "handle": "outlet-kollektioner-serviser-asas-tomtejul-1",
+      "parent_id": null,
+      "name": {
+        "sv": "Åsas Tomtejul"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Glas från Åsas Tomtejul | Fyrklövern Glas"
+      },
+      "meta_description": {
+        "sv": "Dessa läckra glas från servisen Åsas Tomtejul är både snygga och sköna att dricka ur. Se alla glasen ur kollektionen hos Fyrklövern här!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Åsas Tomtejul"
+      },
+      "status": true
+    },
+    {
+      "id": "173",
+      "category_level": "1",
+      "handle": "duka-bordet",
+      "parent_id": null,
+      "name": {
+        "sv": "Duka bordet"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Duka bordet | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Hitta produkterna för dina speciella tillfällen, vare sig det gäller vardagslyx, fest eller en specifik högtid. Här hittar du allt till ditt dukade bord."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Duka bordet"
+      },
+      "status": true
+    },
+    {
+      "id": "174",
+      "category_level": "2",
+      "handle": "duka-bordet-till-vardagslyx",
+      "parent_id": null,
+      "name": {
+        "sv": "Till vardagslyx"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Duka till vardagslyx | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fyrklöverns produkter skapar en personlig prägel och en känsla av vardagslyx under årets alla dagar. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Till vardagslyx"
+      },
+      "status": true
+    },
+    {
+      "id": "175",
+      "category_level": "2",
+      "handle": "inredning-dekoration",
+      "parent_id": "165",
+      "name": {
+        "sv": "Dekoration"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Dekorationer | Köp dekorationer till hemmet online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina dekorationer i traditionell och skandinavisk design. Dekorationer för hela hemmet från kända konstnärer och designers. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Dekoration"
+      },
+      "status": true
+    },
+    {
+      "id": "176",
+      "category_level": "2",
+      "handle": "inredning-ljusstakar-ljus",
+      "parent_id": "165",
+      "name": {
+        "sv": "Ljusstakar och ljus"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Ljushållare | Köp små & stora ljushållare online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina ljushållare i traditionell och skandinavisk design. Lys upp hemmet med stora och små ljushållare. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Ljushållare"
+      },
+      "status": true
+    },
+    {
+      "id": "177",
+      "category_level": "3",
+      "handle": "inredning-dekoration-vaser",
+      "parent_id": "175",
+      "name": {
+        "sv": "Vaser"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Vaser | Köp stor eller liten vas online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina vaser i traditionell och skandinavisk design. Välj en stor eller liten vas beroende på plats och utrymme. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Vaser"
+      },
+      "status": true
+    },
+    {
+      "id": "182",
+      "category_level": "3",
+      "handle": "dukning-servering-tallrikar-assietter",
+      "parent_id": "149",
+      "name": {
+        "sv": "Assietter"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Assietter | Köp små tallrikar online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina assietter i traditionell och skandinavisk design. Små tallrikar som kan användas till både förrätter och frukostmackan. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Assietter och små tallrikar"
+      },
+      "status": true
+    },
+    {
+      "id": "183",
+      "category_level": "3",
+      "handle": "dukning-servering-tallrikar-kuverttallrikar",
+      "parent_id": "149",
+      "name": {
+        "sv": "Kuverttallrikar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Kuverttallrikar | Köp kuverttallrikar online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina kuverttallrikar i traditionell och skandinavisk design. Skapa en elegant dukning med kuverttallrikar. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Kuverttallrikar"
+      },
+      "status": true
+    },
+    {
+      "id": "184",
+      "category_level": "2",
+      "handle": "dukning-servering-muggar-koppar",
+      "parent_id": "166",
+      "name": {
+        "sv": "Muggar & Koppar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp kaffekoppar & temuggar online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina te- och kaffekoppar i traditionell och skandinavisk design. Oavsett vad du dricker hittar du kaffe- och temuggar här. Se sortimentet hos Fyrklövern här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Kaffekoppar & temuggar"
+      },
+      "status": true
+    },
+    {
+      "id": "185",
+      "category_level": "3",
+      "handle": "dukning-servering-muggar-koppar-muggar",
+      "parent_id": "184",
+      "name": {
+        "sv": "Muggar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Muggar | Köp fina muggar online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina muggar i traditionell och skandinavisk design. Servera varma drycker på bästa möjliga sätt. Se Fyrklöverns sortiment av muggar här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Muggar"
+      },
+      "status": true
+    },
+    {
+      "id": "186",
+      "category_level": "3",
+      "handle": "dukning-servering-muggar-koppar-kaffekoppar",
+      "parent_id": "184",
+      "name": {
+        "sv": "Kaffekoppar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Koppar | Köp fina koppar online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina koppar i traditionell och skandinavisk design. Servera drycker på bästa möjliga sätt. Se Fyrklöverns sortiment av koppar här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Kaffekoppar"
+      },
+      "status": true
+    },
+    {
+      "id": "187",
+      "category_level": "2",
+      "handle": "dukning-servering-skalar",
+      "parent_id": "166",
+      "name": {
+        "sv": "Skålar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Skålar | Köp fina & djupa skålar online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina skålar i traditionell och skandinavisk design. Både djupa skålar till frukosten och andra varianter till måltiderna. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Skålar"
+      },
+      "status": true
+    },
+    {
+      "id": "188",
+      "category_level": "3",
+      "handle": "dukning-servering-skalar-serveringsskalar",
+      "parent_id": "187",
+      "name": {
+        "sv": "Serveringsskålar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp vackra serveringsskålar för alla tillfällen på nätet | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina serveringsskålar i traditionell och skandinavisk design. Fyrklövern har allt du behöver för att skapa trevnad och en hemtrevlig känsla."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Serveringsskålar"
+      },
+      "status": true
+    },
+    {
+      "id": "189",
+      "category_level": "3",
+      "handle": "dukning-servering-skalar-frukostskalar-dessertskalar",
+      "parent_id": "187",
+      "name": {
+        "sv": "Frukostskålar & Dessertskålar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp fina frukostskålar och dessertskålar på nätet | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina frukostskålar & dessertskålar i traditionell och skandinavisk design. Fyrklövern har allt du behöver för att skapa trevnad och en hemtrevlig känsla."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Frukostskålar & Dessertskålar"
+      },
+      "status": true
+    },
+    {
+      "id": "190",
+      "category_level": "3",
+      "handle": "dukning-servering-skalar-skalar-med-lock-terriner",
+      "parent_id": "187",
+      "name": {
+        "sv": "Skålar med lock & Terriner"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp terriner och skålar med lock på nätet | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina terriner och skålar med lock i traditionell och skandinavisk design. Fyrklövern har allt du behöver för att skapa trevnad och en hemtrevlig känsla."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Skålar med lock & Terriner"
+      },
+      "status": true
+    },
+    {
+      "id": "191",
+      "category_level": "2",
+      "handle": "dukning-servering-upplaggningsfat",
+      "parent_id": "166",
+      "name": {
+        "sv": "Uppläggningsfat"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp vackra uppläggninsfat för alla tillfällen | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina uppläggningsfat i traditionell och skandinavisk design. Både dekorations och serveringsfat till måltiderna. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Uppläggningsfat"
+      },
+      "status": true
+    },
+    {
+      "id": "192",
+      "category_level": "3",
+      "handle": "dukning-servering-upplaggningsfat-serveringsfat",
+      "parent_id": "191",
+      "name": {
+        "sv": "Serveringsfat"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp fina serveringsfat för alla tillfällen | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina serveringsfat i traditionell och skandinavisk design. Fyrklövern har allt du behöver för att skapa trevnad och en hemtrevlig känsla."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Serveringsfat"
+      },
+      "status": true
+    },
+    {
+      "id": "193",
+      "category_level": "3",
+      "handle": "dukning-servering-upplaggningsfat-tartfat-kakfat",
+      "parent_id": "191",
+      "name": {
+        "sv": "Tårtfat & Kakfat"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp snygga tårtfat & kakfat på nätet | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Tårtfat och kakfat i traditionell och skandinavisk design. Fyrklövern har allt du behöver för att skapa trevnad och en hemtrevlig känsla."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Tårtfat & Kakfat"
+      },
+      "status": true
+    },
+    {
+      "id": "194",
+      "category_level": "2",
+      "handle": "dukning-servering-glas",
+      "parent_id": "166",
+      "name": {
+        "sv": "Glas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Glas | Köp fina glas till dukningen online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina glas i traditionell och skandinavisk design. Skapa en riktigt fin dukning med rätt glas. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Glas"
+      },
+      "status": true
+    },
+    {
+      "id": "195",
+      "category_level": "2",
+      "handle": "dukning-servering-bestick",
+      "parent_id": "166",
+      "name": {
+        "sv": "Bestick"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Bestick | Köp fina bestick till dukningen online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina bestick i traditionell och skandinavisk design. Du behöver bestick för att lyckas med dukningen. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Bestick"
+      },
+      "status": true
+    },
+    {
+      "id": "196",
+      "category_level": "2",
+      "handle": "dukning-servering-tillbehor",
+      "parent_id": "166",
+      "name": {
+        "sv": "Tillbehör"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp allt för en fin dukning & servering online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Allt till dukningen och serveringen i traditionell och skandinavisk design. Vi har allt du behöver för en fin dukning. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Dukning & servering"
+      },
+      "status": true
+    },
+    {
+      "id": "197",
+      "category_level": "3",
+      "handle": "dukning-servering-glas-dricksglas",
+      "parent_id": "194",
+      "name": {
+        "sv": "Dricksglas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Dricksglas | Köp fina vattenglas online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina dricksglas i traditionell och skandinavisk design. Vi har fina vattenglas för alla tillfällen och dukningar. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Dricksglas & vattenglas"
+      },
+      "status": true
+    },
+    {
+      "id": "198",
+      "category_level": "3",
+      "handle": "dukning-servering-glas-vinglas",
+      "parent_id": "194",
+      "name": {
+        "sv": "Vinglas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Vinglas | Köp rödvinsglas & vitvinsglas online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina vinglas i traditionell och skandinavisk design. Beroende på vad du föredrar så har vi både rödvinsglas och vitvinsglas. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Vinglas"
+      },
+      "status": true
+    },
+    {
+      "id": "199",
+      "category_level": "3",
+      "handle": "dukning-servering-glas-olglas",
+      "parent_id": "194",
+      "name": {
+        "sv": "Ölglas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Ölglas | Köp ölglas på & utan fot online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina ölglas i traditionell och skandinavisk design. Vi har ölglas på fot och utan fot för din dukning. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Ölglas"
+      },
+      "status": true
+    },
+    {
+      "id": "200",
+      "category_level": "3",
+      "handle": "dukning-servering-glas-champagneglas",
+      "parent_id": "194",
+      "name": {
+        "sv": "Champagneglas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Champagneglas | Köp fina glas för champagne | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina champagneglas i traditionell och skandinavisk design. Vi har glas till champagne inför festen och dukningen. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Champagneglas"
+      },
+      "status": true
+    },
+    {
+      "id": "201",
+      "category_level": "3",
+      "handle": "dukning-servering-glas-snapsglas-likorglas",
+      "parent_id": "194",
+      "name": {
+        "sv": "Snapsglas & Likörglas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Snapsglas | Köp likörglas på fot online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina snapsglas och likörglas i traditionell och skandinavisk design. Vi har snapsglas och likörglas på fot som gör sig väldigt fina till dukningen."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Snapsglas & Likörglas"
+      },
+      "status": true
+    },
+    {
+      "id": "202",
+      "category_level": "3",
+      "handle": "dukning-servering-glas-karaffer",
+      "parent_id": null,
+      "name": {
+        "sv": "Karaffer"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "203",
+      "category_level": "3",
+      "handle": "dukning-servering-bestick-bestickset",
+      "parent_id": "195",
+      "name": {
+        "sv": "Bestickset"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Bestickset | Köp bestick i olika set online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina bestickset i traditionell och skandinavisk design. Vi har bestick i set för allas stilar och behov. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Bestickset"
+      },
+      "status": true
+    },
+    {
+      "id": "204",
+      "category_level": "3",
+      "handle": "dukning-servering-bestick-serveringsbestick",
+      "parent_id": "195",
+      "name": {
+        "sv": "Serveringsbestick"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Serveringsbestick | Köp salladsbestick online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina serveringsbestick i traditionell och skandinavisk design. Vi har salladsbestick och alla andra bestick du behöver till serveringen. Se Fyrklöverns sortiment."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Serveringsbestick"
+      },
+      "status": true
+    },
+    {
+      "id": "205",
+      "category_level": "3",
+      "handle": "dukning-servering-tillbehor-ugnsformar",
+      "parent_id": "196",
+      "name": {
+        "sv": "Ugnsformar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Formar | Köp ugns- & bakformar online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina formar i traditionell och skandinavisk design. Vi har bakformar till fikat och ugnsformar till måltiderna. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Formar"
+      },
+      "status": true
+    },
+    {
+      "id": "206",
+      "category_level": "3",
+      "handle": "dukning-servering-tillbehor-bordstabletter",
+      "parent_id": "196",
+      "name": {
+        "sv": "Bordstabletter"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Bordstabletter | Köp stilrena bordsunderlägg på nätet | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina bordstabletter i traditionell och skandinavisk design. Fyrklövern har allt du behöver för att skapa trevnad och en hemtrevlig känsla."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Bordstabletter"
+      },
+      "status": true
+    },
+    {
+      "id": "208",
+      "category_level": "3",
+      "handle": "dukning-servering-skalar-saskannor",
+      "parent_id": "187",
+      "name": {
+        "sv": "Såskannor"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Såssnipor | Köp fina såskannor online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina såssnipor och såskannor i traditionell och skandinavisk design. Vi har kannor för sås från välkända formgivare. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Såskannor & såssnipor"
+      },
+      "status": true
+    },
+    {
+      "id": "209",
+      "category_level": "3",
+      "handle": "dukning-servering-tillbehor-kannor",
+      "parent_id": null,
+      "name": {
+        "sv": "Kannor"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "210",
+      "category_level": "3",
+      "handle": "dukning-servering-tillbehor-serveringsburkar",
+      "parent_id": null,
+      "name": {
+        "sv": "Serveringsburkar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "211",
+      "category_level": "3",
+      "handle": "inredning-dekoration-dekorationsdetaljer",
+      "parent_id": "175",
+      "name": {
+        "sv": "Dekorationsdetaljer"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Dekorationsdetaljer för hemmet | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Förnya hemmet med exklusiv inredning och unika dekorationer. Upptäck vårt urval av vaser, ljusstakar och ljuslyktor för atmosfär."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Dekorationsdetaljer"
+      },
+      "status": true
+    },
+    {
+      "id": "212",
+      "category_level": "3",
+      "handle": "inredning-dekoration-juldekoration",
+      "parent_id": "175",
+      "name": {
+        "sv": "Juldekoration"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Julpynt | Köp fina juldekorationer online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fint julpynt i traditionell och skandinavisk design. Pynta med fina juldekorationer inför vår stora högtid. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Juldekorationer & julpynt"
+      },
+      "status": true
+    },
+    {
+      "id": "213",
+      "category_level": "2",
+      "handle": "inredning-textil",
+      "parent_id": "165",
+      "name": {
+        "sv": "Textil"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp hemtextiler online | Skandinavisk design | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina hemtextiler i traditionell och skandinavisk design. Hemma från soffan kan du enkelt beställa hem hemtextiler på nätet. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Hemtextiler"
+      },
+      "status": true
+    },
+    {
+      "id": "214",
+      "category_level": "2",
+      "handle": "inredning-belysning",
+      "parent_id": null,
+      "name": {
+        "sv": "Belysning"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "215",
+      "category_level": "3",
+      "handle": "inredning-ljusstakar-ljus-ljusstakar",
+      "parent_id": "176",
+      "name": {
+        "sv": "Ljusstakar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Ljusstakar | Köp fina ljusstakar online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina ljusstakar i traditionell och skandinavisk design. I vårt sortiment finns ljusstakar i såväl munblåst glas som kristall, mässing och kromat stål."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Ljusstakar"
+      },
+      "status": true
+    },
+    {
+      "id": "216",
+      "category_level": "3",
+      "handle": "inredning-ljusstakar-ljus-ljuslyktor",
+      "parent_id": null,
+      "name": {
+        "sv": "Ljuslyktor"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Ljuslyktor | Köp vackra ljuslyktor online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina ljuslyktor i traditionell och skandinavisk design. Lys upp de mörka kvällarna med vackra ljuslyktor. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Ljuslyktor"
+      },
+      "status": true
+    },
+    {
+      "id": "217",
+      "category_level": "3",
+      "handle": "inredning-ljusstakar-ljus-julljustakar",
+      "parent_id": "176",
+      "name": {
+        "sv": "Julljustakar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Julljusstakar | Köp adventljusstakar online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina julljusstakar i traditionell och skandinavisk design. Skapa mysig stämning inför högtiden med adventljusstakar. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Adventljusstakar & julljusstakar"
+      },
+      "status": true
+    },
+    {
+      "id": "218",
+      "category_level": "3",
+      "handle": "inredning-textil-dukar",
+      "parent_id": "213",
+      "name": {
+        "sv": "Dukar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Bordsdukar | Köp fina dukar online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina dukar i traditionell och skandinavisk design. Vi har bordsdukar för alla bord och stilar. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Bordsdukar"
+      },
+      "status": true
+    },
+    {
+      "id": "219",
+      "category_level": "3",
+      "handle": "inredning-textil-servetter-servettringar",
+      "parent_id": "213",
+      "name": {
+        "sv": "Servetter & servettringar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Tygservetter för dukningen | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Lyxa till din dukning med våra tygservetter i naturnära material och skandinaviska färger. Skapa en trivsam atmosfär för alla tillfällen."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "221",
+      "category_level": "3",
+      "handle": "dukning-servering-tillbehor-dukar",
+      "parent_id": "196",
+      "name": {
+        "sv": "Dukar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp bordsdukar online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina dukar i traditionell och skandinavisk stil. Vi har tygdukar för alla bord och stilar. Se Fyrklöverns urval här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "224",
+      "category_level": "3",
+      "handle": "dukning-servering-tallrikar-tallriksset",
+      "parent_id": "149",
+      "name": {
+        "sv": "Tallriksset"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Tallrikar i set | Köp tallriksset online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina tallrikar i set i traditionell och skandinavisk design. Upptäck vårt unika breda utbud av tallriksset i högkvalitativt porslin och stengods här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Tallrikar i set"
+      },
+      "status": true
+    },
+    {
+      "id": "225",
+      "category_level": "3",
+      "handle": "dukning-servering-tillbehor-servetter-servettringar",
+      "parent_id": "196",
+      "name": {
+        "sv": "Servetter & servettringar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp tygservetter online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Hos oss hittar du servetter i hög kvalitet, naturnära material och skandinaviska färger som förhöjer din dukning. Se vårt sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "226",
+      "category_level": "3",
+      "handle": "dukning-servering-tillbehor-brickor-1",
+      "parent_id": "196",
+      "name": {
+        "sv": "Brickor"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Brickor | Köp serveringsbrickor online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina brickor i traditionell och skandinavisk design. Gör bjudningen lättare med dessa serveringsbrickor. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Brickor"
+      },
+      "status": true
+    },
+    {
+      "id": "227",
+      "category_level": "3",
+      "handle": "dukning-servering-tillbehor-kannor-karaffer",
+      "parent_id": "196",
+      "name": {
+        "sv": "Kannor & Karaffer"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp fina kannor & karaffer för alla tillfällen | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Kannor & karaffer i traditionell och skandinavisk design. Fyrklövern har allt du behöver för att skapa trevnad och en hemtrevlig känsla."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Kannor & Karaffer"
+      },
+      "status": true
+    },
+    {
+      "id": "228",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-glas-1-diamond-1",
+      "parent_id": "1778",
+      "name": {
+        "sv": "Diamond Glas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Glas från Diamond | Fyrklövern Glas"
+      },
+      "meta_description": {
+        "sv": "Se glasen som för tankarna till Great Gatsby och en tid fylld av flärd och elegans. De tillhör vår kollektion Diamond och finns enbart hos Fyrklövern här!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Diamond glaskollektion"
+      },
+      "status": true
+    },
+    {
+      "id": "229",
+      "category_level": "3",
+      "handle": "inredning-textil-kokshanddukar",
+      "parent_id": "213",
+      "name": {
+        "sv": "Kökshanddukar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Kökshanddukar | Köp fina & snygga kökshanddukar online"
+      },
+      "meta_description": {
+        "sv": "Fina kökshanddukar i traditionell och skandinavisk design. Komplettera stilen i köket med dessa snygga kökshanddukar. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Kökshanddukar"
+      },
+      "status": true
+    },
+    {
+      "id": "230",
+      "category_level": "1",
+      "handle": "disney-1",
+      "parent_id": null,
+      "name": {
+        "sv": "Disney"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Disney-porslin & inredningsdetaljer | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Förvandla ditt hem med vårt exklusiva Disney-sortiment: Eleganta porslin, ljusstakar och dekorativa detaljer för en magisk atmosfär."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Disney"
+      },
+      "status": true
+    },
+    {
+      "id": "231",
+      "category_level": "1",
+      "handle": "julshop",
+      "parent_id": null,
+      "name": {
+        "sv": "JULSHOP"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Välkommen till vår julshop | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "I vår julshop köper du julprodukter för att skapa en stämningsfull jul med vackra dukningar, inredning och dekorationer. Välkommen!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "232",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-glas-1-crown",
+      "parent_id": "1778",
+      "name": {
+        "sv": "Crown Glas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Crown kristallglas | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Hylla kristallglasens skönhet med vår kollektion Crown. Modern möter antik i viktoriansk inspirerad design. Tidlös elegans för alla tillfällen."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Crown"
+      },
+      "status": true
+    },
+    {
+      "id": "233",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-glas-1-drop",
+      "parent_id": "1778",
+      "name": {
+        "sv": "Drop Glas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Drop glaskollektion | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Upptäck Drop, en glaskollektion med skandinavisk design i miljökristall. Inspirerad av vattendroppen, från transparent till greige toner."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Drop"
+      },
+      "status": true
+    },
+    {
+      "id": "234",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-bestick-siluett",
+      "parent_id": "1886",
+      "name": {
+        "sv": "Siluett"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Bestick från Siluett | Fyrklövern Bestick"
+      },
+      "meta_description": {
+        "sv": "Siluett är ett elegant och balanserat bestick som passar till både festdukningen och vardagsmiddagen. Se alla bestick från Siluett hos Fyrklövern här!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Siluett"
+      },
+      "status": true
+    },
+    {
+      "id": "235",
+      "category_level": "2",
+      "handle": "kollektioner-serviser-scallop",
+      "parent_id": null,
+      "name": {
+        "sv": "Scallop"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp Scallop ljusstakar online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Scallop är en kollektion av ljusstakar som ger en stämningsfull atmosfär. Dessa snygga ljusstakar ger ditt bord och hem ett vackert och sofistikerat uttryck."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "236",
+      "category_level": "2",
+      "handle": "kollektioner-serviser-lace",
+      "parent_id": null,
+      "name": {
+        "sv": "Lace"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Lace-kollektionen av Lars Wallin | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Modernisera hemmet med Lace av Lars Wallin. Trendiga vaser och ljuslyktor med unik design och lyxig känsla. Enkelhet möter elegans."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Lace"
+      },
+      "status": true
+    },
+    {
+      "id": "240",
+      "category_level": "2",
+      "handle": "duka-bordet-till-fest",
+      "parent_id": null,
+      "name": {
+        "sv": "Till fest"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Duka til Fest | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "I vårt sortiment finns allt du behöver för tillfällen då du vill göra det extra fint för de du tycker allra mest om. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Till fest"
+      },
+      "status": true
+    },
+    {
+      "id": "241",
+      "category_level": "2",
+      "handle": "duka-bordet-till-alla-hjartans-dag",
+      "parent_id": null,
+      "name": {
+        "sv": "Till Alla Hjärtans Dag"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Duka till Alla Hjärtans Dag"
+      },
+      "meta_description": {
+        "sv": "Fira kärleken med stil! Upptäck vårt unika urval av vackert porslin och inredning inför Alla Hjärtans Dag. Se Fyrklöverns urval här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Till Alla Hjärtans Dag"
+      },
+      "status": true
+    },
+    {
+      "id": "242",
+      "category_level": "1",
+      "handle": "nyheter",
+      "parent_id": null,
+      "name": {
+        "sv": "Nyheter"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Nyheter för det dukade bordet | Fyrklövern Nyheter"
+      },
+      "meta_description": {
+        "sv": "Titta in och hitta dina egna favoriter till dukning, servering och inredning hos Fyrklövern! Se nyheter hos Fyrklövern här!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Nyheter"
+      },
+      "status": true
+    },
+    {
+      "id": "243",
+      "category_level": "1",
+      "handle": "inspiration",
+      "parent_id": null,
+      "name": {
+        "sv": "Inspiration"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Inredningsinspiration | Se Fyrklöverns inspiration för inredning"
+      },
+      "meta_description": {
+        "sv": "Upptäck Fyrklöverns inspirerande inredningsidéer! Utforska stilfulla dekorationsdetaljer för att skapa ditt drömhem. Vi har inredningsinspiration för alla."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Inspiration för inredning"
+      },
+      "status": true
+    },
+    {
+      "id": "246",
+      "category_level": "1",
+      "handle": "outlet",
+      "parent_id": null,
+      "name": {
+        "sv": "Outlet"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Fyrklövern outlet | Fynda i vårt utgående sortiment"
+      },
+      "meta_description": {
+        "sv": "Fynda porslin, glas och inredning i vår outlet. Här samlar vi produkter på rea eller som ska utgå ur sortiment. Så länge lagret räcker. Fyrklövern."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Fyrklövern outlet"
+      },
+      "status": true
+    },
+    {
+      "id": "247",
+      "category_level": "2",
+      "handle": "kollektioner-serviser-jul",
+      "parent_id": "155",
+      "name": {
+        "sv": "Jul"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Julkollektioner & julserviser | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Skapa en stämningsfull jul med Fyrklöverns populära och unika julkollektioner & julserviser. Gör årets jul till den bästa med våra fantastiska julprodukter."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "248",
+      "category_level": "2",
+      "handle": "julshop-dukning-servering",
+      "parent_id": "231",
+      "name": {
+        "sv": "Juldukning & Servering"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Juldukning - Skapa en minnesvärd dukning och servering"
+      },
+      "meta_description": {
+        "sv": "Duka upp för en stämningsfull jul! Här hittar du allt för juldukningen och serveringen. Låt varje julmåltid bli en magisk upplevelse med oss!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "249",
+      "category_level": "2",
+      "handle": "julshop-inredning",
+      "parent_id": "231",
+      "name": {
+        "sv": "Julinredning"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Inredning för julen - Skapa en minnesvärd julkänsla"
+      },
+      "meta_description": {
+        "sv": "Drömmer du om en extra mysig jul? Gör din jul minnesvärd med våra inredningsdetaljer! Hos oss hittar du allt du behöver för att kunna inreda inför julen."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "250",
+      "category_level": "3",
+      "handle": "julshop-inredning-belysning-1",
+      "parent_id": "249",
+      "name": {
+        "sv": "Julbelysning"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Julbelysning|Vackra adventsstjärnor och LED-tomtar|Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Här köper du adventsstjärnor och tomtar med LED-belysning. Allt för en stämningsfull jul. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "251",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-jul-gammaldags-jul-1",
+      "parent_id": "247",
+      "name": {
+        "sv": "Gammaldags Jul"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp servisen Gammaldags Jul online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina servisen Gammaldags Jul i traditionell och skandinavisk design. Komplettera din Gammaldags Jul servis från Fyrklövern eller upptäck något nytt."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Gammaldags Jul"
+      },
+      "status": true
+    },
+    {
+      "id": "252",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-jul-tomtarnas-jul",
+      "parent_id": "247",
+      "name": {
+        "sv": "Tomtarnas Jul"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp servisen Tomtarnas Jul online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina servisen Tomtarnas Jul i traditionell och skandinavisk design. Komplettera din Tomtarnas Jul servis från Fyrklövern eller upptäck något nytt."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Tomtarnas Jul"
+      },
+      "status": true
+    },
+    {
+      "id": "254",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-jul-julminnen",
+      "parent_id": "247",
+      "name": {
+        "sv": "Julminnen"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp servisen Julminnen online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina servisen Julminnen i traditionell och skandinavisk design. Komplettera din Julminnen servis från Fyrklövern eller upptäck något nytt."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Julminnen"
+      },
+      "status": true
+    },
+    {
+      "id": "255",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-jul-disney-jul-jubiieum",
+      "parent_id": null,
+      "name": {
+        "sv": "Disney Jul Jubileum"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp servisen Disney Jul Jubileum online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina servisen Disney Jul Jubileum i traditionell och skandinavisk design. Komplettera din Disney Jul Jubileum servis från Fyrklövern eller upptäck något nytt."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Disney Jul Jubileum"
+      },
+      "status": true
+    },
+    {
+      "id": "256",
+      "category_level": "3",
+      "handle": "julshop-dukning-servering-tallrikar-1",
+      "parent_id": "248",
+      "name": {
+        "sv": "Jultallrikar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Jultallrikar – Köp unika jultallrikar för juldukningen"
+      },
+      "meta_description": {
+        "sv": "Utforska vårt sortiment av unika jultallrikar som sätter tonen för en minnesvärd och stämningsfull juldukning.  Skapa minnen med vackra jultallrikar!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "257",
+      "category_level": "3",
+      "handle": "julshop-dukning-servering-muggar-koppar",
+      "parent_id": "248",
+      "name": {
+        "sv": "Julmuggar & Julkoppar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Koppar & muggar för julen | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Gör julmyset extra speciellt! Upptäck vårt urval av unika julkoppar och julmuggar för att skapa en mysig och stämningsfull julstämning."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "258",
+      "category_level": "3",
+      "handle": "julshop-dukning-servering-skalar",
+      "parent_id": "248",
+      "name": {
+        "sv": "Julskålar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Julskålar – Duka upp med unika julskålar | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Skapa en speciell atmosfär vid julbordet med våra unika julskålar! Köp högkvalitativa porslinsskålar i olika storlekar, alla smyckade med juliga julmotiv."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "259",
+      "category_level": "3",
+      "handle": "julshop-dukning-servering-upplaggningsfat",
+      "parent_id": "248",
+      "name": {
+        "sv": "Julfat"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Uppläggningsfat och Serveringsfat för julen | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Skapa ett vackert dukat julbord med våra juliga uppläggningsfat för julskinkan, julkakorna och julgodiset. Hos oss förenas tradition och högsta kvalitet."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "260",
+      "category_level": "3",
+      "handle": "julshop-dukning-servering-glas",
+      "parent_id": "248",
+      "name": {
+        "sv": "Julglas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Glas för julen - Skapa en minnesvärd julstämning | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Sätt guldkant på julen med våra vackra, unika och traditionella julglas, Utforska vårt sortiment av juliga glas för att skapa en minnesvärd och stämningsfull jul."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "261",
+      "category_level": "3",
+      "handle": "julshop-dukning-servering-dukning-ljus",
+      "parent_id": "248",
+      "name": {
+        "sv": "Juldukning & Ljus"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Juliga tillbehör för en minnesvärd juldukning | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Juliga såskannor, kannor, ugnsformar och bordsdukar för julbordet köper du hos oss. Skapa magi vid varje måltid! Välkommen in i vår julshop!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "262",
+      "category_level": "3",
+      "handle": "julshop-inredning-juldekoration",
+      "parent_id": "249",
+      "name": {
+        "sv": "Juldekorationer & Julpynt"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Juldekoration och Julpynt för en stämningsfull jul | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Inred och gör det mysigt inför julen! Här hittar du allt från elljusstakar och jultextil till porslinsfigurer, för att julpynta ditt hem. Se julpyntet här!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "263",
+      "category_level": "3",
+      "handle": "julshop-inredning-ljusstakar-ljus",
+      "parent_id": "249",
+      "name": {
+        "sv": "Julljusstakar & Ljus"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Ljushållare för julen -  Skandinavisk design online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina ljushållare i traditionell och skandinavisk design. Lys upp hemmet med stora och små ljushållare för att skapa en stämningsfull jul. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Ljushållare"
+      },
+      "status": true
+    },
+    {
+      "id": "264",
+      "category_level": "3",
+      "handle": "julshop-inredning-textil",
+      "parent_id": "249",
+      "name": {
+        "sv": "Jultextil"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Textilier för julen | Fyrklövern Julpynt"
+      },
+      "meta_description": {
+        "sv": "Visst är det extra roligt att inreda inför julen! Här hittar du de flesta textilierna  som garanterat skapar fin julstämning. Se dem hos Fyrklövern här!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "269",
+      "category_level": "3",
+      "handle": "disney-1-disney-dukning-servering-tallrikar-2",
+      "parent_id": null,
+      "name": {
+        "sv": "Disney-tallrikar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Disneytallrikar | Köp tallrikar med Disneymotiv på nätet"
+      },
+      "meta_description": {
+        "sv": "Köp fina Disney-tallrikar. Vårt samarbete med Disney gör att vi kan ge våra produkter en touch av förtrollning."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Disney tallrik"
+      },
+      "status": true
+    },
+    {
+      "id": "270",
+      "category_level": "3",
+      "handle": "disney-1-disney-dukning-servering-muggar-koppar-2",
+      "parent_id": null,
+      "name": {
+        "sv": "Disney-muggar & koppar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp Disneymuggar & Disneykoppar på nätet | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Köp fina Disney-muggar och koppar. Vårt samarbete med Disney gör att vi kan ge våra produkter en touch av förtrollning."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Disney muggar & koppar"
+      },
+      "status": true
+    },
+    {
+      "id": "271",
+      "category_level": "3",
+      "handle": "disney-1-disney-dukning-servering-skalar-1",
+      "parent_id": null,
+      "name": {
+        "sv": "Disney-skålar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Disneyskålar | Köp skålar med Disneymotiv på nätet | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Köp fina Disney-skålar. Vårt samarbete med Disney gör att vi kan ge våra produkter en touch av förtrollning."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Disney skål"
+      },
+      "status": true
+    },
+    {
+      "id": "272",
+      "category_level": "3",
+      "handle": "disney-1-disney-dukning-servering-upplaggningsfat-1",
+      "parent_id": null,
+      "name": {
+        "sv": "Disney-uppläggningsfat"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp uppläggninsfat med Disneymotiv på nätet | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Köp fina uppläggningsfat med Disneymotiv. Vårt samarbete med Disney gör att vi kan ge våra produkter en touch av förtrollning."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Disney uppläggningsfat"
+      },
+      "status": true
+    },
+    {
+      "id": "273",
+      "category_level": "3",
+      "handle": "disney-1-disney-dukning-servering-glas-1",
+      "parent_id": null,
+      "name": {
+        "sv": "Disney-glas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Disneyglas | Köp glas med Disneymotiv på nätet | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Köp fina Disney-glas. Vårt samarbete med Disney gör att vi kan ge våra produkter en touch av förtrollning."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Disney glas"
+      },
+      "status": true
+    },
+    {
+      "id": "274",
+      "category_level": "2",
+      "handle": "disney-1-dekoration-1",
+      "parent_id": null,
+      "name": {
+        "sv": "Disney-dekoration"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Disneydekoration | Köp dekorationer med Disneymotiv"
+      },
+      "meta_description": {
+        "sv": "Köp vacker Disney-dekoration. Vårt samarbete med Disney gör att vi kan ge våra produkter en touch av förtrollning."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Disney dekoration"
+      },
+      "status": true
+    },
+    {
+      "id": "275",
+      "category_level": "3",
+      "handle": "disney-1-dekoration-1-ljusstakar-1",
+      "parent_id": null,
+      "name": {
+        "sv": "Disney-ljusstakar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp vackra Disneyljusstakar på nätet | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Köp fina Disney-ljusstakar. Vårt samarbete med Disney gör att vi kan ge våra produkter en touch av förtrollning."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Disney ljusstake"
+      },
+      "status": true
+    },
+    {
+      "id": "276",
+      "category_level": "2",
+      "handle": "kollektioner-serviser-disney",
+      "parent_id": "155",
+      "name": {
+        "sv": "Disney"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp våra vackra disneykollektioner på nätet | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Se våra Disney-kollektioner. Vårt samarbete med Disney gör att vi kan ge våra produkter en touch av förtrollning."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Disney kollektioner"
+      },
+      "status": true
+    },
+    {
+      "id": "277",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-disney-disney-jul-jubileum",
+      "parent_id": null,
+      "name": {
+        "sv": "Disney Jul Jubileum"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp servisen Disney jul online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fina servisen Disney Jul jubileum i traditionell och skandinavisk design. Komplettera din Disney Jul jubileum servis från Fyrklövern eller upptäck något nytt."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "333",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-vardag-fest-nordic-dawn",
+      "parent_id": "1777",
+      "name": {
+        "sv": "Nordic Dawn"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp servisen Nordic Dawn online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "En tidlös porslinskollektion i fyra färger för energin i vardagen och livets alla tillställningar, inspirerad av lugnet i nordisk natur. Se servisen Nordic Dawn hos Fyrklövern här!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "334",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-vardag-fest-terra-fiore",
+      "parent_id": "1777",
+      "name": {
+        "sv": "Terra Fiore"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Köp servisen Terra Fiore online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Med inspiration från Toscana och det italienska hantverket, är detta en kollektion att umgås vid. Köp servisen Terra Fiore här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Terra Fiore"
+      },
+      "status": true
+    },
+    {
+      "id": "338",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-bestick-hammer",
+      "parent_id": "1886",
+      "name": {
+        "sv": "Hammer"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Hammer bestick online | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Våra Hammer bestick är unikt designade med känsla för estetik och kvalitet. Kollektionen erbjuder innovativa och funktionella bestick för en modern dukning."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "343",
+      "category_level": "3",
+      "handle": "disney-1-disney-dukning-servering-tillbehor-2",
+      "parent_id": null,
+      "name": {
+        "sv": "Disney-tillbehör"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Duka med vackra Disney-tillbehör | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Ge dina måltider den där magiska känslan med våra fina Disney-tillbehör. Köp vårt Disney-sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "344",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-disney-nalle-puh",
+      "parent_id": "276",
+      "name": {
+        "sv": "Nalle Puh"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Nalle Puh Disney | Köp fina Nalle Puh muggar hos Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Säg det med en mugg! Vår Nalle Puh-kollektion är designad i samarbete med Disney, där Nalle Puhs charm och äventyr fångas. Varje mugg bär Nalle Puhs kloka visdomsord."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "363",
+      "category_level": "1",
+      "handle": "varumarken",
+      "parent_id": null,
+      "name": {
+        "sv": "Varumärken"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Varumärken | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Kvalitet och elegans från kända varumärken. Vi erbjuder ett handpockat utbud från Fyrklövern, Lind DNA, Broste Copenhagen, Ester & Erik och Lovely Linen."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Varumärken"
+      },
+      "status": true
+    },
+    {
+      "id": "366",
+      "category_level": "2",
+      "handle": "varumarken-fyrklovern",
+      "parent_id": null,
+      "name": {
+        "sv": "Fyrklövern"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Vårt egna varumärke Fyrklövern | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Sedan 1974 har Fyrklövern skapat produkter och kollektioner av hög kvalitet inom porslin, glas och hemdekoration. Välkommen!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Fyrklövern"
+      },
+      "status": true
+    },
+    {
+      "id": "369",
+      "category_level": "2",
+      "handle": "varumarken-lind-dna",
+      "parent_id": null,
+      "name": {
+        "sv": "Lind DNA"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "LIND DNA | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Lind DNA designar hållbara produkter med fokus på kvalitet. Botanisera bland ett brett sortiment med allt från serveringstillbehör till inredning."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "370",
+      "category_level": "2",
+      "handle": "varumarken-lovely-linen",
+      "parent_id": null,
+      "name": {
+        "sv": "Lovely Linen"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Lovely Linen | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Lovely Linen är ett svenskt varumärke som skapar hållbara linneprodukter för nutida hem. Välkommen att utforska Lovely Linen mångsidiga utbud hos oss på Fyrklövern."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "371",
+      "category_level": "2",
+      "handle": "varumarken-broste-copenhagen",
+      "parent_id": null,
+      "name": {
+        "sv": "Broste Copenhagen"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Broste Copenhagen | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Hos oss hittar du Brostes vackra vaser, ljusstakar och ljuslyktor med behaglig estetik. Köp Broste för samtida design och hållbara objekt som utmanar gränserna för skandinavisk stil genom adderad lekfullhet."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "407",
+      "category_level": "2",
+      "handle": "duka-bordet-isbla-karlek",
+      "parent_id": null,
+      "name": {
+        "sv": "Isblå kärlek"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "409",
+      "category_level": "1",
+      "handle": "never-boring",
+      "parent_id": null,
+      "name": {
+        "sv": "Never Boring"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "410",
+      "category_level": "4",
+      "handle": "inspiration-dukningstips-festliga-tillfallen-never-boring-1",
+      "parent_id": null,
+      "name": {
+        "sv": "Never Boring"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "411",
+      "category_level": "4",
+      "handle": "inspiration-dukningstips-hogtider-stilfull-paskdukning-i-blavitt-och-rosa",
+      "parent_id": null,
+      "name": {
+        "sv": "Stilfull påskdukning i blåvitt och rosa"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Stilfull påskdukning i blåvitt och rosa|Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Små genomtänkta påskdetaljer - så fixar du stilen. Överdriv inte pyntningen utan håll denna påskdukning elegant och harmonisk och låt porslinet stjäla showen."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "412",
+      "category_level": "3",
+      "handle": "inspiration-trender-trend-duka-i-lila-och-gront",
+      "parent_id": null,
+      "name": {
+        "sv": "Trend - Duka i lila och grönt"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "442",
+      "category_level": "2",
+      "handle": "inspiration-testartikel",
+      "parent_id": null,
+      "name": {
+        "sv": "testartikel"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "455",
+      "category_level": "2",
+      "handle": "duka-bordet-till-pask",
+      "parent_id": null,
+      "name": {
+        "sv": "Till påsk"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Duka till påsk | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Skapa en stilfull påskdukning med vårt unika urval av vackert porslin och inredning. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Till påsk"
+      },
+      "status": true
+    },
+    {
+      "id": "456",
+      "category_level": "2",
+      "handle": "kampanjer-nyhetsbrev-10",
+      "parent_id": null,
+      "name": {
+        "sv": "Nyhetsbrev - 10% på allt"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Nyhetsbrev - 10% på allt"
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "480",
+      "category_level": "2",
+      "handle": "varumarken-ester-erik",
+      "parent_id": null,
+      "name": {
+        "sv": "ester & erik"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "ester & erik | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "ester & erik är ett danskt familjeföretag som tillverkar vackra ljus i högsta kvalitet. Varumärket återspeglar kärleken till ljus, hantverk och kvalitet."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "Ester & Erik"
+      },
+      "status": true
+    },
+    {
+      "id": "489",
+      "category_level": "2",
+      "handle": "inspiration-dukningstips",
+      "parent_id": null,
+      "name": {
+        "sv": "Dukningstips"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "490",
+      "category_level": "3",
+      "handle": "inspiration-dukningstips-hogtider",
+      "parent_id": null,
+      "name": {
+        "sv": "Högtider"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "491",
+      "category_level": "3",
+      "handle": "inspiration-dukningstips-sasonger",
+      "parent_id": null,
+      "name": {
+        "sv": "Säsonger"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "492",
+      "category_level": "3",
+      "handle": "inspiration-dukningstips-vardag",
+      "parent_id": null,
+      "name": {
+        "sv": "Vardag"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "493",
+      "category_level": "3",
+      "handle": "inspiration-dukningstips-festliga-tillfallen",
+      "parent_id": null,
+      "name": {
+        "sv": "Festliga tillfällen"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "494",
+      "category_level": "2",
+      "handle": "inspiration-inredning-1",
+      "parent_id": null,
+      "name": {
+        "sv": "Inredning"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "495",
+      "category_level": "2",
+      "handle": "inspiration-trender",
+      "parent_id": null,
+      "name": {
+        "sv": "Trender"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "496",
+      "category_level": "2",
+      "handle": "inspiration-reportage",
+      "parent_id": null,
+      "name": {
+        "sv": "Reportage"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "497",
+      "category_level": "2",
+      "handle": "inspiration-guider",
+      "parent_id": null,
+      "name": {
+        "sv": "Guider"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "498",
+      "category_level": "4",
+      "handle": "inspiration-dukningstips-sasonger-drommar-om-toscana",
+      "parent_id": null,
+      "name": {
+        "sv": "Drömmar om Toscana"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "499",
+      "category_level": "4",
+      "handle": "inspiration-dukningstips-vardag-vardagslyx",
+      "parent_id": null,
+      "name": {
+        "sv": "Vardagslyx"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "500",
+      "category_level": "4",
+      "handle": "inspiration-dukningstips-festliga-tillfallen-kraftkalas",
+      "parent_id": null,
+      "name": {
+        "sv": "Kreativt kräftkalas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "501",
+      "category_level": "4",
+      "handle": "inspiration-dukningstips-hogtider-minnesvard-midsommarfest",
+      "parent_id": null,
+      "name": {
+        "sv": "Minnesvärd midsommarfest"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "506",
+      "category_level": "4",
+      "handle": "inspiration-dukningstips-hogtider-harliga-midsommar",
+      "parent_id": null,
+      "name": {
+        "sv": "Härliga midsommar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "507",
+      "category_level": "4",
+      "handle": "inspiration-dukningstips-hogtider-5-dukningstips-till-pask",
+      "parent_id": null,
+      "name": {
+        "sv": "5 dukningstips till påsk"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Duka ditt vackraste påskbord | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Påsken är en fin högtid då vi njuter av god mat och umgås på ett mer lekfullt sätt. Vi bjuder på 5 enkla dukningstips för ditt påskbord!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "525",
+      "category_level": "2",
+      "handle": "duka-bordet-till-sommarmiddag",
+      "parent_id": null,
+      "name": {
+        "sv": "Till sommarmiddag"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Duka för vårmiddag | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Skapa en vacker vårdukning som för tankarna till Toscana och drömmar om solen. Se Fyrklöverns sortiment här."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "526",
+      "category_level": "2",
+      "handle": "outlet-dukning-servering",
+      "parent_id": "246",
+      "name": {
+        "sv": "Dukning & Servering"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "527",
+      "category_level": "2",
+      "handle": "outlet-inredning",
+      "parent_id": "246",
+      "name": {
+        "sv": "Inredning"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "552",
+      "category_level": "4",
+      "handle": "inspiration-dukningstips-sasonger-drommigt-varmingel",
+      "parent_id": null,
+      "name": {
+        "sv": "Drömmigt vårmingel"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "577",
+      "category_level": "2",
+      "handle": "kollektioner-serviser-bambi-vanner",
+      "parent_id": null,
+      "name": {
+        "sv": "Bambi & Vänner"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Bambi & Vänner|Påskägg och värmeljusstake|Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Upptäck kollektionen Bambi och hans vänner! Köp påskägg och värmeljusstake, båda tillverkade av finaste porslin och handmålade i ljusa pastellfärger med gulddetaljer."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "578",
+      "category_level": "2",
+      "handle": "kollektioner-serviser-piff-puff",
+      "parent_id": null,
+      "name": {
+        "sv": "Piff & Puff"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Sprid julglädje med Disney’s Piff & Puff ljusstakar|Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Skapa julstämning med Disney’s Piff och Puff ljustakar och ljussläckare från Fyrklövern. En unik kollektion som skapar julnostalgi för hela familjen år efter år!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "579",
+      "category_level": "2",
+      "handle": "kollektioner-serviser-disney-julshow",
+      "parent_id": null,
+      "name": {
+        "sv": "Disney Julshow"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Disney Julshow – Handskulpterade porslinsfigurer|Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Upptäck Fyrklöverns exklusiva kollektion av handmålade Disney Julshow-figurer, tillverkade med högsta kvalitet och detaljer i guld. Skapa magi i ditt hem!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "580",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-disney-bambi-vanner-1",
+      "parent_id": null,
+      "name": {
+        "sv": "Bambi & Vänner"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Bambi & Vänner|Påskägg och värmeljusstake|Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Upptäck kollektionen Bambi och hans vänner! Köp påskägg och värmeljusstake, båda tillverkade av finaste porslin och handmålade i ljusa pastellfärger med gulddetaljer."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "581",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-disney-piff-puff-1",
+      "parent_id": null,
+      "name": {
+        "sv": "Piff & Puff"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Sprid julglädje med Disney’s Piff & Puff ljusstakar|Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Skapa julstämning med Disney’s Piff och Puff ljustakar och ljussläckare från Fyrklövern. En unik kollektion som skapar julnostalgi för hela familjen år efter år!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "582",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-disney-disney-julshow-1",
+      "parent_id": null,
+      "name": {
+        "sv": "Disney Julshow"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Disney Julshow – Handskulpterade porslinsfigurer|Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Upptäck Fyrklöverns exklusiva kollektion av handmålade Disney Julshow-figurer, tillverkade med högsta kvalitet och detaljer i guld. Skapa magi i ditt hem!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "589",
+      "category_level": "4",
+      "handle": "inspiration-dukningstips-hogtider-duka-for-en-minnesvard-jul",
+      "parent_id": null,
+      "name": {
+        "sv": "Duka för en minnesvärd jul"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "590",
+      "category_level": "4",
+      "handle": "inspiration-dukningstips-hogtider-skapa-magi-pa-julbordet-med-disney",
+      "parent_id": null,
+      "name": {
+        "sv": "Skapa magi på julbordet med Disney"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "591",
+      "category_level": "4",
+      "handle": "inspiration-dukningstips-festliga-tillfallen-5-dukningstips-till-halloween",
+      "parent_id": null,
+      "name": {
+        "sv": "5 dukningstips till Halloween"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "610",
+      "category_level": "4",
+      "handle": "inspiration-dukningstips-hogtider-harliga-midsommar-nodk",
+      "parent_id": null,
+      "name": {
+        "sv": "Härliga midsommar NO/DK"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "611",
+      "category_level": "2",
+      "handle": "duka-bordet-till-midsommar",
+      "parent_id": null,
+      "name": {
+        "sv": "Till Midsommar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "635",
+      "category_level": "4",
+      "handle": "inspiration-dukningstips-festliga-tillfallen-herrgardsdrommar",
+      "parent_id": null,
+      "name": {
+        "sv": "Herrgårdsdrömmar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "636",
+      "category_level": "4",
+      "handle": "inspiration-dukningstips-festliga-tillfallen-nar-hav-moter-porslin",
+      "parent_id": null,
+      "name": {
+        "sv": "När hav möter porslin"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "637",
+      "category_level": "4",
+      "handle": "inspiration-dukningstips-sasonger-sommarkvall",
+      "parent_id": null,
+      "name": {
+        "sv": "Förtrollande sommarkvällar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "638",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-jul-piff-puff-2",
+      "parent_id": null,
+      "name": {
+        "sv": "Piff & Puff"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Sprid julglädje med Disney’s Piff & Puff ljusstakar|Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Skapa julstämning med Disney’s Piff och Puff ljustakar och ljussläckare från Fyrklövern. En unik kollektion som skapar julnostalgi för hela familjen år efter år!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "639",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-jul-disney-julshow-2",
+      "parent_id": null,
+      "name": {
+        "sv": "Disney Julshow"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Disney Julshow – Handskulpterade porslinsfigurer|Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Upptäck Fyrklöverns exklusiva kollektion av handmålade Disney Julshow-figurer, tillverkade med högsta kvalitet och detaljer i guld. Skapa magi i ditt hem!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "646",
+      "category_level": "4",
+      "handle": "inspiration-dukningstips-sasonger-sommarfrukost",
+      "parent_id": null,
+      "name": {
+        "sv": "Sommarfrukost"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "708",
+      "category_level": "2",
+      "handle": "kampanjer-gava-pa-kopet",
+      "parent_id": "1",
+      "name": {
+        "sv": "Gåva på köpet"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Gåva på köpet"
+      },
+      "meta_description": {
+        "sv": "Tele - gåva på köpet Drop vinglas 2-pack ny"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "TMSG7"
+      },
+      "status": true
+    },
+    {
+      "id": "712",
+      "category_level": "2",
+      "handle": "kampanjer-vip-40",
+      "parent_id": null,
+      "name": {
+        "sv": "VIP 40"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "VIP 40"
+      },
+      "meta_description": {
+        "sv": "Tele - VIP 40 extra sälj september"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "VIP40"
+      },
+      "status": true
+    },
+    {
+      "id": "713",
+      "category_level": "2",
+      "handle": "kampanjer-vip-50",
+      "parent_id": null,
+      "name": {
+        "sv": "VIP 50"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "VIP 50"
+      },
+      "meta_description": {
+        "sv": "Tele - extra september"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "VIP50"
+      },
+      "status": true
+    },
+    {
+      "id": "735",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-bestick-2dine",
+      "parent_id": "1886",
+      "name": {
+        "sv": "2Dine"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "2Dine|Tidlös bestickserie med skandinavisk design|Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "2Dine – oändliga möjligheter för din dukning. Vårt bestick i skandinavisk design passar alla tillfällen, från vardagsmiddagar till festliga bjudningar."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "736",
+      "category_level": "2",
+      "handle": "varumarken-watt-veke",
+      "parent_id": null,
+      "name": {
+        "sv": "Watt&Veke"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "738",
+      "category_level": "4",
+      "handle": "kollektioner-serviser-vardag-fest-nordic-dawn-nordic-dawn-natur",
+      "parent_id": "333",
+      "name": {
+        "sv": "Nordic Dawn Natur"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Tallrikar inspirerade av nordisk natur för en mysig jul"
+      },
+      "meta_description": {
+        "sv": "Låt naturen bli en del av juldukningen. Köp nordiska porslinstallrikar med mönster av lärk, mistel och kottar. Perfekta för juldukning och adventsfika."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "740",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-jul-disney-vinter",
+      "parent_id": "247",
+      "name": {
+        "sv": "Disney Vinter"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Disney Vinter|Tidlöst julporslin och glas med Musse & vänner"
+      },
+      "meta_description": {
+        "sv": "Njut av vackert porslin med nostalgiska motiv av Musse, Mimmi och Pluto. Hög kvalitet och tidlös design för en minnesvärd jul."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "741",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-disney-disney-vinter",
+      "parent_id": "276",
+      "name": {
+        "sv": "Disney Vinter"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Disney Vinter|Tidlöst julporslin och glas med Musse & vänner"
+      },
+      "meta_description": {
+        "sv": "Njut av vackert porslin med nostalgiska motiv av Musse, Mimmi och Pluto. Hög kvalitet och tidlös design för en minnesvärd jul."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "745",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-disney-mickey-mouse-midnight",
+      "parent_id": "276",
+      "name": {
+        "sv": "Mickey Mouse Midnight"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Exklusiv Disney Mickey Mouse-kollektion i svart stengods"
+      },
+      "meta_description": {
+        "sv": "Upplev Disney-magi med vår exklusiva Mickey Mouse Midnight-kollektion. Högkvalitativt stengods med en touch av skandinavisk design."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "754",
+      "category_level": "2",
+      "handle": "duka-bordet-till-hostmiddag",
+      "parent_id": null,
+      "name": {
+        "sv": "Till höstmiddag"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "761",
+      "category_level": "3",
+      "handle": "dukning-servering-glas-julglas",
+      "parent_id": "194",
+      "name": {
+        "sv": "Julglas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "763",
+      "category_level": "2",
+      "handle": "kampanjer-30-rabatt-1",
+      "parent_id": null,
+      "name": {
+        "sv": "30% Rabatt"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "30% Rabatt"
+      },
+      "meta_description": {
+        "sv": "Telekunder ÅW, ÅR, Juleminnen"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "VIP30"
+      },
+      "status": true
+    },
+    {
+      "id": "771",
+      "category_level": "2",
+      "handle": "kampanjer-gava-lace",
+      "parent_id": null,
+      "name": {
+        "sv": "Gåva Lace"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Gåva Lace"
+      },
+      "meta_description": {
+        "sv": "Gåva till tele lacevas"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "TMSG9"
+      },
+      "status": true
+    },
+    {
+      "id": "846",
+      "category_level": "2",
+      "handle": "kampanjer-60-rabatt",
+      "parent_id": null,
+      "name": {
+        "sv": "60% Rabatt"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "60% Rabatt"
+      },
+      "meta_description": {
+        "sv": "Kalle till Tele 60%"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "VIP60"
+      },
+      "status": true
+    },
+    {
+      "id": "863",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-jul-nordic-dawn-nature",
+      "parent_id": null,
+      "name": {
+        "sv": "Nordic Dawn Nature"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Tallrikar inspirerade av nordisk natur för en mysig jul"
+      },
+      "meta_description": {
+        "sv": "Låt naturen bli en del av juldukningen. Köp nordiska porslinstallrikar med mönster av lärk, mistel och kottar. Perfekta för juldukning och adventsfika."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "926",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-vardag-fest-kaprifol",
+      "parent_id": "1777",
+      "name": {
+        "sv": "Kaprifol"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "968",
+      "category_level": "2",
+      "handle": "duka-bordet-nyarsdukning",
+      "parent_id": null,
+      "name": {
+        "sv": "Nyårsdukning"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "982",
+      "category_level": "1",
+      "handle": "till-landningssida",
+      "parent_id": null,
+      "name": {
+        "sv": "Till landningssida"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "4 FOR 3"
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1028",
+      "category_level": "4",
+      "handle": "kollektioner-serviser-vardag-fest-nordic-dawn-nordic-dawn-himmel",
+      "parent_id": "333",
+      "name": {
+        "sv": "Nordic Dawn Himmel"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Nordic Dawn Himmel - En blå touch av nordisk himmel för din dukning"
+      },
+      "meta_description": {
+        "sv": "Upptäck Nordic Dawn Himmel, en tallrik i en mjuk blå nyans som för tankarna till den oändliga horisonten. Inspirerad av nordisk natur med solens strålar som mönster. Mixa och matcha med andra färger i Nordic Dawn-kollektionen."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1029",
+      "category_level": "4",
+      "handle": "kollektioner-serviser-vardag-fest-nordic-dawn-nordic-dawn-glimt",
+      "parent_id": "333",
+      "name": {
+        "sv": "Nordic Dawn Glimt"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Nordic Dawn Glimt - Skandinavisk design för ditt bord"
+      },
+      "meta_description": {
+        "sv": "Upptäck Nordic Dawn Glimt, en tallrik i en ljus nyans som fångar den nordiska gryningens ljus. Inspirerad av naturen med mönster av solens strålar. Mixa och matcha med andra färger i Nordic Dawn-kollektionen."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1030",
+      "category_level": "4",
+      "handle": "kollektioner-serviser-vardag-fest-nordic-dawn-nordic-dawn-bark",
+      "parent_id": "333",
+      "name": {
+        "sv": "Nordic Dawn Bark"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Nordic Dawn Bark - Jordnära design för ditt bord"
+      },
+      "meta_description": {
+        "sv": "Upptäck Nordic Dawn Bark, en tallrik i en varm, greige ton som speglar skogens trädstammar. Inspirerad av nordisk natur med mönster av solens strålar. Mixa och matcha med andra färger i Nordic Dawn-kollektionen."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1031",
+      "category_level": "4",
+      "handle": "kollektioner-serviser-vardag-fest-nordic-dawn-nordic-dawn-dagg",
+      "parent_id": "333",
+      "name": {
+        "sv": "Nordic Dawn Dagg"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Nordic Dawn Dagg - Frisk design för din dukning"
+      },
+      "meta_description": {
+        "sv": "Upptäck Nordic Dawn Dagg, en tallrik i en grön nyans som speglar morgonens dagg och vitalitet. Inspirerad av nordisk natur med mönster av solens strålar. Mixa och matcha med andra färger i Nordic Dawn-kollektionen."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1032",
+      "category_level": "4",
+      "handle": "kollektioner-serviser-vardag-fest-nordic-dawn-nordic-dawn-ljung",
+      "parent_id": "333",
+      "name": {
+        "sv": "Nordic Dawn Ljung"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Nordic Dawn Ljung - Mjuka lila toner för din borddukning"
+      },
+      "meta_description": {
+        "sv": "Upptäck Nordic Dawn Ljung, en tallrik i en mild lila nyans som fångar morgondisets skönhet. Inspirerad av nordisk natur med solens strålar som mönster. Mixa och matcha med andra färger i Nordic Dawn-kollektionen."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1114",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-disney-mickey-friends",
+      "parent_id": "276",
+      "name": {
+        "sv": "Mickey & Friends"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Musse, Mimmi, Kalle & Co. - Disney-muggar för varje äventyr!"
+      },
+      "meta_description": {
+        "sv": "Starta dagen med Musse Pigg, Mimmi Pigg, Kalle Anka, Kajsa Anka, Långben & Pluto! Disney Mickey & Friends-muggar i stengods med inspirerande citat och trendiga färger."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1115",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-disney-stitch",
+      "parent_id": "276",
+      "name": {
+        "sv": "Stitch"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Disney Stitch Kollektion - Sprid glädje med Stitch!"
+      },
+      "meta_description": {
+        "sv": "Go with the flow med Stitch! Vår Disney-kollektion fångar Stitchs charm med stengods, silkeslen glasyr och inspirerande citat. Sprid glädje och värme varje dag."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1117",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-vardag-fest-cote-dazur",
+      "parent_id": "1777",
+      "name": {
+        "sv": "Côte d'Azur"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Côte d'Azur: Stengodsservis från Rivieran | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Upplev Rivierans känsla med Côte d'Azur stengodsservis. Tallrikar, muggar & skålar i havets & sandens färger. Skapa avkoppling & gemenskap!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1137",
+      "category_level": "3",
+      "handle": "outlet-dukning-servering-tallrikar-1",
+      "parent_id": "526",
+      "name": {
+        "sv": "Tallrikar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1138",
+      "category_level": "3",
+      "handle": "outlet-dukning-servering-muggar-koppar-1",
+      "parent_id": "526",
+      "name": {
+        "sv": "Muggar & Koppar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1139",
+      "category_level": "3",
+      "handle": "outlet-dukning-servering-tillbehor-1",
+      "parent_id": "526",
+      "name": {
+        "sv": "Tillbehör"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1140",
+      "category_level": "2",
+      "handle": "outlet-kollektioner-serviser",
+      "parent_id": "246",
+      "name": {
+        "sv": "Kollektioner & Serviser"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1141",
+      "category_level": "3",
+      "handle": "outlet-kollektioner-serviser-lace-1",
+      "parent_id": "1140",
+      "name": {
+        "sv": "Lace"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1142",
+      "category_level": "3",
+      "handle": "outlet-kollektioner-serviser-diamond",
+      "parent_id": "1140",
+      "name": {
+        "sv": "Diamond"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1143",
+      "category_level": "3",
+      "handle": "outlet-kollektioner-serviser-kaprifol",
+      "parent_id": "1140",
+      "name": {
+        "sv": "Kaprifol"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1144",
+      "category_level": "3",
+      "handle": "outlet-kollektioner-serviser-salt",
+      "parent_id": "1140",
+      "name": {
+        "sv": "Salt"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1145",
+      "category_level": "3",
+      "handle": "outlet-kollektioner-serviser-shell",
+      "parent_id": "1140",
+      "name": {
+        "sv": "Shell"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1146",
+      "category_level": "3",
+      "handle": "outlet-kollektioner-serviser-ros",
+      "parent_id": "1140",
+      "name": {
+        "sv": "Rosé"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1147",
+      "category_level": "3",
+      "handle": "outlet-kollektioner-serviser-bella",
+      "parent_id": "1140",
+      "name": {
+        "sv": "Bella"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1184",
+      "category_level": "3",
+      "handle": "outlet-kollektioner-serviser-linnea",
+      "parent_id": "1140",
+      "name": {
+        "sv": "Linnea"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1193",
+      "category_level": "2",
+      "handle": "kampanjer-tallrikspaket-10",
+      "parent_id": "1",
+      "name": {
+        "sv": "Tallrikspaket + 10%"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Tallrikspaket + 10%"
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "10EXTRA"
+      },
+      "status": true
+    },
+    {
+      "id": "1215",
+      "category_level": "3",
+      "handle": "outlet-kollektioner-serviser-disney-jul-jubileum",
+      "parent_id": null,
+      "name": {
+        "sv": "Disney Jul Jubileum"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1221",
+      "category_level": "3",
+      "handle": "outlet-kollektioner-serviser-victoria",
+      "parent_id": "1140",
+      "name": {
+        "sv": "Victoria"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1222",
+      "category_level": "3",
+      "handle": "outlet-kollektioner-serviser-celebration",
+      "parent_id": "1140",
+      "name": {
+        "sv": "Celebration"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1230",
+      "category_level": "3",
+      "handle": "dukning-servering-muggar-koppar-frukost-kaffeset",
+      "parent_id": "184",
+      "name": {
+        "sv": "Frukost- och kaffeset"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1231",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-vardag-fest-nordic-dawn-sommar",
+      "parent_id": "1777",
+      "name": {
+        "sv": "Nordic Dawn Sommar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Nordic Dawn Sommarporslin | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Nordic Dawn Sommar-kollektionen pryds av jordgubbar, smultron, blåbär och förgätmigej-blommor, perfekt för en somrig känsla varje dag."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1232",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-vardag-fest-riviera",
+      "parent_id": "1777",
+      "name": {
+        "sv": "Riviera"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Fyrklövern Riviera Muggar - Medelhavsdesign"
+      },
+      "meta_description": {
+        "sv": "Dröm dig bort med Riviera-muggarna från Fyrklövern! Trendiga Medelhavsränder, unika handtag & palmdekor skapar semesterkänsla. Hållbart porslin."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1291",
+      "category_level": "3",
+      "handle": "outlet-kollektioner-serviser-sensation",
+      "parent_id": "1140",
+      "name": {
+        "sv": "Sensation"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1292",
+      "category_level": "3",
+      "handle": "outlet-kollektioner-serviser-clematis",
+      "parent_id": "1140",
+      "name": {
+        "sv": "Clematis"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1293",
+      "category_level": "1",
+      "handle": "presenter",
+      "parent_id": null,
+      "name": {
+        "sv": "Presenter"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1294",
+      "category_level": "1",
+      "handle": "om-oss",
+      "parent_id": null,
+      "name": {
+        "sv": "Om oss"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Om Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Fyrklövern har sedan 1974 skapat unika kollektioner och serviser av högsta kvalitet för dukning, servering och inredning – för livets speciella tillfällen, både vardag och fest."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1295",
+      "category_level": "3",
+      "handle": "dukning-servering-glas-glasset",
+      "parent_id": "194",
+      "name": {
+        "sv": "Glasset"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1344",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-disney-mickey-mouse-silhouette",
+      "parent_id": "276",
+      "name": {
+        "sv": "Mickey Mouse Silhouette"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1350",
+      "category_level": "3",
+      "handle": "outlet-kollektioner-serviser-nordic-blue",
+      "parent_id": "1140",
+      "name": {
+        "sv": "Nordic Blue"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1351",
+      "category_level": "3",
+      "handle": "outlet-kollektioner-serviser-royal-dream",
+      "parent_id": null,
+      "name": {
+        "sv": "Royal Dream"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1352",
+      "category_level": "1",
+      "handle": "paket",
+      "parent_id": null,
+      "name": {
+        "sv": "Paket"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Paketdeals & Servisset – Spar pengar | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "Upptäck säsongens dukningsset och serviser till förmånliga paketpriser. Handla kompletta porslinsset billigare än delarna för sig hos Fyrklövern."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1367",
+      "category_level": "2",
+      "handle": "disney-1-disney-dukning-servering",
+      "parent_id": null,
+      "name": {
+        "sv": "Disney Dukning & Servering"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1368",
+      "category_level": "2",
+      "handle": "kampanjer-medlemsrabatt-30-2",
+      "parent_id": "1",
+      "name": {
+        "sv": "Medlemsrabatt 30%"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Medlemsrabatt 30%"
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1373",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-glas-1-presence-glas",
+      "parent_id": "1778",
+      "name": {
+        "sv": "Presence Glas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Presence Glas | Kristallglas, Vinglas & Dricksglas"
+      },
+      "meta_description": {
+        "sv": "Presence är vackra kristallglas för vardag och fest. Tunna, tåliga och med klar lyster. Skandinavisk enkelhet i form av vinglas och dricksglas."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1378",
+      "category_level": "3",
+      "handle": "outlet-dukning-servering-glas-1",
+      "parent_id": "526",
+      "name": {
+        "sv": "Glas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1379",
+      "category_level": "2",
+      "handle": "outlet-jul-1",
+      "parent_id": null,
+      "name": {
+        "sv": "Jul"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1381",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-disney-lejonkungen",
+      "parent_id": "276",
+      "name": {
+        "sv": "Lejonkungen"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Lejonkungen | Stengods i toppkvalitet med Disney-motiv"
+      },
+      "meta_description": {
+        "sv": "Hakuna Matata! Lejonkungen stengods i toppkvalitet. Mugg, assiett & skål i trendiga toner. Nostalgi, glädje & vänskap i nordiska hem."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1387",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-jul-asas-tomtejul",
+      "parent_id": "247",
+      "name": {
+        "sv": "Åsas Tomtejul"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Åsas Tomtejul | Charmig Julservis & Julglas med Tomtar"
+      },
+      "meta_description": {
+        "sv": "Upptäck Åsas Tomtejul! Vår charmiga julservis med ulltomtar från Åsas Tomtebod i gnistrande vinterlandskap. Högkvalitativt porslin i ny, modern design."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1389",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-disney-disney-jul",
+      "parent_id": "276",
+      "name": {
+        "sv": "Disney Jul"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Disney Jul | Julservis & Julglas med Disney-motiv"
+      },
+      "meta_description": {
+        "sv": "NYHET! Stämningsfull Disney Jul-servis inspirerad av Kalle Anka & vänner. Kvalitetsporslin med nostalgiska motiv. Komplettera med matchande kristallglas."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1390",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-jul-disney-jul",
+      "parent_id": "247",
+      "name": {
+        "sv": "Disney Jul"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Disney Jul | Julservis & Julglas med Disney-motiv"
+      },
+      "meta_description": {
+        "sv": "NYHET! Stämningsfull Disney Jul-servis inspirerad av Kalle Anka & vänner. Kvalitetsporslin med nostalgiska motiv. Komplettera med matchande kristallglas."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1427",
+      "category_level": "2",
+      "handle": "kampanjer-outlet-10-extra",
+      "parent_id": "1",
+      "name": {
+        "sv": "Outlet 10% Extra"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Outlet 10% Extra"
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "EXTRA10"
+      },
+      "status": true
+    },
+    {
+      "id": "1464",
+      "category_level": "2",
+      "handle": "kampanjer-medlemsrabatt-20-1",
+      "parent_id": "1",
+      "name": {
+        "sv": "Medlemsrabatt 20%"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Medlemsrabatt 20%"
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1498",
+      "category_level": "2",
+      "handle": "varumarken-asas-tomtebod",
+      "parent_id": null,
+      "name": {
+        "sv": "Åsas Tomtebod"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1509",
+      "category_level": "2",
+      "handle": "kampanjer-dubbla-poang",
+      "parent_id": null,
+      "name": {
+        "sv": "Dubbla poäng"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Dubbla poäng"
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1516",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-vardag-fest-scene",
+      "parent_id": "1777",
+      "name": {
+        "sv": "Scene"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1531",
+      "category_level": "1",
+      "handle": "testkategori",
+      "parent_id": null,
+      "name": {
+        "sv": "Testkategori"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1534",
+      "category_level": "1",
+      "handle": "black-deal",
+      "parent_id": null,
+      "name": {
+        "sv": "BLACK WEEK"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "BLACK WEEK DEALS: 20-70% RABATT | Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "BLACK WEEK DEALS är här! Spara 20-70% plus 10% extra på utvalda paket. Priserna blir inte bättre under Black Week – först till kvarn gäller! Gäller t.o.m. 1/12."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1535",
+      "category_level": "2",
+      "handle": "black-deal-tallrikar",
+      "parent_id": null,
+      "name": {
+        "sv": "Tallrikar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Tallrikar på Black Week: Spara 20–70% hos Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "BLACK WEEK på tallrikar! Fynda dina favoritprodukter med upp till 70% rabatt. Priserna sänks inte mer i år – först till kvarn gäller. Missa inte Fyrklöverns deal!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1536",
+      "category_level": "2",
+      "handle": "black-deal-glas",
+      "parent_id": null,
+      "name": {
+        "sv": "Glas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Glas på Black Week: Spara 20–70% hos Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "BLACK WEEK på glas! Fynda din favoritserie med upp till 70% rabatt. Priserna sänks inte mer i år – först till kvarn gäller. Missa inte Fyrklöverns deal!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1537",
+      "category_level": "2",
+      "handle": "black-deal-muggar",
+      "parent_id": null,
+      "name": {
+        "sv": "Muggar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Muggar på Black Week: Spara 20–70% hos Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "BLACK WEEK på glas! Fynda din favoritserie med upp till 70% rabatt. Priserna sänks inte mer i år – först till kvarn gäller. Missa inte Fyrklöverns deal!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1538",
+      "category_level": "2",
+      "handle": "black-deal-inredning",
+      "parent_id": null,
+      "name": {
+        "sv": "Inredning"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Inredning på Black Week: Spara 20–70% hos Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "BLACK WEEK på inredning! Fynda dina favoritprodukter med upp till 70% rabatt. Priserna sänks inte mer i år – först till kvarn gäller. Missa inte Fyrklöverns deal!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1539",
+      "category_level": "2",
+      "handle": "black-deal-disney",
+      "parent_id": null,
+      "name": {
+        "sv": "Disney"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Disney på Black Week: Spara 20–70% hos Fyrklövern"
+      },
+      "meta_description": {
+        "sv": "BLACK WEEK på Disney! Fynda dina favoritprodukter med upp till 70% rabatt. Priserna sänks inte mer i år – först till kvarn gäller. Missa inte Fyrklöverns deal!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1543",
+      "category_level": "4",
+      "handle": "kollektioner-serviser-vardag-fest-nordic-dawn-nordic-dawn-stra",
+      "parent_id": "333",
+      "name": {
+        "sv": "Nordic Dawn Strå"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1550",
+      "category_level": "2",
+      "handle": "julshop-julklappstips",
+      "parent_id": "231",
+      "name": {
+        "sv": "Julklappstips"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1551",
+      "category_level": "1",
+      "handle": "wintersale",
+      "parent_id": null,
+      "name": {
+        "sv": "Wintersale"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1552",
+      "category_level": "2",
+      "handle": "wintersale-tallrikar",
+      "parent_id": null,
+      "name": {
+        "sv": "Tallrikar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1553",
+      "category_level": "2",
+      "handle": "wintersale-glas",
+      "parent_id": null,
+      "name": {
+        "sv": "Glas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1554",
+      "category_level": "2",
+      "handle": "wintersale-muggar",
+      "parent_id": null,
+      "name": {
+        "sv": "Muggar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1555",
+      "category_level": "2",
+      "handle": "wintersale-inredning",
+      "parent_id": null,
+      "name": {
+        "sv": "Inredning"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1556",
+      "category_level": "2",
+      "handle": "wintersale-disney",
+      "parent_id": null,
+      "name": {
+        "sv": "Disney"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1617",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-disney-iconic",
+      "parent_id": "276",
+      "name": {
+        "sv": "Mickey Mouse Iconic"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1618",
+      "category_level": "2",
+      "handle": "kampanjer-15-1",
+      "parent_id": "1",
+      "name": {
+        "sv": "-15%"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "-15%"
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1629",
+      "category_level": "2",
+      "handle": "kampanjer-gift-aspvik",
+      "parent_id": null,
+      "name": {
+        "sv": "Gift Aspvik"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Gift Aspvik"
+      },
+      "meta_description": {
+        "sv": "Buy a plate set and get two bowls for free. Hurry – while stocks last!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1630",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-aspvik-gava",
+      "parent_id": "1",
+      "name": {
+        "sv": "Få en Aspvik Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Aspvik Gåva"
+      },
+      "meta_description": {
+        "sv": "Köp ett tallriksset och få två skålar på köpet, värde 399 kr. Gåvan finns endast i begränsat antal! Klicka på knappen för att få din gåva."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1631",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-bla-herrgard-gava",
+      "parent_id": "1",
+      "name": {
+        "sv": "Få en Blå Herrgård Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Blå Herrgård Gåva"
+      },
+      "meta_description": {
+        "sv": "Köp ett tallriksset och få en serveringsskål på köpet, värde 529 kr. Gåvan finns endast i begränsat antal! Klicka på knappen för att få din gåva.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1632",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-moments-gava",
+      "parent_id": "1",
+      "name": {
+        "sv": "Få en Moments Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Moments Gåva"
+      },
+      "meta_description": {
+        "sv": "Köp ett tallriksset och få en serveringsskål på köpet, värde 649 kr. Gåvan finns endast i begränsat antal! Klicka på knappen för att få din gåva.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1633",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-terra-fiore-gava",
+      "parent_id": "1",
+      "name": {
+        "sv": "Få en Terra Fiore Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Terra Fiore Gåva"
+      },
+      "meta_description": {
+        "sv": "Köp ett tallriksset och få en serveringsskål på köpet, värde 579 kr. Gåvan finns endast i begränsat antal! Klicka på knappen för att få din gåva.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1634",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-kaprifol-gava",
+      "parent_id": "1",
+      "name": {
+        "sv": "Få en Kaprifol Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Kaprifol Gåva"
+      },
+      "meta_description": {
+        "sv": "Köp ett tallriksset och få två muggar på köpet, värde 538 kr. Gåvan finns endast i begränsat antal! Klicka på knappen för att få din gåva.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1635",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-nordic-dawn-glimt-gava",
+      "parent_id": "1",
+      "name": {
+        "sv": "Få en Nordic Dawn Glimt Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Nordic Dawn Glimt Gåva"
+      },
+      "meta_description": {
+        "sv": "Köp ett tallriksset och få en serveringsskål på köpet, värde 629 kr. Gåvan finns endast i begränsat antal! Klicka på knappen för att få din gåva.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1636",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-nordic-dawn-dagg-gava",
+      "parent_id": "1",
+      "name": {
+        "sv": "Få en Nordic Dawn Dagg Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Nordic Dawn Dagg Gåva"
+      },
+      "meta_description": {
+        "sv": "Köp ett tallriksset och få en serveringsskål på köpet, värde 629 kr. Gåvan finns endast i begränsat antal! Klicka på knappen för att få din gåva.   automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1637",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-nordic-dawn-bark-gava",
+      "parent_id": "1",
+      "name": {
+        "sv": "Få en Nordic Dawn Bark Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Nordic Dawn Bark Gåva"
+      },
+      "meta_description": {
+        "sv": "Köp ett tallriksset och få en serveringsskål på köpet, värde 629 kr. Gåvan finns endast i begränsat antal! Klicka på knappen för att få din gåva.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1638",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-nordic-dawn-himmel-gava",
+      "parent_id": "1",
+      "name": {
+        "sv": "Få en Nordic Dawn Himmel Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Nordic Dawn Himmel Gåva"
+      },
+      "meta_description": {
+        "sv": "Köp ett tallriksset och få en serveringsskål på köpet, värde 629 kr. Gåvan finns endast i begränsat antal! Klicka på knappen för att få din gåva.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1639",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-nordic-dawn-stra-gava",
+      "parent_id": "1",
+      "name": {
+        "sv": "Få en Nordic Dawn Strå Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Nordic Dawn Strå Gåva"
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1640",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-nordic-dawn-sommar-gava",
+      "parent_id": "1",
+      "name": {
+        "sv": "Få en Nordic Dawn Sommar Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Nordic Dawn Sommar Gåva"
+      },
+      "meta_description": {
+        "sv": "Köp ett tallriksset och få en serveringsskål på köpet, värde 699 kr. Gåvan finns endast i begränsat antal! Klicka på knappen för att få din gåva.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1684",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-cte-dazur-gava",
+      "parent_id": "1",
+      "name": {
+        "sv": "Få en Côte d'Azur Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Côte d'Azur Gåva"
+      },
+      "meta_description": {
+        "sv": "Köp ett tallriksset och få två muggar på köpet, värde 318 kr. Gåvan finns endast i begränsat antal! Klicka på knappen för att få din gåva.   automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1685",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-nordic-dawn-ljung-gava",
+      "parent_id": "1",
+      "name": {
+        "sv": "Få en Nordic Dawn Ljung Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Nordic Dawn Ljung Gåva"
+      },
+      "meta_description": {
+        "sv": "Köp ett tallriksset och få två muggar på köpet, värde 318 kr. Gåvan finns endast i begränsat antal! Klicka på knappen för att få din gåva.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1694",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-mickey-mouse-gava",
+      "parent_id": "1",
+      "name": {
+        "sv": "Få en Mickey Mouse Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Mickey Mouse Gåva"
+      },
+      "meta_description": {
+        "sv": "Handla för minst 2 999 kr i kollektionen ock få en Mickey Mouse ljusstake på köpet, värde 499 kr. Gåvan finns endast i begränsat antal! Klicka på knappen för att få din gåva.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1705",
+      "category_level": "2",
+      "handle": "kampanjer-aspvik-geschenk-1",
+      "parent_id": null,
+      "name": {
+        "sv": "Aspvik-Geschenk"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Aspvik-Geschenk"
+      },
+      "meta_description": {
+        "sv": "Teller-Set kaufen und zwei Schalen gratis erhalten, Wert 34 €. Nur begrenzte Stückzahl! Klick hier für dein Geschenk.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1707",
+      "category_level": "2",
+      "handle": "kampanjer-cte-dazur-geschenk",
+      "parent_id": null,
+      "name": {
+        "sv": "Côte d'Azur-Geschenk"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Côte d'Azur-Geschenk"
+      },
+      "meta_description": {
+        "sv": "Teller-Set kaufen und zwei Becher gratis erhalten, Wert 29,80 €. Nur begrenzte Stückzahl! Klick hier für dein Geschenk.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1708",
+      "category_level": "2",
+      "handle": "kampanjer-moments-geschenk",
+      "parent_id": null,
+      "name": {
+        "sv": "Moments-Geschenk"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Moments-Geschenk"
+      },
+      "meta_description": {
+        "sv": "Teller-Set kaufen und eine Servierschale gratis erhalten, Wert 59,90 €. Nur begrenzte Stückzahl! Klick hier für dein Geschenk.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1709",
+      "category_level": "2",
+      "handle": "kampanjer-terra-fiore-geschenk",
+      "parent_id": null,
+      "name": {
+        "sv": "Terra Fiore-Geschenk"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Terra Fiore-Geschenk"
+      },
+      "meta_description": {
+        "sv": "Teller-Set kaufen und eine Servierschale gratis erhalten, Wert 49 €. Nur begrenzte Stückzahl! Klick hier für dein Geschenk.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1710",
+      "category_level": "2",
+      "handle": "kampanjer-geiblatt-geschenk",
+      "parent_id": null,
+      "name": {
+        "sv": "Geißblatt-Geschenk"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Geißblatt-Geschenk"
+      },
+      "meta_description": {
+        "sv": "Teller-Set kaufen und zwei Becher gratis erhalten, Wert 49,80 €. Nur begrenzte Stückzahl! Klick hier für dein Geschenk.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1711",
+      "category_level": "2",
+      "handle": "kampanjer-nordic-dawn-schimmer-geschenk",
+      "parent_id": null,
+      "name": {
+        "sv": "Nordic Dawn Schimmer-Geschenk"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Nordic Dawn Schimmer-Geschenk"
+      },
+      "meta_description": {
+        "sv": "Teller-Set kaufen und eine Servierschale gratis erhalten, Wert 52 €. Nur begrenzte Stückzahl! Klick hier für dein Geschenk.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1712",
+      "category_level": "2",
+      "handle": "kampanjer-nordic-dawn-tau-geschenk",
+      "parent_id": null,
+      "name": {
+        "sv": "Nordic Dawn Tau-Geschenk"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Nordic Dawn Tau-Geschenk"
+      },
+      "meta_description": {
+        "sv": "Teller-Set kaufen und eine Servierschale gratis erhalten, Wert 52 €. Nur begrenzte Stückzahl! Klick hier für dein Geschenk.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1713",
+      "category_level": "2",
+      "handle": "kampanjer-nordic-dawn-borke-geschenk",
+      "parent_id": null,
+      "name": {
+        "sv": "Nordic Dawn Borke-Geschenk"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Nordic Dawn Borke-Geschenk"
+      },
+      "meta_description": {
+        "sv": "Teller-Set kaufen und eine Servierschale gratis erhalten, Wert 52 €. Nur begrenzte Stückzahl! Klick hier für dein Geschenk.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1714",
+      "category_level": "2",
+      "handle": "kampanjer-nordic-dawn-himmel-geschenk",
+      "parent_id": null,
+      "name": {
+        "sv": "Nordic Dawn Himmel-Geschenk"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Nordic Dawn Himmel-Geschenk"
+      },
+      "meta_description": {
+        "sv": "Teller-Set kaufen und eine Servierschale gratis erhalten, Wert 52 €. Nur begrenzte Stückzahl! Klick hier für dein Geschenk.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1715",
+      "category_level": "2",
+      "handle": "kampanjer-nordic-dawn-heide-geschenk",
+      "parent_id": null,
+      "name": {
+        "sv": "Nordic Dawn Heide-Geschenk"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Nordic Dawn Heide-Geschenk"
+      },
+      "meta_description": {
+        "sv": "Teller-Set kaufen und zwei Becher gratis erhalten, Wert 29,80 €. Nur begrenzte Stückzahl! Klick hier für dein Geschenk.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1716",
+      "category_level": "2",
+      "handle": "kampanjer-nordic-dawn-stroh-geschenk",
+      "parent_id": null,
+      "name": {
+        "sv": "Nordic Dawn Stroh-Geschenk"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Nordic Dawn Stroh-Geschenk"
+      },
+      "meta_description": {
+        "sv": "Teller-Set kaufen und eine Servierschale gratis erhalten, Wert 52 €. Nur begrenzte Stückzahl! Klick hier für dein Geschenk.   automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1717",
+      "category_level": "2",
+      "handle": "kampanjer-nordic-dawn-sommer-geschenk",
+      "parent_id": null,
+      "name": {
+        "sv": "Nordic Dawn Sommer-Geschenk"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Nordic Dawn Sommer-Geschenk"
+      },
+      "meta_description": {
+        "sv": "Teller-Set kaufen und eine Servierschale gratis erhalten, Wert 59 €. Nur begrenzte Stückzahl! Klick hier für dein Geschenk.  automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1720",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-vardag-fest-lilja",
+      "parent_id": "1777",
+      "name": {
+        "sv": "Lilja"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1761",
+      "category_level": "2",
+      "handle": "kampanjer-medlem-muggar-20-1",
+      "parent_id": "1",
+      "name": {
+        "sv": "Medlem muggar 20%"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Medlem muggar 20%"
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1764",
+      "category_level": "2",
+      "handle": "kampanjer-medlem-tallrikar-20",
+      "parent_id": "1",
+      "name": {
+        "sv": "Medlem Tallrikar 20%"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Medlem Tallrikar 20%"
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1765",
+      "category_level": "2",
+      "handle": "kampanjer-medlem-skalar-fat-20",
+      "parent_id": "1",
+      "name": {
+        "sv": "Medlem Skålar & Fat 20%"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Medlem Skålar & Fat 20%"
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1769",
+      "category_level": "2",
+      "handle": "presenter-inflyttning",
+      "parent_id": "1293",
+      "name": {
+        "sv": "Inflyttning"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1770",
+      "category_level": "2",
+      "handle": "presenter-fodelsedag",
+      "parent_id": "1293",
+      "name": {
+        "sv": "Födelsedag"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1771",
+      "category_level": "2",
+      "handle": "presenter-student-examen",
+      "parent_id": "1293",
+      "name": {
+        "sv": "Student & Examen"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1772",
+      "category_level": "2",
+      "handle": "presenter-brollop",
+      "parent_id": "1293",
+      "name": {
+        "sv": "Bröllop"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1777",
+      "category_level": "2",
+      "handle": "kollektioner-serviser-vardag-fest",
+      "parent_id": "155",
+      "name": {
+        "sv": "Vardag & fest"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1778",
+      "category_level": "2",
+      "handle": "kollektioner-serviser-glas-1",
+      "parent_id": "155",
+      "name": {
+        "sv": "Glas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1779",
+      "category_level": "4",
+      "handle": "kollektioner-serviser-vardag-fest-nordic-dawn-nordic-dawn-sommar",
+      "parent_id": "333",
+      "name": {
+        "sv": "Nordic Dawn Sommar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1780",
+      "category_level": "2",
+      "handle": "kampanjer-medlem-tallerkener-20",
+      "parent_id": null,
+      "name": {
+        "sv": "Medlem Tallerkener 20%"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Medlem Tallerkener 20%"
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1781",
+      "category_level": "2",
+      "handle": "kampanjer-medlem-skaler-fat-20",
+      "parent_id": null,
+      "name": {
+        "sv": "Medlem Skåler & fat 20%"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Medlem Skåler & fat 20%"
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1785",
+      "category_level": "2",
+      "handle": "kampanjer-medlem-10",
+      "parent_id": "1",
+      "name": {
+        "sv": "Medlem +10%"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Medlem +10%"
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1800",
+      "category_level": "1",
+      "handle": "summer-sale",
+      "parent_id": null,
+      "name": {
+        "sv": "SUMMER SALE"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Fyrklövern Summer Sale – Upp till 50% rabatt + gåva"
+      },
+      "meta_description": {
+        "sv": "Fynda tallrikar, muggar, glas och Disney till upp till 50% rabatt under Fyrklöverns Summer Sale! Förnya din dukning nu och få en exklusiv gåva på köpet."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1801",
+      "category_level": "2",
+      "handle": "summer-sale-tallrikar",
+      "parent_id": null,
+      "name": {
+        "sv": "Tallrikar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Tallrikar – Fyrklövern Summer Sale: Upp till 50% + gåva"
+      },
+      "meta_description": {
+        "sv": "Fynda vackra tallrikar till upp till 50% rabatt under Fyrklöverns Summer Sale! Förnya din dukning och få en exklusiv gåva på köpet. Handla här!"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1803",
+      "category_level": "2",
+      "handle": "summer-sale-glas",
+      "parent_id": null,
+      "name": {
+        "sv": "Glas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Glas – Fyrklövern Summer Sale: Upp till 50% + gåva"
+      },
+      "meta_description": {
+        "sv": "Fynda eleganta glas till upp till 50% rabatt under Fyrklöverns Summer Sale! Förnya din dukning till sommarens fester och få en gåva på köpet."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1804",
+      "category_level": "2",
+      "handle": "summer-sale-muggar",
+      "parent_id": null,
+      "name": {
+        "sv": "Muggar"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Muggar – Fyrklövern Summer Sale: Upp till 50% + gåva"
+      },
+      "meta_description": {
+        "sv": "Fynda härliga muggar till upp till 50% rabatt under Fyrklöverns Summer Sale! Förnya fikastunden i sommar och få en exklusiv gåva på köpet."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1806",
+      "category_level": "2",
+      "handle": "summer-sale-inredning",
+      "parent_id": null,
+      "name": {
+        "sv": "Inredning"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Inredning – Fyrklövern Summer Sale: Upp till 50% + gåva"
+      },
+      "meta_description": {
+        "sv": "Fynda vacker inredning till upp till 50% rabatt under Fyrklöverns Summer Sale! Skapa en somrig känsla i hemmet och få en exklusiv gåva på köpet."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1807",
+      "category_level": "2",
+      "handle": "summer-sale-disney",
+      "parent_id": null,
+      "name": {
+        "sv": "Disney"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Disney – Fyrklövern Summer Sale: Upp till 50% + gåva"
+      },
+      "meta_description": {
+        "sv": "Fynda magiska Disney-favoriter till upp till 50% rabatt under Fyrklöverns Summer Sale! Förgyll din dukning och få en exklusiv gåva på köpet."
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1808",
+      "category_level": "4",
+      "handle": "kollektioner-serviser-disney-iconic-mickey-mouse-iconic-klassisk-vit",
+      "parent_id": "1617",
+      "name": {
+        "sv": "Mickey Mouse Iconic Klassisk Vit"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1809",
+      "category_level": "4",
+      "handle": "kollektioner-serviser-disney-iconic-mickey-mouse-iconic-parlgra",
+      "parent_id": "1617",
+      "name": {
+        "sv": "Mickey Mouse Iconic Pärlgrå"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1810",
+      "category_level": "2",
+      "handle": "julshop-julkollektioner-julserviser",
+      "parent_id": "231",
+      "name": {
+        "sv": "Julkollektioner & Julserviser"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1811",
+      "category_level": "3",
+      "handle": "julshop-julkollektioner-julserviser-asas-tomtejul",
+      "parent_id": "1810",
+      "name": {
+        "sv": "Åsas Tomtejul"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1812",
+      "category_level": "3",
+      "handle": "julshop-julkollektioner-julserviser-disney-vinter",
+      "parent_id": "1810",
+      "name": {
+        "sv": "Disney Vinter"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1813",
+      "category_level": "3",
+      "handle": "julshop-julkollektioner-julserviser-disney-jul",
+      "parent_id": "1810",
+      "name": {
+        "sv": "Disney Jul"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1814",
+      "category_level": "3",
+      "handle": "julshop-julkollektioner-julserviser-julminnen",
+      "parent_id": "1810",
+      "name": {
+        "sv": "Julminnen"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1815",
+      "category_level": "3",
+      "handle": "julshop-julkollektioner-julserviser-gammaldags-jul",
+      "parent_id": "1810",
+      "name": {
+        "sv": "Gammaldags Jul"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1835",
+      "category_level": "3",
+      "handle": "julshop-julkollektioner-julserviser-tomtarnas-jul",
+      "parent_id": "1810",
+      "name": {
+        "sv": "Tomtarnas Jul"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1836",
+      "category_level": "3",
+      "handle": "inredning-ljusstakar-ljus-ljus",
+      "parent_id": "176",
+      "name": {
+        "sv": "Ljus"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1844",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-asas-tomtejul-gava",
+      "parent_id": null,
+      "name": {
+        "sv": "Få en Åsas Tomtejul Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Åsas Tomtejul Gåva"
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1845",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-tomtarnas-jul-gava",
+      "parent_id": null,
+      "name": {
+        "sv": "Få en Tomtarnas Jul Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Tomtarnas Jul Gåva"
+      },
+      "meta_description": {
+        "sv": "Köp ett tallriksset och få en serveringsskål på köpet, värde 629 kr. Gåvan finns endast i begränsat antal! {Viktigt: Gåvan läggs inte till automatiskt – klicka på knappen för att lägga till den i din order. } automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1846",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-disney-jul-gava",
+      "parent_id": null,
+      "name": {
+        "sv": "Få en Disney Jul Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Disney Jul Gåva"
+      },
+      "meta_description": {
+        "sv": "Köp ett tallriksset och få en serveringsskål på köpet, värde 799 kr. Gåvan finns endast i begränsat antal! {Viktigt: Gåvan läggs inte till automatiskt – klicka på knappen för att lägga till den i din order. } automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1847",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-disney-vinter-gava",
+      "parent_id": null,
+      "name": {
+        "sv": "Få en Disney Vinter Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Disney Vinter Gåva"
+      },
+      "meta_description": {
+        "sv": "Köp ett tallriksset och få en serveringsskål på köpet, värde 639 kr. Gåvan finns endast i begränsat antal! {Viktigt: Gåvan läggs inte till automatiskt – klicka på knappen för att lägga till den i din order. } automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1848",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-gammaldags-jul-gava",
+      "parent_id": null,
+      "name": {
+        "sv": "Få en Gammaldags Jul Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Gammaldags Jul Gåva"
+      },
+      "meta_description": {
+        "sv": "Köp ett tallriksset och få en serveringsskål på köpet, värde 699 kr. Gåvan finns endast i begränsat antal! {Viktigt: Gåvan läggs inte till automatiskt – klicka på knappen för att lägga till den i din order. } automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1849",
+      "category_level": "2",
+      "handle": "kampanjer-fa-en-julminnen-gava",
+      "parent_id": null,
+      "name": {
+        "sv": "Få en Julminnen Gåva"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Få en Julminnen Gåva"
+      },
+      "meta_description": {
+        "sv": "Köp ett tallriksset och få en serveringsskål på köpet, värde 1090 kr. Gåvan finns endast i begränsat antal! {Viktigt: Gåvan läggs inte till automatiskt – klicka på knappen för att lägga till den i din order. } automatic-gift"
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1881",
+      "category_level": "2",
+      "handle": "kampanjer-summer-10",
+      "parent_id": null,
+      "name": {
+        "sv": "Summer +10%"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "Summer +10%"
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": "SUMMER10"
+      },
+      "status": true
+    },
+    {
+      "id": "1885",
+      "category_level": "3",
+      "handle": "kollektioner-serviser-glas-1-julglas",
+      "parent_id": "1778",
+      "name": {
+        "sv": "Julglas"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1886",
+      "category_level": "2",
+      "handle": "kollektioner-serviser-bestick",
+      "parent_id": "155",
+      "name": {
+        "sv": "Bestick"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1888",
+      "category_level": "3",
+      "handle": "julshop-dukning-servering-jultallrikset",
+      "parent_id": "248",
+      "name": {
+        "sv": "Jultallrikset"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1889",
+      "category_level": "3",
+      "handle": "julshop-dukning-servering-julglasset",
+      "parent_id": "248",
+      "name": {
+        "sv": "Julglasset"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1893",
+      "category_level": "2",
+      "handle": "paket-tallriksset",
+      "parent_id": "1352",
+      "name": {
+        "sv": "Tallriksset"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1894",
+      "category_level": "2",
+      "handle": "paket-glasset",
+      "parent_id": "1352",
+      "name": {
+        "sv": "Glasset"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1895",
+      "category_level": "2",
+      "handle": "paket-tallriks-glasset",
+      "parent_id": "1352",
+      "name": {
+        "sv": "Tallriks- och glasset"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1896",
+      "category_level": "2",
+      "handle": "paket-bestickset",
+      "parent_id": "1352",
+      "name": {
+        "sv": "Bestickset"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": ""
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    },
+    {
+      "id": "1906",
+      "category_level": "2",
+      "handle": "kampanjer-10-1",
+      "parent_id": "1",
+      "name": {
+        "sv": "10%"
+      },
+      "description": {
+        "sv": ""
+      },
+      "meta_title": {
+        "sv": "10%"
+      },
+      "meta_description": {
+        "sv": ""
+      },
+      "meta_keywords": {
+        "sv": ""
+      },
+      "main_header": {
+        "sv": ""
+      },
+      "status": true
+    }
+  ]
+}

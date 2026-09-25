@@ -123,6 +123,12 @@ function extractTags(product, tagsMap = {}) {
  * @returns {Object} Specifications object
  */
 function extractSpecifications(product, config) {
+    // Fyrklövern's Excel export provides already named dynamic fields rather
+    // than Vendre's numeric specification IDs.
+    if (product.specifications?.metafields) {
+        return product.specifications.metafields;
+    }
+
     if (!product.specifications || !product.specifications.text) {
         return {};
     }
@@ -150,11 +156,22 @@ function extractImages(product) {
         return [];
     }
 
-    return product.images.map((img, index) => ({
-        src: (img.url && img.url.full) || img.url || img.src || '',
-        position: index + 1,
-        altText: img.alt_text || img.description || '',
-    }));
+    const imagesBySource = new Map();
+
+    for (const [index, img] of product.images.entries()) {
+        const src = String((img.url && img.url.full) || img.url || img.src || '').trim();
+        if (!src) continue;
+
+        // Matrixify keeps the later position when a source URL is repeated.
+        // Mirror that behavior while retaining the source workbook's order.
+        imagesBySource.set(src, {
+            src,
+            position: index + 1,
+            altText: img.alt_text || img.description || '',
+        });
+    }
+
+    return [...imagesBySource.values()].sort((a, b) => a.position - b.position);
 }
 
 /**
@@ -163,8 +180,9 @@ function extractImages(product) {
  * @returns {string} SEO title
  */
 function extractSeoTitle(product) {
-    if (product.seo_title) {
-        return product.seo_title.sv || product.seo_title.en || '';
+    const seoTitle = product.seo_title || product.meta_title;
+    if (seoTitle) {
+        return seoTitle.sv || seoTitle.en || '';
     }
     return getName(product);
 }
@@ -175,8 +193,9 @@ function extractSeoTitle(product) {
  * @returns {string} SEO description
  */
 function extractSeoDescription(product) {
-    if (product.seo_description) {
-        return product.seo_description.sv || product.seo_description.en || '';
+    const seoDescription = product.seo_description || product.meta_description;
+    if (seoDescription) {
+        return seoDescription.sv || seoDescription.en || '';
     }
     // Fallback to short description
     const shortDesc = getShortDesc(product, 'sv');

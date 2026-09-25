@@ -7,6 +7,25 @@ const { PRODUCT_COLUMNS } = require('../config/matrixify');
 const { sanitizeForShopify } = require('../utils/html');
 const { calculatePricing } = require('../transformers/product-transformer');
 
+function formatMetafieldValue(key, value, config) {
+    if (config.booleanMetafieldKeys?.includes(key)) {
+        const normalized = String(value).trim().toLowerCase();
+        if (['ja', 'true', 'yes', '1'].includes(normalized)) return 'true';
+        if (['nej', 'false', 'no', '0'].includes(normalized)) return 'false';
+        return null;
+    }
+
+    if (config.dateMetafieldKeys?.includes(key)) {
+        const match = String(value).trim().match(/^(\d{1,2})\/(\d{1,2})\/(\d{2})$/);
+        if (!match) return null;
+
+        const [, month, day, year] = match;
+        return `20${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+    }
+
+    return value;
+}
+
 /**
  * Export products to Matrixify format
  * @param {Array} products - Array of normalized products
@@ -63,7 +82,7 @@ function buildProductRow(product, config, idToHandleMap) {
         [C.HANDLE]: product.handle,
         [C.TITLE]: product.title,
         [C.BODY_HTML]: sanitizeForShopify(product.description),
-        [C.VENDOR]: product.vendor || '',
+        [C.VENDOR]: config.blankVendor ? '' : (product.vendor || ''),
         [C.TYPE]: product.productType || '',
         [C.TAGS]: product.tags.join(', '),
         [C.PUBLISHED]: product.isActive || product.show ? 'TRUE' : 'FALSE',
@@ -71,25 +90,31 @@ function buildProductRow(product, config, idToHandleMap) {
         [C.VARIANT_BARCODE]: product.ean || '',
         [C.VARIANT_PRICE]: pricing.price,
         [C.VARIANT_COMPARE_AT_PRICE]: pricing.compareAtPrice || '',
-        [C.VARIANT_INVENTORY_QTY]: product.quantity || product.stock || 0,
-        [C.VARIANT_INVENTORY_POLICY]: 'deny', // Don't allow overselling
         [C.VARIANT_FULFILLMENT_SERVICE]: 'manual',
         [C.VARIANT_REQUIRES_SHIPPING]: 'TRUE',
         [C.VARIANT_TAXABLE]: 'TRUE',
         [C.VARIANT_WEIGHT]: '', // Not provided by Vendre
         [C.VARIANT_WEIGHT_UNIT]: 'kg',
         [C.IMAGE_SRC]: product.images.length > 0 ? product.images[0].src : '',
-        [C.IMAGE_POSITION]: product.images.length > 0 ? '1' : '',
+        [C.IMAGE_POSITION]: product.images.length > 0 ? String(product.images[0].position) : '',
         [C.IMAGE_ALT_TEXT]: product.images.length > 0 ? product.images[0].altText : '',
         [C.SEO_TITLE]: product.seoTitle,
         [C.SEO_DESCRIPTION]: product.seoDescription,
-        'Metafield: custom.description_short [single_line_text_field]': product.descriptionShort
-            ? String(product.descriptionShort).replace(/\s+/g, ' ').trim()
-            : '',
     };
 
+    if (config.includeInventoryFields !== false) {
+        row[C.VARIANT_INVENTORY_QTY] = product.quantity || product.stock || 0;
+        row[C.VARIANT_INVENTORY_POLICY] = 'deny'; // Don't allow overselling
+    }
+
+    if (config.includeDescriptionShort !== false) {
+        row['Metafield: custom.description_short [single_line_text_field]'] = product.descriptionShort
+            ? String(product.descriptionShort).replace(/\s+/g, ' ').trim()
+            : '';
+    }
+
     // Add manufacturer metafields
-    if (product.manufacturerName) {
+    if (config.includeManufacturerName !== false && product.manufacturerName) {
         row['Metafield: custom.manufacturer_name [single_line_text_field]'] = product.manufacturerName;
     }
     if (product.manufacturerModel) {
@@ -101,8 +126,28 @@ function buildProductRow(product, config, idToHandleMap) {
 
     // Add dynamic metafields from specifications
     for (const [key, value] of Object.entries(product.specifications)) {
-        const metafieldKey = `Metafield: custom.${key.toLowerCase()} [single_line_text_field]`;
-        row[metafieldKey] = value;
+        if (config.excludedMetafieldKeys?.includes(key)) continue;
+
+        const isList = Array.isArray(value);
+        const type = config.booleanMetafieldKeys?.includes(key)
+            ? 'boolean'
+            : config.dateMetafieldKeys?.includes(key)
+                ? 'date'
+                : isList
+                    ? 'list.single_line_text_field'
+                    : 'single_line_text_field';
+        const metafieldKey = `Metafield: custom.${key.toLowerCase()} [${type}]`;
+        const formattedValue = isList
+            ? JSON.stringify(value)
+            : formatMetafieldValue(key, value, config);
+
+        if (formattedValue == null) continue;
+
+        /*
+         * List values retain Matrixify's JSON-array format. Scalar boolean and
+         * date values are normalized above to Shopify's accepted formats.
+         */
+        row[metafieldKey] = formattedValue;
     }
 
     // Add related products metafield
@@ -121,11 +166,17 @@ function buildProductRow(product, config, idToHandleMap) {
         const imgRow = {
             [C.HANDLE]: product.handle,
             [C.IMAGE_SRC]: img.src,
-            [C.IMAGE_POSITION]: String(i + 1),
+            [C.IMAGE_POSITION]: String(img.position),
             [C.IMAGE_ALT_TEXT]: img.altText,
         };
         // Fill other columns with empty strings
-        for (const col of Object.values(C)) {
+        const productColumns = Object.values(C).filter(col =>
+            config.includeInventoryFields !== false || (
+                col !== C.VARIANT_INVENTORY_QTY &&
+                col !== C.VARIANT_INVENTORY_POLICY
+            )
+        );
+        for (const col of productColumns) {
             if (!(col in imgRow)) {
                 imgRow[col] = '';
             }

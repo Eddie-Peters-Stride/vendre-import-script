@@ -35,6 +35,10 @@ function getHandleFromSeoLink(seoLink) {
  * @returns {string} Product handle
  */
 function getProductHandle(product) {
+    if (product.handle) {
+        return product.handle;
+    }
+
     const seoLink = getSeoLink(product);
     if (seoLink) {
         const slug = getHandleFromSeoLink(seoLink);
@@ -53,6 +57,10 @@ function getProductHandle(product) {
  * @returns {string} Collection handle
  */
 function getCollectionHandle(collection) {
+    if (collection.handle) {
+        return collection.handle;
+    }
+
     const seoLink = getSeoLink(collection);
     if (seoLink) {
         const slug = getHandleFromSeoLink(seoLink);
