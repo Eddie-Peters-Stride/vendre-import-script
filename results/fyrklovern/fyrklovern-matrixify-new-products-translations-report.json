@@ -1,0 +1,49 @@
+{
+  "comparedNewProducts": 16,
+  "productsWithTranslations": 9,
+  "translationRows": 18,
+  "targetLocales": [
+    "da",
+    "de",
+    "en",
+    "fi",
+    "nl"
+  ],
+  "productsWithoutSourceTranslations": [
+    {
+      "productId": "2202",
+      "articleNumber": "10014060",
+      "title": "Nordic Dawn assiett 21 cm, Bark"
+    },
+    {
+      "productId": "2203",
+      "articleNumber": "10014061",
+      "title": "Nordic Dawn skål 19 cm, Bark"
+    },
+    {
+      "productId": "2204",
+      "articleNumber": "10014062",
+      "title": "Nordic Dawn mugg 35 cl, Bark"
+    },
+    {
+      "productId": "2205",
+      "articleNumber": "10014063",
+      "title": "Nordic Dawn djup tallrik 25 cm, Bark"
+    },
+    {
+      "productId": "3279",
+      "articleNumber": "10012773",
+      "title": "Breath of Nature bordstablett 45 x 35 cm 4-pack, Earth Stone 4-pack"
+    },
+    {
+      "productId": "3280",
+      "articleNumber": "10012772",
+      "title": "Breath of Nature bordstablett 45 x 35 cm 4-pack, Evening Darkness"
+    },
+    {
+      "productId": "3281",
+      "articleNumber": "10012774",
+      "title": "Breath of Nature bordstablett 45 x 35 cm 4-pack, Nordic Sand"
+    }
+  ]
+}

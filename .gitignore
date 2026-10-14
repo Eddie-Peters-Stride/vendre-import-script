@@ -2,6 +2,11 @@
 /package-lock.json
 /dist/
 
+
+# Dependencies
+node_modules/
+.artifact_node_modules/
+
 # Ignore all environment files (store-specific .env files)
 .env*
 !.env.example

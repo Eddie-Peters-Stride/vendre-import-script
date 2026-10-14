@@ -1,0 +1,79 @@
+{
+  "importedRows": 104526,
+  "translatedRows": 8933,
+  "mappedResources": {
+    "product": 959,
+    "collection": 0
+  },
+  "unmappedResources": {
+    "product": [
+      {
+        "identification": "'15794969477460",
+        "title": "Aspvik tallriksset 12 delar, 4 pers",
+        "reason": "duplicate Swedish title"
+      },
+      {
+        "identification": "'15794978849108",
+        "title": "Nordic Dawn tallrik 27 cm, Ljung",
+        "reason": "no Swedish title match"
+      },
+      {
+        "identification": "'15794978947412",
+        "title": "Nordic Dawn assiett 21 cm, Ljung",
+        "reason": "no Swedish title match"
+      },
+      {
+        "identification": "'15794979045716",
+        "title": "Nordic Dawn skål 19 cm, Ljung",
+        "reason": "no Swedish title match"
+      },
+      {
+        "identification": "'15794979111252",
+        "title": "Nordic Dawn mugg 35 cl, Ljung",
+        "reason": "no Swedish title match"
+      },
+      {
+        "identification": "'15794979209556",
+        "title": "Nordic Dawn djup tallrik 25 cm, Ljung",
+        "reason": "no Swedish title match"
+      },
+      {
+        "identification": "'15795035537748",
+        "title": "Aspvik tallriksset 12 delar, 4 pers",
+        "reason": "duplicate Swedish title"
+      },
+      {
+        "identification": "'15795052118356",
+        "title": "Nalle Puh frukost- och kaffeset 12 delar, 4 pers",
+        "reason": "duplicate Swedish title"
+      },
+      {
+        "identification": "'15795052544340",
+        "title": "Nalle Puh frukost- och kaffeset 12 delar, 4 pers",
+        "reason": "duplicate Swedish title"
+      },
+      {
+        "identification": "'15795116147028",
+        "title": "Aspvik tallriksset 24 delar, 8 pers",
+        "reason": "duplicate Swedish title"
+      },
+      {
+        "identification": "'15795116376404",
+        "title": "Aspvik tallriksset 24 delar, 8 pers",
+        "reason": "duplicate Swedish title"
+      },
+      {
+        "identification": "'15795171164500",
+        "title": "Julminnen tallriks- och glasset 60 delar, 12 pers",
+        "reason": "duplicate Swedish title"
+      },
+      {
+        "identification": "'15795171983700",
+        "title": "Julminnen tallriks- och glasset 60 delar, 12 pers",
+        "reason": "duplicate Swedish title"
+      }
+    ],
+    "collection": []
+  },
+  "skipped": []
+}

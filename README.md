@@ -181,7 +181,46 @@ This creates `results/fyrklovern/fyrklovern-matrixify-products.xlsx`. The
 product rows use Matrixify's `Custom Collections` column, populated with the
 handles from `fyrklovern-categories.json`.
 
+### Shopify standard language import (Fyrklövern)
+
+Swedish (`sv-SE`) is the migrated/default language. To create a standard
+Shopify language-import CSV for the other locales, first export translations
+from **Shopify admin → Settings → Languages → Export**. The Shopify export is
+needed to retain Shopify's resource IDs; source product IDs and category IDs
+are not Shopify IDs.
+
+```bash
+npm run export:fyrklovern:shopify-language-translations -- \
+  --input="C:\\Users\\Eddie Peters\\Downloads\\fyrklovern_custom_export-with_familycode_updated-2026-09-22 (1).xlsx" \
+  --shopify-export="C:\\path\\shopify-language-export.csv"
+```
+
+The resulting `results/fyrklovern/fyrklovern-shopify-language-import.csv` is
+UTF-8, comma-delimited, and preserves Shopify's standard headers. It fills
+only non-empty translations for product and collection titles, descriptions,
+SEO titles, and SEO descriptions. Review the accompanying `-report.json` for
+unmatched or duplicate Swedish titles before importing it through **Settings →
+Languages → Import**.
+
 ## 📝 Available Commands
+
+### Differential top-up migration (Fyrklövern)
+
+Export live baselines from Matrixify before running the command. The Products
+export must contain `ID`, `Handle`, `Variant SKU`, `Image Src`, `Image Position`,
+`Image Alt Text`, and all `custom.*` metafields. The Collections export must
+contain `Handle`, `Sort Order`, `Sort: Position`, `Sort: Product ID`, and
+`Sort: Product Handle`.
+
+```bash
+npm run topup:fyrklovern -- --live-products="C:\\Exports\\products.xlsx" --live-collections="C:\\Exports\\collections.xlsx" --translation-export="C:\\Exports\\translations.csv" --output-dir="outputs\\fyrklovern-topup"
+```
+
+It writes separate Matrixify workbooks for products, media, collection
+positions, recommendations, and translations, plus a Shopify language CSV and
+an audit report. Import new products first. The report defers native Shopify
+translation rows for products that do not yet have Shopify resource IDs; export
+translations again after product import and rerun the command to create them.
 
 ### Sync Commands (Fetch + Export)
 
