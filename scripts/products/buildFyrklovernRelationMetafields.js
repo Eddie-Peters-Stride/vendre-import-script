@@ -13,7 +13,7 @@ const FYRKLOVERN_DIR = path.resolve(__dirname, '..', '..', '..', '..', 'Fyrklöv
 const DEFAULT_INPUT = path.join(FYRKLOVERN_DIR, 'fyrklovern_custom_export.xlsx');
 const DEFAULT_LATEST_PRODUCTDATA = path.join(FYRKLOVERN_DIR, 'fyrklovern_productdata_newexport.xlsx');
 const DEFAULT_PERMALINKS = path.join(FYRKLOVERN_DIR, 'fyrklovern_productpermalinks.xlsx');
-const OUTPUT_FILE = path.resolve(__dirname, '../../outputs/fyrklovern-relations/fyrklovern-matrixify-product-references-update.xlsx');
+const OUTPUT_FILE = path.resolve(__dirname, '../../outputs/Fyrklovern/Matrixify files/Products/Relations/Fyrklovern product relationships - Matrixify update.xlsx');
 const RELATED_FIELD = 'Metafield: custom.recommended_products [list.product_reference]';
 const FAMILY_FIELD = 'Metafield: custom.family_products [list.product_reference]';
 

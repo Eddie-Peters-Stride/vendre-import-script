@@ -22,9 +22,10 @@ const DEFAULT_OUTPUT = path.join(
     __dirname,
     '..',
     '..',
-    'results',
-    'fyrklovern',
-    'fyrklovern-shopify-language-import.csv'
+    'outputs',
+    'Fyrklovern',
+    'Shopify language import',
+    'Fyrklovern multilingual content - Shopify language import.csv'
 );
 
 function argument(name, fallback = '') {

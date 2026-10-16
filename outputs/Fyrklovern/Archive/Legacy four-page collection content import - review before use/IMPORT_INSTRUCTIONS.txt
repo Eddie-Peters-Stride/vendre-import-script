@@ -1,0 +1,17 @@
+FYRKLOVERN COLLECTION CONTENT IMPORTS
+
+1. Upload 01_files.xlsx to Matrixify. Import the Files sheet (24 images). Wait until Shopify finishes processing all images and confirm the import succeeded.
+2. Upload 02_collections.xlsx. Import the Collections sheet. It updates four existing collections by ID/handle using UPDATE, with one nonempty metafield per row.
+3. Once the collection import succeeds, import each of the six 03_translations_<language>.xlsx workbooks. Each has a Translations sheet and only one target-language column. The corresponding language must be enabled in Shopify.
+
+Swedish is the base language. Language codes: da (Danish), fi (Finnish), nb (Norwegian Bokmal), en (English), de (German), nl (Dutch).
+Blank source values have been omitted. Missing translations are not filled with Swedish. No handles, memberships, sorting, or publishing settings are changed.
+Text metafields use rich_text_field JSON. Image metafields use list.file_reference, with Shopify filenames in source order.
+To expose these new fields as theme dynamic sources, add collection metafield definitions in Shopify using the exact namespace/key/type listed in mapping_report.json. For image-list definitions, restrict file references to images. Theme section configuration is separate from this content import.
+The mapping CSV/JSON records source block names, source fields, metafield destinations, and retained layout/reference settings. These reports and excluded_entries.csv are not import files.
+Image alt text is incomplete in the source. All supplied image alt text, including translations, is retained in the mapping report and is not imported.
+Six source entries were excluded because they were unlinked or connected to non-collection entities. See excluded_entries.csv.
+
+Validation: {"collections":4,"collectionMetafields":44,"richTextMetafields":29,"imageListMetafields":15,"images":24,"translationRows":{"da":35,"fi":35,"nb":35,"en":10,"de":11,"nl":11},"sourceFields":524,"excludedEntries":6,"outputs":[{"filename":"01_files.xlsx","sheetName":"Files","rows":24},{"filename":"02_collections.xlsx","sheetName":"Collections","rows":44},{"filename":"03_translations_da.xlsx","sheetName":"Translations","rows":35},{"filename":"03_translations_fi.xlsx","sheetName":"Translations","rows":35},{"filename":"03_translations_nb.xlsx","sheetName":"Translations","rows":35},{"filename":"03_translations_en.xlsx","sheetName":"Translations","rows":10},{"filename":"03_translations_de.xlsx","sheetName":"Translations","rows":11},{"filename":"03_translations_nl.xlsx","sheetName":"Translations","rows":11}]}
+
+Documentation: https://matrixify.app/documentation/collections/ | https://matrixify.app/documentation/metafields/ | https://matrixify.app/documentation/files/ | https://matrixify.app/documentation/translations/

@@ -1,0 +1,8 @@
+FYRKLOVERN COLLECTION CONTENT IMPORT
+
+1. Create Shopify collection metafield definitions for every key/type in mapping_report.json.
+2. If 01_files.xlsx exists, import its Files sheet first and confirm success.
+3. Import 02_collections.xlsx and, if present, 02_collections_metafields_only.xlsx (Collections sheets). Both contain UPDATE rows; metafields are row-based to avoid clearing omitted fields.
+4. Import the 03_translations_*.xlsx workbooks for enabled Shopify languages.
+
+No Shopify API calls or imports are performed by this script.

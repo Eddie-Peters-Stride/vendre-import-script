@@ -24,15 +24,16 @@ const { loadVendreData } = require('../../src/utils/file-io');
 const ROOT = path.resolve(__dirname, '..', '..');
 const FYRKLOVERN_DIR = path.resolve(ROOT, '..', '..', 'Fyrklövern');
 const RESULTS_DIR = path.join(ROOT, 'results', 'fyrklovern');
+const MATRIXIFY_DIR = path.join(ROOT, 'outputs', 'Fyrklovern', 'Matrixify files', 'Products');
 const DEFAULT_INPUT = path.join(FYRKLOVERN_DIR, 'fyrklovern_productdata_newexport.xlsx');
 const PERMALINKS = path.join(FYRKLOVERN_DIR, 'fyrklovern_productpermalinks.xlsx');
 const IMAGE_ORDER = path.join(FYRKLOVERN_DIR, 'fyrklovern_produkter_bildordning.xlsx');
 const EXISTING_PRODUCTS = path.join(RESULTS_DIR, 'fyrklovern-products.json');
 const CATEGORIES = path.join(RESULTS_DIR, 'fyrklovern-categories.json');
-const OUTPUT = path.join(RESULTS_DIR, 'fyrklovern-matrixify-new-products.xlsx');
+const OUTPUT = path.join(MATRIXIFY_DIR, 'Fyrklovern new products - Matrixify import.xlsx');
 const METAFIELD_UPDATE_OUTPUT = path.join(
-    RESULTS_DIR,
-    'fyrklovern-matrixify-new-products-metafields-update.xlsx'
+    MATRIXIFY_DIR,
+    'Fyrklovern new product metafields - Matrixify update.xlsx'
 );
 
 const CONFIG = {

@@ -7,9 +7,9 @@ const visibilityFile = process.argv[2]
 const baseProductsFile = process.argv[3]
     || path.join('exports', 'Export_2026-09-29_101146 (1).xlsx');
 const newProductsFile = process.argv[4]
-    || path.join('results', 'fyrklovern', 'fyrklovern-matrixify-new-products.xlsx');
+    || path.join('outputs', 'Fyrklovern', 'Matrixify files', 'Products', 'Fyrklovern new products - Matrixify import.xlsx');
 const outputFile = process.argv[5]
-    || path.join('outputs', 'fyrklovern_market_catalog_inclusion.xlsx');
+    || path.join('outputs', 'Fyrklovern', 'Matrixify files', 'Products', 'Fyrklovern product market inclusion - Matrixify update.xlsx');
 
 function readRows(filePath, sheetName) {
     const workbook = XLSX.readFile(filePath);

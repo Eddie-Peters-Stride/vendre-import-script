@@ -160,13 +160,107 @@ worksheet is retained for the staged hierarchy. Handles use the complete
 Swedish category permalink path with `/` converted to `-`, and never include
 source IDs.
 
+Inspect Norce category and CMS exports without contacting Shopify:
+
+```bash
+npm run audit:fyrklovern-norce-content -- \
+  --categories="C:\path\to\fyrklovern_custom_export.xlsx" \
+  --cms="C:\path\to\fyrklovern-content-export-2026-10-15.csv" \
+  --content-map="C:\path\to\norce-category-content-map.json" \
+  --category-id=149
+```
+
+The audit reads `categorieslocalized`, `categorypermalinks`, and
+`category structure`, plus the semicolon-delimited CMS CSV (including BOM and
+quoted fields). It preserves source fields and component/item order, inventories
+component/property names, and reports categories without a supplied ContentId
+relationship. Wide culture columns are expanded into separate culture groups;
+legacy row-per-culture CSVs are also accepted. A single verified relationship
+can be supplied with `--category-id=149 --culture=sv-SE --content-id=<id>`. The
+optional content map accepts an array of
+`{ "categoryId", "culture", "contentId", "source" }` records. Its output is
+`outputs/Fyrklovern/Reports and source maps/Norce CMS source audit.json` by default; `--output=<path>` changes
+that location. Candidate field mappings are review-only and no Matrixify file
+or Shopify change is produced by this command.
+
+Run its parser and audit fixture checks with `npm run test:fyrklovern-norce-source`.
+
+Build an offline Norce-to-Shopify collection mapping review from the category
+workbook and a Shopify export. Only `Collections` rows with `Top Row=true` are
+used; URL matches remain pending manual approval and title-only matches are
+unverified suggestions. This command does not call Shopify or write imports.
+
+```bash
+npm run review:fyrklovern-mappings -- \
+  --categories="C:\path\to\fyrklovern_custom_export.xlsx" \
+  --shopify="exports\Export_2026-10-06_132403.xlsx"
+```
+
+To opt in to read-only StoreAPI fetching for specific Norce IDs, set
+`NORCE_STOREAPI_TOKEN` locally in the ignored `.env` file (never paste or commit
+the token). Use the plan's exact settings from `.env.example`:
+`NORCE_STOREAPI_URL`, `NORCE_STOREAPI_SHOPID`, `NORCE_STOREAPI_TOKEN`, and
+optional `NORCE_DEFAULT_CULTURE`, `NORCE_DEFAULT_COUNTRY`, and
+`NORCE_DEFAULT_CURRENCY`. Timeout, retry count and request spacing are
+configurable with `NORCE_STOREAPI_TIMEOUT_MS`, `NORCE_STOREAPI_RETRIES`, and
+`NORCE_STOREAPI_THROTTLE_MS`.
+
+With no arguments, the fetch command discovers unique CategoryIDs from
+`NORCE_CATEGORY_EXPORT_PATH`, or from the repo-relative sibling
+`../../<Fyrklovern folder>/fyrklovern_custom_export.xlsx` (directory matching
+ignores accents). It fetches each unique CategoryID once in one selected
+culture, default `sv-SE`, and excludes CategoryIDs with conflicting localized
+source rows. `NORCE_CMS_EXPORT_PATH` is optional; if absent, CMS presence stays
+unknown. The JSON cache is written to `NORCE_STOREAPI_OUTPUT_PATH` or
+`outputs/Fyrklovern/Reports and source maps/StoreAPI category ContentId map.json`; per-ID errors are
+retained and do not stop later IDs. Existing outputs are protected unless
+`--overwrite=true` is passed.
+
+```powershell
+npm.cmd run fetch:fyrklovern-norce-categories
+npm.cmd run fetch:fyrklovern-norce-categories -- --ids=149,150 --culture=sv-SE
+npm.cmd run fetch:fyrklovern-norce-categories -- --categories="C:\path\to\fyrklovern_custom_export.xlsx" --cms="C:\path\to\fyrklovern-content-export.csv" --output="outputs\content-map.json"
+```
+
+To use the fetched cache in the offline mapping review, pass it as the
+explicit map and point to the CMS source used for presence checks:
+
+```powershell
+npm.cmd run review:fyrklovern-mappings -- --categories="C:\path\to\fyrklovern_custom_export.xlsx" --shopify="exports\Export_2026-10-06_132403.xlsx" --content-map="outputs\Fyrklovern\Reports and source maps\StoreAPI category ContentId map.json" --cms="C:\path\to\fyrklovern-content-export.csv"
+```
+
+For the mapping review with the currently available source files, use:
+
+```powershell
+npm run review:fyrklovern-mappings -- --categories="C:\path\to\fyrklovern_custom_export.xlsx" --shopify="exports\Export_2026-10-06_132403.xlsx" --content-map="outputs\Fyrklovern\Reports and source maps\StoreAPI category ContentId map.json" --cms="C:\path\to\fyrklovern-content-export-2026-10-15.csv"
+```
+
+The explicit audit map contributes the supplied Category 149 ContentId only;
+other relationships remain blank. `ContentFound` is checked against the
+supplied CMS export. The review records that StoreAPI was not fetched in this
+run. In PowerShell use `npm.cmd`; the command loads `.env` or `ENV_FILE`,
+refuses to make requests without the token, and writes a reusable JSON mapping
+cache only. No Shopify writes occur.
+
+### Fyrklövern output folders
+
+Fyrklövern Matrixify workbooks are grouped under `outputs/Fyrklovern/Matrixify files/Products` and `outputs/Fyrklovern/Matrixify files/Collections`. Source maps, audit reports, and mapping reviews are stored in `outputs/Fyrklovern/Reports and source maps`; Shopify's standard language-import CSV is kept separately under `outputs/Fyrklovern/Shopify language import`.
+
+Build the approved Norce collection content import with:
+
+```powershell
+npm.cmd run build:fyrklovern-collection-content -- --categories="C:\path\to\fyrklovern_custom_export.xlsx" --cms="C:\path\to\fyrklovern-content-export.csv" --content-map="outputs\Fyrklovern\Reports and source maps\StoreAPI category ContentId map.json" --shopify="exports\Export_2026-10-06_132403.xlsx" --approved-map="C:\path\to\approved-mappings.json"
+```
+
+The report and workbooks are written to `outputs/Fyrklovern/Matrixify files/Collections/Content updates` by default. Use `--approve-url-candidates=true` only when intentionally approving every exact URL candidate. Review the generated import instructions and mapping/QA report before importing; metafield definitions must exist in Shopify first.
+
 Create the collections-only Matrixify import workbook with:
 
 ```bash
 npm run export:fyrklovern:collections
 ```
 
-This creates `results/fyrklovern/fyrklovern-matrixify-collections.xlsx` with a
+This creates `outputs/Fyrklovern/Matrixify files/Collections/Fyrklovern collections - full Matrixify import.xlsx` with a
 single `Collections` sheet. It does not read, include, or assign products.
 Fyrklövern category handles are title-based; category IDs are not appended to
 them.
@@ -177,7 +271,7 @@ Create the Matrixify product import with its linked collection handles:
 npm run export:fyrklovern:products
 ```
 
-This creates `results/fyrklovern/fyrklovern-matrixify-products.xlsx`. The
+This creates `outputs/Fyrklovern/Matrixify files/Products/Fyrklovern products - full Matrixify import.xlsx`. The
 product rows use Matrixify's `Custom Collections` column, populated with the
 handles from `fyrklovern-categories.json`.
 
@@ -195,7 +289,7 @@ npm run export:fyrklovern:shopify-language-translations -- \
   --shopify-export="C:\\path\\shopify-language-export.csv"
 ```
 
-The resulting `results/fyrklovern/fyrklovern-shopify-language-import.csv` is
+The resulting `outputs/Fyrklovern/Shopify language import/Fyrklovern multilingual content - Shopify language import.csv` is
 UTF-8, comma-delimited, and preserves Shopify's standard headers. It fills
 only non-empty translations for product and collection titles, descriptions,
 SEO titles, and SEO descriptions. Review the accompanying `-report.json` for

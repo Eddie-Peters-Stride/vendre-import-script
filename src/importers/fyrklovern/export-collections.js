@@ -10,8 +10,10 @@ const { transformCollections } = require('../../transformers/collection-transfor
 const { exportCollections } = require('../../exporters/matrixify-collections');
 
 function main() {
-    const outputDir = path.join(__dirname, '..', '..', '..', 'results', 'fyrklovern');
-    const categoriesPath = path.join(outputDir, 'fyrklovern-categories.json');
+    const root = path.join(__dirname, '..', '..', '..');
+    const resultsDir = path.join(root, 'results', 'fyrklovern');
+    const outputDir = path.join(root, 'outputs', 'Fyrklovern', 'Matrixify files', 'Collections');
+    const categoriesPath = path.join(resultsDir, 'fyrklovern-categories.json');
     const stagedCategories = loadVendreData(categoriesPath);
     // Categories with the same original permalink are the same storefront
     // collection. Keep one Matrixify row while products can still reference it
@@ -27,7 +29,7 @@ function main() {
     const rows = exportCollections(collections, maps, {
         exportSettings: { includeVendreData: false },
     });
-    const outputPath = path.join(outputDir, 'fyrklovern-matrixify-collections.xlsx');
+    const outputPath = path.join(outputDir, 'Fyrklovern collections - full Matrixify import.xlsx');
 
     writeExcelFile(rows, outputPath, 'Collections');
     console.log(`Exported ${rows.length} Fyrklövern collections to ${outputPath}`);

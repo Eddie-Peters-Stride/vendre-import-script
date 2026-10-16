@@ -14,12 +14,13 @@ const { slugify } = require('../../src/utils/handles');
 const ROOT = path.resolve(__dirname, '..', '..');
 const FYRKLOVERN_DIR = path.resolve(ROOT, '..', '..', 'Fyrklövern');
 const RESULTS_DIR = path.join(ROOT, 'results', 'fyrklovern');
+const MATRIXIFY_DIR = path.join(ROOT, 'outputs', 'Fyrklovern', 'Matrixify files', 'Products', 'Translations');
 const NEW_PRODUCT_SOURCE = path.join(FYRKLOVERN_DIR, 'fyrklovern_productdata_newexport.xlsx');
 const MULTILINGUAL_SOURCE = path.join(FYRKLOVERN_DIR, 'fyrklovern_custom_export.xlsx');
 const PERMALINKS = path.join(FYRKLOVERN_DIR, 'fyrklovern_productpermalinks.xlsx');
 const STAGED_PRODUCTS = path.join(RESULTS_DIR, 'fyrklovern-products.json');
-const OUTPUT = path.join(RESULTS_DIR, 'fyrklovern-matrixify-new-products-translations.xlsx');
-const REPORT = path.join(RESULTS_DIR, 'fyrklovern-matrixify-new-products-translations-report.json');
+const OUTPUT = path.join(MATRIXIFY_DIR, 'Fyrklovern new product translations - Matrixify import.xlsx');
+const REPORT = path.join(ROOT, 'outputs', 'Fyrklovern', 'Reports and source maps', 'Fyrklovern new product translations - QA report.json');
 
 const TARGET_LOCALES = {
     da: 'da-DK',
@@ -116,6 +117,8 @@ function main() {
 
     const workbook = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(workbook, XLSX.utils.json_to_sheet(rows, { header: HEADERS }), 'Translations');
+    fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });
+    fs.mkdirSync(path.dirname(REPORT), { recursive: true });
     XLSX.writeFile(workbook, OUTPUT);
     const report = {
         comparedNewProducts: newProducts.length,

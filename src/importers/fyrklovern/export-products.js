@@ -43,9 +43,11 @@ function buildCollectionHandles(product, collectionHandleById) {
 }
 
 function main() {
-    const outputDir = path.join(__dirname, '..', '..', '..', 'results', 'fyrklovern');
-    const productsPath = path.join(outputDir, 'fyrklovern-products.json');
-    const categoriesPath = path.join(outputDir, 'fyrklovern-categories.json');
+    const root = path.join(__dirname, '..', '..', '..');
+    const resultsDir = path.join(root, 'results', 'fyrklovern');
+    const outputDir = path.join(root, 'outputs', 'Fyrklovern', 'Matrixify files', 'Products');
+    const productsPath = path.join(resultsDir, 'fyrklovern-products.json');
+    const categoriesPath = path.join(resultsDir, 'fyrklovern-categories.json');
     const rawProducts = loadVendreData(productsPath);
     const rawCategories = loadVendreData(categoriesPath);
 
@@ -88,7 +90,7 @@ function main() {
         rows.push(...productRows);
     }
 
-    const outputPath = path.join(outputDir, 'fyrklovern-matrixify-products.xlsx');
+    const outputPath = path.join(outputDir, 'Fyrklovern products - full Matrixify import.xlsx');
     writeExcelFile(rows, outputPath, 'Products');
 
     console.log(

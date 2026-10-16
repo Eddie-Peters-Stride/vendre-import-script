@@ -1,0 +1,34 @@
+{
+  "fetchedAt": "2026-10-15T15:39:53.452Z",
+  "culture": "sv-SE",
+  "country": "SE",
+  "results": [
+    {
+      "requestedId": "149",
+      "category": {
+        "id": 149,
+        "parentId": 166,
+        "name": "Tallrikar",
+        "mainHeader": "Tallrikar",
+        "content": "",
+        "data": {
+          "id": "c52bc2f5-987d-4b8d-ac59-05bd2db24b24",
+          "name": ""
+        },
+        "images": [],
+        "primaryRoute": {
+          "path": "/dukning-servering/tallrikar"
+        },
+        "CategoryID": "149",
+        "ContentId": "c52bc2f5-987d-4b8d-ac59-05bd2db24b24",
+        "contentIds": [
+          "c52bc2f5-987d-4b8d-ac59-05bd2db24b24"
+        ]
+      }
+    },
+    {
+      "requestedId": "150",
+      "category": null
+    }
+  ]
+}
