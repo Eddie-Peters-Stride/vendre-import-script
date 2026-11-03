@@ -1,8 +1,9 @@
 FYRKLOVERN COLLECTION CONTENT IMPORT
 
-1. Create Shopify collection metafield definitions for every key/type in mapping_report.json.
-2. If 01_files.xlsx exists, import its Files sheet first and confirm success.
-3. Import 02_collections.xlsx and, if present, 02_collections_metafields_only.xlsx (Collections sheets). Both contain UPDATE rows; metafields are row-based to avoid clearing omitted fields.
-4. Import the 03_translations_*.xlsx workbooks for enabled Shopify languages.
+1. Create Shopify collection metafield definitions for every key/type in Collection content - mapping and QA report.json.
+2. If Collection images - Matrixify Files import.xlsx exists, import its Files sheet first and confirm success.
+3. Import Collection content - Matrixify update.xlsx and, if present, Collection metafields only - Matrixify update.xlsx (Collections sheets). Both contain UPDATE rows; metafields are row-based to avoid clearing omitted fields.
+4. Import the Collection translations - <language>.xlsx workbooks for enabled Shopify languages.
+5. Use Collection text assignment and storefront review.csv to see CMS category assignments and compare text against live pages. Its storefront status is deliberately unverified because the CMS export has no publish/visibility field.
 
 No Shopify API calls or imports are performed by this script.

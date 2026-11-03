@@ -1,0 +1,354 @@
+{
+  "shopifySource": "cache/shopify-products-2026-10-21.csv",
+  "mappingSource": "norcemigration/product-metafield-translation-run-final/reports/product-mapping.xlsx",
+  "rows": [
+    {
+      "handle": "julminnen-tallriksset-36-delar-12-pers",
+      "id": "15795172770132",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-mugg-30-cl-4-pack-minnen",
+      "id": "15795159892308",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-mugg-30-cl-2-pack-minnen",
+      "id": "15795149439316",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-mugg-30-cl-minnen",
+      "id": "15795149177172",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-skal-16-cm-4-pack-tradition",
+      "id": "15795148783956",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-tallriksset-24-delar-8-pers",
+      "id": "15795097731412",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "crown-glasset-8-delar-gron",
+      "id": "15795093438804",
+      "swedish": "Glasprogram rekommenderas",
+      "group": "CA2"
+    },
+    {
+      "handle": "julminnnen-frukost-och-kaffeset-12-delar",
+      "id": "15795065749844",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "crown-dricksglas-30-cl-4-pack-gron",
+      "id": "15795009913172",
+      "swedish": "Glasprogram rekommenderas",
+      "group": "CA2"
+    },
+    {
+      "handle": "crown-vinglas-30-cl-4-pack-gron",
+      "id": "15795009782100",
+      "swedish": "Glasprogram rekommenderas",
+      "group": "CA2"
+    },
+    {
+      "handle": "crown-dricksglas-30-cl-gron",
+      "id": "15795009683796",
+      "swedish": "Glasprogram rekommenderas",
+      "group": "CA2"
+    },
+    {
+      "handle": "crown-vinglas-30-cl-gron",
+      "id": "15795009618260",
+      "swedish": "Glasprogram rekommenderas",
+      "group": "CA2"
+    },
+    {
+      "handle": "breath-of-nature-bordsduk-north-sea-green-145x250-cm",
+      "id": "15795008700756",
+      "swedish": "Maskintvätt 40 grader. Torktumling rekommenderas ej. Strykning på hög värme när textilen är lite fuktig.",
+      "group": "CA3"
+    },
+    {
+      "handle": "breath-of-nature-kokshandduk-50-x-70-cm-2-pack-burning-sun",
+      "id": "15795007488340",
+      "swedish": "Maskintvätt 40 grader. Torktumling rekommenderas ej. Strykning på hög värme när textilen är lite fuktig.",
+      "group": "CA3"
+    },
+    {
+      "handle": "dream-collection-plad-130-x-170-cm",
+      "id": "15795005423956",
+      "swedish": "Handtvätt rekommenderas för att polyesterfyllningen ska behållas jämn.",
+      "group": null
+    },
+    {
+      "handle": "breath-of-natur-bordstablett-45-x-35-cm-4-pack-north-sea-green",
+      "id": "15794999296340",
+      "swedish": "Maskintvätt 40 grader. Torktumling rekommenderas ej. Strykning på hög värme när textilen är lite fuktig.",
+      "group": "CA3"
+    },
+    {
+      "handle": "breath-of-nature-kuddfodral-48-x-48-cm-earth-stone",
+      "id": "15794998509908",
+      "swedish": "Maskintvätt 40 grader. Torktumling rekommenderas ej. Strykning på hög värme när textilen är lite fuktig.",
+      "group": "CA3"
+    },
+    {
+      "handle": "breath-of-nature-kuddfodral-48-x-48-cm-evening-darkness",
+      "id": "15794998116692",
+      "swedish": "Maskintvätt 40 grader. Torktumling rekommenderas ej. Strykning på hög värme när textilen är lite fuktig.",
+      "group": "CA3"
+    },
+    {
+      "handle": "breath-of-nature-kuddfodral-48-x-48-cm-burning-sun",
+      "id": "15794997657940",
+      "swedish": "Maskintvätt 40 grader. Torktumling rekommenderas ej. Strykning på hög värme när textilen är lite fuktig.",
+      "group": "CA3"
+    },
+    {
+      "handle": "julminnen-mugg-30-cl-4-pack",
+      "id": "15794972426580",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-djup-tallrik-motiv-20-cm-4-pack",
+      "id": "15794971509076",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-assiett-22-cm-4-pack",
+      "id": "15794971443540",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-tallrik-28-cm-motiv-4-pack",
+      "id": "15794971410772",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-startset-12-delar",
+      "id": "15794971279700",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "disney-wonder-bricka-46-cm",
+      "id": "15794960269652",
+      "swedish": "Torkas med fuktig trasa",
+      "group": null
+    },
+    {
+      "handle": "dream-collection-burk-med-bambulock-18-cm",
+      "id": "15794959909204",
+      "swedish": "Porslinsburken tål maskindisk och mikrovågsugn. Bambulocket tål ej maskindisk och mikrovågsugn. Bör rengöras för hand med fuktig trasa.",
+      "group": null
+    },
+    {
+      "handle": "dream-collec-burk-med-bambulock-13cm",
+      "id": "15794959843668",
+      "swedish": "Porslinsburken tål maskindisk och mikrovågsugn. Bambulocket tål ej maskindisk och mikrovågsugn. Bör rengöras för hand med fuktig trasa.",
+      "group": null
+    },
+    {
+      "handle": "diamond-vitvinsglas-35-cl2",
+      "id": "15794955747668",
+      "swedish": "Handdiskas skonsamt",
+      "group": null
+    },
+    {
+      "handle": "pepper-ugnsform-38-x-27-cm",
+      "id": "15794952438100",
+      "swedish": "Stengods kan vara känsligt för stora temperaturförändringar. Placera ej en uppvärmd stengodsprodukt på kall yta eller en kyld produkt direkt i ugnen.",
+      "group": null
+    },
+    {
+      "handle": "drop-karaff-12-l",
+      "id": "15794951979348",
+      "swedish": "Ett skonsamt diskprogram rekommenderas eller att glasen diskas varsamt för hand",
+      "group": null
+    },
+    {
+      "handle": "drop-dricksglas-40-cl",
+      "id": "15794949456212",
+      "swedish": "Ett skonsamt diskprogram rekommenderas eller att glasen diskas varsamt för hand",
+      "group": null
+    },
+    {
+      "handle": "drop-vinglas-55-cl2",
+      "id": "15794949030228",
+      "swedish": "Ett skonsamt diskprogram rekommenderas eller att glasen diskas varsamt för hand",
+      "group": null
+    },
+    {
+      "handle": "kaprifol-bricka-vit-46-cm",
+      "id": "15794946212180",
+      "swedish": "Torkas med fuktig trasa",
+      "group": null
+    },
+    {
+      "handle": "breath-of-nature-kokshandduk-evening-darkness-50-x-70-cm-2-pack",
+      "id": "15794943525204",
+      "swedish": "Maskintvätt 40 grader. Torktumling rekommenderas ej. Strykning på hög värme när textilen är lite fuktig.",
+      "group": "CA3"
+    },
+    {
+      "handle": "breath-of-nature-kokshandduk-earth-stone-2-pack",
+      "id": "15794943033684",
+      "swedish": "Maskintvätt 40 grader. Torktumling rekommenderas ej. Strykning på hög värme när textilen är lite fuktig.",
+      "group": "CA3"
+    },
+    {
+      "handle": "breath-of-nature-bordsduk-nordic-sand-145-x-320-cm",
+      "id": "15794942476628",
+      "swedish": "Maskintvätt 40 grader. Torktumling rekommenderas ej. Strykning på hög värme när textilen är lite fuktig.",
+      "group": "CA3"
+    },
+    {
+      "handle": "breath-of-nature-servett-moss-green-45x45-cm-4-pack-ny",
+      "id": "15794941952340",
+      "swedish": "Maskintvätt 40 grader. Torktumling rekommenderas ej. Strykning på hög värme när textilen är lite fuktig.",
+      "group": "CA3"
+    },
+    {
+      "handle": "breath-of-nature-bordsduk-earth-stone-145-x-320-cm",
+      "id": "15794941296980",
+      "swedish": "Maskintvätt 40 grader. Torktumling rekommenderas ej. Strykning på hög värme när textilen är lite fuktig.",
+      "group": "CA3"
+    },
+    {
+      "handle": "breath-of-nature-bordsduk-nordic-sand-145-x-250-cm",
+      "id": "15794940608852",
+      "swedish": "Maskintvätt 40 grader. Torktumling rekommenderas ej. Strykning på hög värme när textilen är lite fuktig.",
+      "group": "CA3"
+    },
+    {
+      "handle": "breath-of-nature-bordsduk-earth-stone-145-x-250-cm",
+      "id": "15794939953492",
+      "swedish": "Maskintvätt 40 grader. Torktumling rekommenderas ej. Strykning på hög värme när textilen är lite fuktig.",
+      "group": "CA3"
+    },
+    {
+      "handle": "breath-of-nature-bordsduk-evening-darkness-145-x-320-cm",
+      "id": "15794939330900",
+      "swedish": "Maskintvätt 40 grader. Torktumling rekommenderas ej. Strykning på hög värme när textilen är lite fuktig.",
+      "group": "CA3"
+    },
+    {
+      "handle": "diamond-karaff-12-l",
+      "id": "15794938184020",
+      "swedish": "Handdiskas skonsamt.",
+      "group": null
+    },
+    {
+      "handle": "breath-of-nature-bordsduk-evening-darkness-145-x-250-cm",
+      "id": "15794937135444",
+      "swedish": "Maskintvätt 40 grader. Torktumling rekommenderas ej. Strykning på hög värme när textilen är lite fuktig.",
+      "group": "CA3"
+    },
+    {
+      "handle": "julminnen-serveringsfat-35-cm",
+      "id": "15794935234900",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-kanna-1-l",
+      "id": "15794934481236",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-serveringsfat-39-cm",
+      "id": "15794933662036",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-terrin-24-l",
+      "id": "15794932875604",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-saskanna-med-fat-90-cl",
+      "id": "15794932089172",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-skal-27-cm",
+      "id": "15794931335508",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-skal-22-cm",
+      "id": "15794930516308",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-skal-16-cm",
+      "id": "15794929566036",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-mugg-30-cl",
+      "id": "15794928582996",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-assiett-22-cm",
+      "id": "15794927665492",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-tallrik-28-cm-motiv",
+      "id": "15794926780756",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "julminnen-djup-tallrik-motiv-20-cm",
+      "id": "15794925764948",
+      "swedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "group": "CA1"
+    },
+    {
+      "handle": "diamond-dricksglas-30-cl",
+      "id": "15794924847444",
+      "swedish": "Handdiskas skonsamt.",
+      "group": null
+    },
+    {
+      "handle": "diamond-rodvinsglas-45-cl-ny",
+      "id": "15794923995476",
+      "swedish": "Handdiskas skonsamt.",
+      "group": null
+    },
+    {
+      "handle": "champagneglas-34-cl-guldkant",
+      "id": "15794898436436",
+      "swedish": "Handdiskas skonsamt.",
+      "group": null
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "fileFormat": "fyrklovern-norce-storeapi-published-content/v1",
+  "generatedAt": "2026-10-16T09:28:16.214Z",
+  "country": "SE",
+  "currency": "SEK",
+  "sourceCategories": "C:\\Users\\Eddie Peters\\Desktop\\Fyrklövern\\fyrklovern_custom_export.xlsx",
+  "cultures": [
+    "da-DK",
+    "de-DE",
+    "en-GB",
+    "fi-FI",
+    "nb-NO",
+    "nl-NL",
+    "sv-SE"
+  ],
+  "excludedConflictCategoryIds": [],
+  "requestedCount": 7,
+  "successCount": 0,
+  "errorCount": 7,
+  "records": [
+    {
+      "categoryId": "1",
+      "culture": "da-DK",
+      "retrievedAt": "2026-10-16T09:28:11.581Z",
+      "contentId": null,
+      "status": "error",
+      "error": "fetch failed"
+    },
+    {
+      "categoryId": "1",
+      "culture": "de-DE",
+      "retrievedAt": "2026-10-16T09:28:12.364Z",
+      "contentId": null,
+      "status": "error",
+      "error": "fetch failed"
+    },
+    {
+      "categoryId": "1",
+      "culture": "en-GB",
+      "retrievedAt": "2026-10-16T09:28:13.132Z",
+      "contentId": null,
+      "status": "error",
+      "error": "fetch failed"
+    },
+    {
+      "categoryId": "1",
+      "culture": "fi-FI",
+      "retrievedAt": "2026-10-16T09:28:13.908Z",
+      "contentId": null,
+      "status": "error",
+      "error": "fetch failed"
+    },
+    {
+      "categoryId": "1",
+      "culture": "nb-NO",
+      "retrievedAt": "2026-10-16T09:28:14.676Z",
+      "contentId": null,
+      "status": "error",
+      "error": "fetch failed"
+    },
+    {
+      "categoryId": "1",
+      "culture": "nl-NL",
+      "retrievedAt": "2026-10-16T09:28:15.427Z",
+      "contentId": null,
+      "status": "error",
+      "error": "fetch failed"
+    },
+    {
+      "categoryId": "1",
+      "culture": "sv-SE",
+      "retrievedAt": "2026-10-16T09:28:16.212Z",
+      "contentId": null,
+      "status": "error",
+      "error": "fetch failed"
+    }
+  ]
+}

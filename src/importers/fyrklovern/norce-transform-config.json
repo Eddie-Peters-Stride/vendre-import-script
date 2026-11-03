@@ -1,0 +1,27 @@
+{
+  "updateProductTitle": false,
+  "updateCollectionTitle": false,
+  "cultureToShopifyLocale": {
+    "nb-NO": "no",
+    "da-DK": "da",
+    "de-DE": "de",
+    "en-GB": "en",
+    "fi-FI": "fi",
+    "nl-NL": "nl"
+  },
+  "productAttributes": {
+    "Brand": { "key": "brand", "type": "single_line_text_field" },
+    "collection": { "key": "collection", "type": "list.single_line_text_field" },
+    "design": { "key": "design", "type": "list.single_line_text_field" },
+    "material": { "key": "material", "type": "list.single_line_text_field" },
+    "volume": { "key": "volume", "type": "single_line_text_field" },
+    "dishwashersafe": { "key": "dishwasher_safe", "type": "boolean" },
+    "microwavesafe": { "key": "microwave_safe", "type": "boolean" },
+    "colour": { "key": "colour", "type": "list.single_line_text_field" },
+    "family": { "key": "family", "type": "single_line_text_field" },
+    "itemcategorycode": { "key": "item_category_code", "type": "single_line_text_field" },
+    "articletype": { "key": "article_type", "type": "single_line_text_field" },
+    "category": { "key": "category", "type": "single_line_text_field" },
+    "collectioncategoryid": { "key": "collection_category_id", "type": "single_line_text_field" }
+  }
+}

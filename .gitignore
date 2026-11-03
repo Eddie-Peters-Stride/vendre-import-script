@@ -14,3 +14,7 @@ node_modules/
 # Ignore CSV and Excel files
 *.csv
 *.xlsx
+
+# Local Norce extraction state and generated review files
+/cache/
+/norcemigration/

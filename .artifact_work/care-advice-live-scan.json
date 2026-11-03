@@ -1,0 +1,1092 @@
+{
+  "scannedAt": "2026-10-27T10:26:10.807Z",
+  "endpoint": "https://storeapi.jetshop.io/",
+  "shopId": "fyrklovern",
+  "records": [
+    {
+      "handle": "julminnen-tallriksset-36-delar-12-pers",
+      "article": "11000714",
+      "sourceId": "3276",
+      "shopifySwedish": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel.",
+      "locales": {
+        "SE": {
+          "channelId": "1",
+          "culture": "sv-SE",
+          "status": "ok",
+          "productId": 3276,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Skötselråd",
+              "value": "Julminnen kan diskas i maskin. Ett skonsamt program rekommenderas. För att hålla porslinet glansigt rekommenderas glansmedel."
+            }
+          ]
+        },
+        "NO": {
+          "channelId": "2",
+          "culture": "nb-NO",
+          "status": "ok",
+          "productId": 3276,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedlikeholdsråd",
+              "value": "Juleminner kan vaskes i oppvaskmaskin. Et skånsomt program anbefales. For å holde porselenet blankt anbefales glansmiddel."
+            }
+          ]
+        },
+        "DK": {
+          "channelId": "3",
+          "culture": "da-DK",
+          "status": "ok",
+          "productId": 3276,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedligeholdelse",
+              "value": "Juleminder kan vaskes i opvaskemaskine. Et skånsomt program anbefales. For at holde porcelænet skinnende anbefales afspændingsmiddel."
+            }
+          ]
+        },
+        "FI": {
+          "channelId": "4",
+          "culture": "fi-FI",
+          "status": "ok",
+          "productId": 3276,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Hoito-ohjeet",
+              "value": "Joulumuistot kestää konepesun. Suosittelemme varovaista ohjelmaa. Posliinin kiillon säilyttämiseksi suosittelemme huuhtelukirkastetta."
+            }
+          ]
+        },
+        "DE": {
+          "channelId": "5",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 3276,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Weihnachtserinnerungen ist spülmaschinengeeignet. Ein Schonprogramm wird empfohlen. Um das Porzellan glänzend zu halten, wird Klarspüler empfohlen."
+            }
+          ]
+        },
+        "EU": {
+          "channelId": "6",
+          "culture": "en-GB",
+          "status": "ok",
+          "productId": 3276,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Care advice",
+              "value": "Christmas Memories is dishwasher safe. A gentle cycle is recommended. To keep the porcelain shiny, rinse aid is recommended."
+            }
+          ]
+        },
+        "NL": {
+          "channelId": "7",
+          "culture": "nl-NL",
+          "status": "ok",
+          "productId": 3276,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Onderhoudstips",
+              "value": "Kerstherinneringen is vaatwasserbestendig. Een zacht programma wordt aanbevolen. Om het porselein glanzend te houden, wordt glansspoelmiddel aanbevolen."
+            }
+          ]
+        },
+        "AT": {
+          "channelId": "8",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 3276,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Weihnachtserinnerungen ist spülmaschinengeeignet. Ein Schonprogramm wird empfohlen. Um das Porzellan glänzend zu halten, wird Klarspüler empfohlen."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "handle": "crown-glasset-8-delar-gron",
+      "article": "11000470",
+      "sourceId": "2994",
+      "shopifySwedish": "Glasprogram rekommenderas",
+      "locales": {
+        "SE": {
+          "channelId": "1",
+          "culture": "sv-SE",
+          "status": "ok",
+          "productId": 2994,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Skötselråd",
+              "value": "Glasprogram rekommenderas"
+            }
+          ]
+        },
+        "NO": {
+          "channelId": "2",
+          "culture": "nb-NO",
+          "status": "ok",
+          "productId": 2994,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedlikeholdsråd",
+              "value": "Anbefalt glassprogram"
+            }
+          ]
+        },
+        "DK": {
+          "channelId": "3",
+          "culture": "da-DK",
+          "status": "ok",
+          "productId": 2994,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedligeholdelse",
+              "value": "Glasprogram anbefales"
+            }
+          ]
+        },
+        "FI": {
+          "channelId": "4",
+          "culture": "fi-FI",
+          "status": "ok",
+          "productId": 2994,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Hoito-ohjeet",
+              "value": "Suositeltava lasiohjelma"
+            }
+          ]
+        },
+        "DE": {
+          "channelId": "5",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 2994,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Glasprogramm empfohlen"
+            }
+          ]
+        },
+        "EU": {
+          "channelId": "6",
+          "culture": "en-GB",
+          "status": "ok",
+          "productId": 2994,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Care advice",
+              "value": "Glass programme recommended"
+            }
+          ]
+        },
+        "NL": {
+          "channelId": "7",
+          "culture": "nl-NL",
+          "status": "ok",
+          "productId": 2994,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Onderhoudstips",
+              "value": "Glasprogramma"
+            }
+          ]
+        },
+        "AT": {
+          "channelId": "8",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 2994,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Glasprogramm empfohlen"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "handle": "breath-of-nature-bordsduk-north-sea-green-145x250-cm",
+      "article": "10013262",
+      "sourceId": "2576",
+      "shopifySwedish": "Maskintvätt 40 grader. Torktumling rekommenderas ej. Strykning på hög värme när textilen är lite fuktig.",
+      "locales": {
+        "SE": {
+          "channelId": "1",
+          "culture": "sv-SE",
+          "status": "ok",
+          "productId": 2576,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Skötselråd",
+              "value": "Maskintvätt 40 grader. Torktumling rekommenderas ej. Strykning på hög värme när textilen är lite fuktig."
+            }
+          ]
+        },
+        "NO": {
+          "channelId": "2",
+          "culture": "nb-NO",
+          "status": "ok",
+          "productId": 2576,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedlikeholdsråd",
+              "value": "Vedlikeholdsråd: Vaskes i maskin 40 grader. Tørketrummel anbefales ikke. Stryk stoffet på høy varme mens det er litt fuktig."
+            }
+          ]
+        },
+        "DK": {
+          "channelId": "3",
+          "culture": "da-DK",
+          "status": "ok",
+          "productId": 2576,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedligeholdelse",
+              "value": "Vaskeanvisning: Maskinvask 40 grader. Må ikke tørretumbles. Stryg ved høj varme, mens stoffet er let fugtigt."
+            }
+          ]
+        },
+        "FI": {
+          "channelId": "4",
+          "culture": "fi-FI",
+          "status": "ok",
+          "productId": 2576,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Hoito-ohjeet",
+              "value": "Hoito-ohje: Konepesu 40 asteessa. Rumpukuivausta ei suositella. Silitys kuumalla raudalla, kun tekstiili on hieman kostea"
+            }
+          ]
+        },
+        "DE": {
+          "channelId": "5",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 2576,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Pflegehinweis: Maschinenwäsche 40 Grad. Nicht im Trockner trocknen. Bei starker Hitze bügeln, wenn der Stoff leicht feucht ist."
+            }
+          ]
+        },
+        "EU": {
+          "channelId": "6",
+          "culture": "en-GB",
+          "status": "error",
+          "error": "ProductNotFound"
+        },
+        "NL": {
+          "channelId": "7",
+          "culture": "nl-NL",
+          "status": "error",
+          "error": "ProductNotFound"
+        },
+        "AT": {
+          "channelId": "8",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 2576,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Pflegehinweis: Maschinenwäsche 40 Grad. Nicht im Trockner trocknen. Bei starker Hitze bügeln, wenn der Stoff leicht feucht ist."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "handle": "dream-collection-plad-130-x-170-cm",
+      "article": "10012985",
+      "sourceId": "2471",
+      "shopifySwedish": "Handtvätt rekommenderas för att polyesterfyllningen ska behållas jämn.",
+      "locales": {
+        "SE": {
+          "channelId": "1",
+          "culture": "sv-SE",
+          "status": "ok",
+          "productId": 2471,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Skötselråd",
+              "value": "Handtvätt rekommenderas för att polyesterfyllningen ska behållas jämn."
+            }
+          ]
+        },
+        "NO": {
+          "channelId": "2",
+          "culture": "nb-NO",
+          "status": "ok",
+          "productId": 2471,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedlikeholdsråd",
+              "value": "Handtvätt rekommenderas för att polyesterfyllningen ska behållas jämn."
+            }
+          ]
+        },
+        "DK": {
+          "channelId": "3",
+          "culture": "da-DK",
+          "status": "ok",
+          "productId": 2471,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedligeholdelse",
+              "value": "Handtvätt rekommenderas för att polyesterfyllningen ska behållas jämn."
+            }
+          ]
+        },
+        "FI": {
+          "channelId": "4",
+          "culture": "fi-FI",
+          "status": "ok",
+          "productId": 2471,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Hoito-ohjeet",
+              "value": "Handtvätt rekommenderas för att polyesterfyllningen ska behållas jämn."
+            }
+          ]
+        },
+        "DE": {
+          "channelId": "5",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 2471,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Handtvätt rekommenderas för att polyesterfyllningen ska behållas jämn."
+            }
+          ]
+        },
+        "EU": {
+          "channelId": "6",
+          "culture": "en-GB",
+          "status": "error",
+          "error": "ProductNotFound"
+        },
+        "NL": {
+          "channelId": "7",
+          "culture": "nl-NL",
+          "status": "error",
+          "error": "ProductNotFound"
+        },
+        "AT": {
+          "channelId": "8",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 2471,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Handtvätt rekommenderas för att polyesterfyllningen ska behållas jämn."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "handle": "disney-wonder-bricka-46-cm",
+      "article": "10013816",
+      "sourceId": "415",
+      "shopifySwedish": "Torkas med fuktig trasa",
+      "locales": {
+        "SE": {
+          "channelId": "1",
+          "culture": "sv-SE",
+          "status": "ok",
+          "productId": 415,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Skötselråd",
+              "value": "Torkas med fuktig trasa"
+            }
+          ]
+        },
+        "NO": {
+          "channelId": "2",
+          "culture": "nb-NO",
+          "status": "ok",
+          "productId": 415,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedlikeholdsråd",
+              "value": "Torkas med fuktig trasa"
+            }
+          ]
+        },
+        "DK": {
+          "channelId": "3",
+          "culture": "da-DK",
+          "status": "ok",
+          "productId": 415,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedligeholdelse",
+              "value": "Torkas med fuktig trasa"
+            }
+          ]
+        },
+        "FI": {
+          "channelId": "4",
+          "culture": "fi-FI",
+          "status": "ok",
+          "productId": 415,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Hoito-ohjeet",
+              "value": "Torkas med fuktig trasa"
+            }
+          ]
+        },
+        "DE": {
+          "channelId": "5",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 415,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Torkas med fuktig trasa"
+            }
+          ]
+        },
+        "EU": {
+          "channelId": "6",
+          "culture": "en-GB",
+          "status": "error",
+          "error": "ProductNotFound"
+        },
+        "NL": {
+          "channelId": "7",
+          "culture": "nl-NL",
+          "status": "ok",
+          "productId": 415,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Onderhoudstips",
+              "value": "Torkas med fuktig trasa"
+            }
+          ]
+        },
+        "AT": {
+          "channelId": "8",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 415,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Torkas med fuktig trasa"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "handle": "dream-collection-burk-med-bambulock-18-cm",
+      "article": "10013802",
+      "sourceId": "413",
+      "shopifySwedish": "Porslinsburken tål maskindisk och mikrovågsugn. Bambulocket tål ej maskindisk och mikrovågsugn. Bör rengöras för hand med fuktig trasa.",
+      "locales": {
+        "SE": {
+          "channelId": "1",
+          "culture": "sv-SE",
+          "status": "ok",
+          "productId": 413,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Skötselråd",
+              "value": "Porslinsburken tål maskindisk och mikrovågsugn. Bambulocket tål ej maskindisk och mikrovågsugn. Bör rengöras för hand med fuktig trasa."
+            }
+          ]
+        },
+        "NO": {
+          "channelId": "2",
+          "culture": "nb-NO",
+          "status": "ok",
+          "productId": 413,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedlikeholdsråd",
+              "value": "Porslinsburken tål maskindisk och mikrovågsugn. Bambulocket tål ej maskindisk och mikrovågsugn. Bör rengöras för hand med fuktig trasa."
+            }
+          ]
+        },
+        "DK": {
+          "channelId": "3",
+          "culture": "da-DK",
+          "status": "ok",
+          "productId": 413,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedligeholdelse",
+              "value": "Porslinsburken tål maskindisk och mikrovågsugn. Bambulocket tål ej maskindisk och mikrovågsugn. Bör rengöras för hand med fuktig trasa."
+            }
+          ]
+        },
+        "FI": {
+          "channelId": "4",
+          "culture": "fi-FI",
+          "status": "ok",
+          "productId": 413,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Hoito-ohjeet",
+              "value": "Porslinsburken tål maskindisk och mikrovågsugn. Bambulocket tål ej maskindisk och mikrovågsugn. Bör rengöras för hand med fuktig trasa."
+            }
+          ]
+        },
+        "DE": {
+          "channelId": "5",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 413,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Porslinsburken tål maskindisk och mikrovågsugn. Bambulocket tål ej maskindisk och mikrovågsugn. Bör rengöras för hand med fuktig trasa."
+            }
+          ]
+        },
+        "EU": {
+          "channelId": "6",
+          "culture": "en-GB",
+          "status": "ok",
+          "productId": 413,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Care advice",
+              "value": "Porslinsburken tål maskindisk och mikrovågsugn. Bambulocket tål ej maskindisk och mikrovågsugn. Bör rengöras för hand med fuktig trasa."
+            }
+          ]
+        },
+        "NL": {
+          "channelId": "7",
+          "culture": "nl-NL",
+          "status": "ok",
+          "productId": 413,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Onderhoudstips",
+              "value": "Porslinsburken tål maskindisk och mikrovågsugn. Bambulocket tål ej maskindisk och mikrovågsugn. Bör rengöras för hand med fuktig trasa."
+            }
+          ]
+        },
+        "AT": {
+          "channelId": "8",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 413,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Porslinsburken tål maskindisk och mikrovågsugn. Bambulocket tål ej maskindisk och mikrovågsugn. Bör rengöras för hand med fuktig trasa."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "handle": "diamond-vitvinsglas-35-cl2",
+      "article": "10013335",
+      "sourceId": "378",
+      "shopifySwedish": "Handdiskas skonsamt",
+      "locales": {
+        "SE": {
+          "channelId": "1",
+          "culture": "sv-SE",
+          "status": "ok",
+          "productId": 378,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Skötselråd",
+              "value": "Handdiskas skonsamt"
+            }
+          ]
+        },
+        "NO": {
+          "channelId": "2",
+          "culture": "nb-NO",
+          "status": "ok",
+          "productId": 378,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedlikeholdsråd",
+              "value": "Handdiskas skonsamt"
+            }
+          ]
+        },
+        "DK": {
+          "channelId": "3",
+          "culture": "da-DK",
+          "status": "ok",
+          "productId": 378,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedligeholdelse",
+              "value": "Handdiskas skonsamt"
+            }
+          ]
+        },
+        "FI": {
+          "channelId": "4",
+          "culture": "fi-FI",
+          "status": "ok",
+          "productId": 378,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Hoito-ohjeet",
+              "value": "Handdiskas skonsamt"
+            }
+          ]
+        },
+        "DE": {
+          "channelId": "5",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 378,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Handdiskas skonsamt"
+            }
+          ]
+        },
+        "EU": {
+          "channelId": "6",
+          "culture": "en-GB",
+          "status": "ok",
+          "productId": 378,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Care advice",
+              "value": "Handdiskas skonsamt"
+            }
+          ]
+        },
+        "NL": {
+          "channelId": "7",
+          "culture": "nl-NL",
+          "status": "ok",
+          "productId": 378,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Onderhoudstips",
+              "value": "Handdiskas skonsamt"
+            }
+          ]
+        },
+        "AT": {
+          "channelId": "8",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 378,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Handdiskas skonsamt"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "handle": "pepper-ugnsform-38-x-27-cm",
+      "article": "10013120",
+      "sourceId": "365",
+      "shopifySwedish": "Stengods kan vara känsligt för stora temperaturförändringar. Placera ej en uppvärmd stengodsprodukt på kall yta eller en kyld produkt direkt i ugnen.",
+      "locales": {
+        "SE": {
+          "channelId": "1",
+          "culture": "sv-SE",
+          "status": "ok",
+          "productId": 365,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Skötselråd",
+              "value": "Stengods kan vara känsligt för stora temperaturförändringar. Placera ej en uppvärmd stengodsprodukt på kall yta eller en kyld produkt direkt i ugnen."
+            }
+          ]
+        },
+        "NO": {
+          "channelId": "2",
+          "culture": "nb-NO",
+          "status": "ok",
+          "productId": 365,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedlikeholdsråd",
+              "value": "Stengods kan vara känsligt för stora temperaturförändringar. Placera ej en uppvärmd stengodsprodukt på kall yta eller en kyld produkt direkt i ugnen."
+            }
+          ]
+        },
+        "DK": {
+          "channelId": "3",
+          "culture": "da-DK",
+          "status": "ok",
+          "productId": 365,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedligeholdelse",
+              "value": "Stengods kan vara känsligt för stora temperaturförändringar. Placera ej en uppvärmd stengodsprodukt på kall yta eller en kyld produkt direkt i ugnen."
+            }
+          ]
+        },
+        "FI": {
+          "channelId": "4",
+          "culture": "fi-FI",
+          "status": "ok",
+          "productId": 365,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Hoito-ohjeet",
+              "value": "Stengods kan vara känsligt för stora temperaturförändringar. Placera ej en uppvärmd stengodsprodukt på kall yta eller en kyld produkt direkt i ugnen."
+            }
+          ]
+        },
+        "DE": {
+          "channelId": "5",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 365,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Stengods kan vara känsligt för stora temperaturförändringar. Placera ej en uppvärmd stengodsprodukt på kall yta eller en kyld produkt direkt i ugnen."
+            }
+          ]
+        },
+        "EU": {
+          "channelId": "6",
+          "culture": "en-GB",
+          "status": "ok",
+          "productId": 365,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Care advice",
+              "value": "Stengods kan vara känsligt för stora temperaturförändringar. Placera ej en uppvärmd stengodsprodukt på kall yta eller en kyld produkt direkt i ugnen."
+            }
+          ]
+        },
+        "NL": {
+          "channelId": "7",
+          "culture": "nl-NL",
+          "status": "ok",
+          "productId": 365,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Onderhoudstips",
+              "value": "Stengods kan vara känsligt för stora temperaturförändringar. Placera ej en uppvärmd stengodsprodukt på kall yta eller en kyld produkt direkt i ugnen."
+            }
+          ]
+        },
+        "AT": {
+          "channelId": "8",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 365,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Stengods kan vara känsligt för stora temperaturförändringar. Placera ej en uppvärmd stengodsprodukt på kall yta eller en kyld produkt direkt i ugnen."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "handle": "drop-karaff-12-l",
+      "article": "10013127",
+      "sourceId": "364",
+      "shopifySwedish": "Ett skonsamt diskprogram rekommenderas eller att glasen diskas varsamt för hand",
+      "locales": {
+        "SE": {
+          "channelId": "1",
+          "culture": "sv-SE",
+          "status": "ok",
+          "productId": 364,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Skötselråd",
+              "value": "Ett skonsamt diskprogram rekommenderas eller att glasen diskas varsamt för hand"
+            }
+          ]
+        },
+        "NO": {
+          "channelId": "2",
+          "culture": "nb-NO",
+          "status": "ok",
+          "productId": 364,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedlikeholdsråd",
+              "value": "Ett skonsamt diskprogram rekommenderas eller att glasen diskas varsamt för hand"
+            }
+          ]
+        },
+        "DK": {
+          "channelId": "3",
+          "culture": "da-DK",
+          "status": "ok",
+          "productId": 364,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedligeholdelse",
+              "value": "Ett skonsamt diskprogram rekommenderas eller att glasen diskas varsamt för hand"
+            }
+          ]
+        },
+        "FI": {
+          "channelId": "4",
+          "culture": "fi-FI",
+          "status": "ok",
+          "productId": 364,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Hoito-ohjeet",
+              "value": "Ett skonsamt diskprogram rekommenderas eller att glasen diskas varsamt för hand"
+            }
+          ]
+        },
+        "DE": {
+          "channelId": "5",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 364,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Ett skonsamt diskprogram rekommenderas eller att glasen diskas varsamt för hand"
+            }
+          ]
+        },
+        "EU": {
+          "channelId": "6",
+          "culture": "en-GB",
+          "status": "ok",
+          "productId": 364,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Care advice",
+              "value": "Ett skonsamt diskprogram rekommenderas eller att glasen diskas varsamt för hand"
+            }
+          ]
+        },
+        "NL": {
+          "channelId": "7",
+          "culture": "nl-NL",
+          "status": "ok",
+          "productId": 364,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Onderhoudstips",
+              "value": "Ett skonsamt diskprogram rekommenderas eller att glasen diskas varsamt för hand"
+            }
+          ]
+        },
+        "AT": {
+          "channelId": "8",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 364,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Ett skonsamt diskprogram rekommenderas eller att glasen diskas varsamt för hand"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "handle": "diamond-rodvinsglas-45-cl-ny",
+      "article": "10011713",
+      "sourceId": "291",
+      "shopifySwedish": "Handdiskas skonsamt.",
+      "locales": {
+        "SE": {
+          "channelId": "1",
+          "culture": "sv-SE",
+          "status": "ok",
+          "productId": 291,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Skötselråd",
+              "value": "Handdiskas skonsamt."
+            }
+          ]
+        },
+        "NO": {
+          "channelId": "2",
+          "culture": "nb-NO",
+          "status": "ok",
+          "productId": 291,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedlikeholdsråd",
+              "value": "Handdiskas skonsamt."
+            }
+          ]
+        },
+        "DK": {
+          "channelId": "3",
+          "culture": "da-DK",
+          "status": "ok",
+          "productId": 291,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Vedligeholdelse",
+              "value": "Handdiskas skonsamt."
+            }
+          ]
+        },
+        "FI": {
+          "channelId": "4",
+          "culture": "fi-FI",
+          "status": "ok",
+          "productId": 291,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Hoito-ohjeet",
+              "value": "Handdiskas skonsamt."
+            }
+          ]
+        },
+        "DE": {
+          "channelId": "5",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 291,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Handdiskas skonsamt."
+            }
+          ]
+        },
+        "EU": {
+          "channelId": "6",
+          "culture": "en-GB",
+          "status": "ok",
+          "productId": 291,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Care advice",
+              "value": "Handdiskas skonsamt."
+            }
+          ]
+        },
+        "NL": {
+          "channelId": "7",
+          "culture": "nl-NL",
+          "status": "ok",
+          "productId": 291,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Onderhoudstips",
+              "value": "Handdiskas skonsamt."
+            }
+          ]
+        },
+        "AT": {
+          "channelId": "8",
+          "culture": "de-DE",
+          "status": "ok",
+          "productId": 291,
+          "careFields": [
+            {
+              "key": "careadvice",
+              "title": "Pflegehinweise",
+              "value": "Handdiskas skonsamt."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

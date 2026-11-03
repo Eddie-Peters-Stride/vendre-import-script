@@ -7,7 +7,30 @@ const DEFAULTS = Object.freeze({
 const CATEGORY_QUERY = `query GetCategory($id: ID!) {
   category(id: $id) {
     id parentId name mainHeader content
-    data { id name }
+    data {
+      id name tags
+      items {
+        name type
+        properties {
+          name type valueType
+          value { __typename ... on StringValue { value } ... on BoolValue { value } }
+        }
+        children {
+          name type
+          properties {
+            name type valueType
+            value { __typename ... on StringValue { value } ... on BoolValue { value } }
+          }
+          children {
+            name type
+            properties {
+              name type valueType
+              value { __typename ... on StringValue { value } ... on BoolValue { value } }
+            }
+          }
+        }
+      }
+    }
     images { url width height }
     primaryRoute { path }
   }
@@ -44,7 +67,12 @@ class NorceStoreApiClient {
         if (typeof transport !== 'function') throw new Error('A fetch-compatible transport is required.');
     }
 
-    async fetchCategory(id, { culture = this.config.culture } = {}) {
+    async fetchCategory(id, {
+        culture = this.config.culture,
+        shopId = this.config.shopId,
+        country = this.config.country,
+        currency = this.config.currency,
+    } = {}) {
         if (!this.config.token) throw new Error('Norce StoreAPI token is missing (NORCE_STOREAPI_TOKEN).');
         if (id == null || String(id).trim() === '') throw new Error('Category ID is required.');
         let endpoint;
@@ -62,9 +90,9 @@ class NorceStoreApiClient {
                 const response = await this.transport(this.config.endpoint, {
                     method: 'POST', signal: controller.signal,
                     headers: {
-                        'Content-Type': 'application/json', Shopid: this.config.shopId,
+                        'Content-Type': 'application/json', Shopid: shopId,
                         Token: this.config.token, Culture: culture,
-                        Country: this.config.country, Currency: this.config.currency,
+                        Country: country, Currency: currency,
                     },
                     body: JSON.stringify({ query: CATEGORY_QUERY, variables: { id: String(id) } }),
                 });
@@ -75,7 +103,9 @@ class NorceStoreApiClient {
                 }
                 const payload = await response.json();
                 if (payload.errors?.length) {
-                    const error = new Error(`Norce StoreAPI returned ${payload.errors.length} GraphQL error(s).`);
+                    const details = payload.errors.map(item => String(item?.message || '').trim())
+                        .filter(Boolean).slice(0, 3).join(' | ');
+                    const error = new Error(`Norce StoreAPI returned ${payload.errors.length} GraphQL error(s)${details ? `: ${details}` : '.'}`);
                     error.retryable = false;
                     throw error;
                 }

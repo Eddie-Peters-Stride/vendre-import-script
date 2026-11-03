@@ -8,6 +8,9 @@ const { buildMappingReview, normalizePath, readSuppliedContentMap, writeMappingW
 const { main: fetchNorceCategories, discoverCategoryPairs, discoverCategories, applyFetchExitStatus } = require('../src/importers/fyrklovern/fetch-norce-categories');
 
 async function testClient() {
+    for (const field of ['items', 'name type', 'properties', 'valueType', 'StringValue', 'BoolValue', 'children']) {
+        assert(CATEGORY_QUERY.includes(field), `StoreAPI query requests ${field}`);
+    }
     let calls = 0;
     const missing = new NorceStoreApiClient({ config: { token: '' }, transport: async () => { calls++; } });
     await assert.rejects(() => missing.fetchCategory(149), /token is missing/);
@@ -30,6 +33,9 @@ async function testClient() {
     const body = JSON.parse(request[1].body);
     assert.equal(body.query, CATEGORY_QUERY);
     assert.deepEqual(body.variables, { id: '149' });
+    const graphqlFailure = new NorceStoreApiClient({ config: { token: 'secret', retries: 0 },
+        transport: async () => ({ ok: true, json: async () => ({ errors: [{ message: "Culture 'da-DK' is not supported in channel." }] }) }) });
+    await assert.rejects(() => graphqlFailure.fetchCategory(1, { culture: 'da-DK' }), /Culture 'da-DK' is not supported in channel/);
     assert.equal(storeApiConfigFromEnv({}).token, '');
     assert.deepEqual(storeApiConfigFromEnv({ NORCE_STOREAPI_URL: 'https://example.test', NORCE_STOREAPI_SHOPID: 'shop', NORCE_STOREAPI_TOKEN: 'secret', NORCE_DEFAULT_CULTURE: 'en-GB' }), {
         endpoint: 'https://example.test', shopId: 'shop', token: 'secret', culture: 'en-GB',

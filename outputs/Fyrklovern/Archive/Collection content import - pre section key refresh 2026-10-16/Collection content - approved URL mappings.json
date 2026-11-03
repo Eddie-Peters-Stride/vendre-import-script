@@ -1,0 +1,2264 @@
+[
+  {
+    "CategoryID": "1",
+    "Culture": "nb-NO",
+    "ShopifyID": "728776343892",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776343892",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "149",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776376660",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "151",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776409428",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "154",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776442196",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "155",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776474964",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "156",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776540500",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "157",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776573268",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "163",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776606036",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "165",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776638804",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "166",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776671572",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "167",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776704340",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "168",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776737108",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "172",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776769876",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "173",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776802644",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "174",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776835412",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "175",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776868180",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "176",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776900948",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "177",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776933716",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "182",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776966484",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "183",
+    "Culture": "sv-SE",
+    "ShopifyID": "728776999252",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "184",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777032020",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "185",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777064788",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "186",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777097556",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "187",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777130324",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "188",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777163092",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "189",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777195860",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "190",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777228628",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "191",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777261396",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "192",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777326932",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "193",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777359700",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "194",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777392468",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "195",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777425236",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "196",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777458004",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "197",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777490772",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "198",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777556308",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "199",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777589076",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "200",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777621844",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "201",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777654612",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "202",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777687380",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "203",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777720148",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "204",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777752916",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "205",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777785684",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "206",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777818452",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "208",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777851220",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "209",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777883988",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "210",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777916756",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "211",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777949524",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "212",
+    "Culture": "sv-SE",
+    "ShopifyID": "728777982292",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "213",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778015060",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "214",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778047828",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "215",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778080596",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "216",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778113364",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "217",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778178900",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "218",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778211668",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "219",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778244436",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "221",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778277204",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "224",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778309972",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "225",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778342740",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "226",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778375508",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "227",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778408276",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "228",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778441044",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "229",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778473812",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "230",
+    "Culture": "da-DK",
+    "ShopifyID": "728778506580",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "230",
+    "Culture": "fi-FI",
+    "ShopifyID": "728778506580",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "230",
+    "Culture": "nb-NO",
+    "ShopifyID": "728778506580",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "230",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778506580",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "231",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778539348",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "232",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778572116",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "233",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778604884",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "234",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778637652",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "235",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778670420",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "236",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778703188",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "240",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778768724",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "241",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778801492",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "242",
+    "Culture": "nb-NO",
+    "ShopifyID": "728778834260",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "242",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778834260",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "243",
+    "Culture": "da-DK",
+    "ShopifyID": "728778899796",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "243",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778899796",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "246",
+    "Culture": "da-DK",
+    "ShopifyID": "728778932564",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "246",
+    "Culture": "de-DE",
+    "ShopifyID": "728778932564",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "246",
+    "Culture": "en-GB",
+    "ShopifyID": "728778932564",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "246",
+    "Culture": "fi-FI",
+    "ShopifyID": "728778932564",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "246",
+    "Culture": "nb-NO",
+    "ShopifyID": "728778932564",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "246",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778932564",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "247",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778965332",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "248",
+    "Culture": "sv-SE",
+    "ShopifyID": "728778998100",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "249",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779030868",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "250",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779063636",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "251",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779096404",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "252",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779129172",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "254",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779161940",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "255",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779194708",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "256",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779227476",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "257",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779260244",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "258",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779293012",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "259",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779325780",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "260",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779358548",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "261",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779391316",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "262",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779424084",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "263",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779456852",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "264",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779522388",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "269",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779555156",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "270",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779587924",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "271",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779620692",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "272",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779653460",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "273",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779686228",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "274",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779751764",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "275",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779784532",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "276",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779850068",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "277",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779882836",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "333",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779915604",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "334",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779948372",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "338",
+    "Culture": "sv-SE",
+    "ShopifyID": "728779981140",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "343",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780046676",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "344",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780079444",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "363",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780112212",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "366",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780144980",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "369",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780210516",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "370",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780243284",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "371",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780276052",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "407",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780308820",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "409",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780341588",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "410",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780407124",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "411",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780439892",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "412",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780472660",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "442",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780505428",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "455",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780538196",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "456",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780603732",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "480",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780636500",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "489",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780669268",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "490",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780702036",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "491",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780734804",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "492",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780800340",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "493",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780865876",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "494",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780898644",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "495",
+    "Culture": "da-DK",
+    "ShopifyID": "728780931412",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "495",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780931412",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "496",
+    "Culture": "da-DK",
+    "ShopifyID": "728780996948",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "496",
+    "Culture": "sv-SE",
+    "ShopifyID": "728780996948",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "497",
+    "Culture": "da-DK",
+    "ShopifyID": "728781029716",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "497",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781029716",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "498",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781062484",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "499",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781128020",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "500",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781193556",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "501",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781226324",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "506",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781259092",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "507",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781291860",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "525",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781357396",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "526",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781390164",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "527",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781422932",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "552",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781455700",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "577",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781488468",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "578",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781554004",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "579",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781586772",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "580",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781619540",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "581",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781652308",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "582",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781685076",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "589",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781717844",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "590",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781750612",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "591",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781783380",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "610",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781816148",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "611",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781848916",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "635",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781881684",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "636",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781914452",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "637",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781947220",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "638",
+    "Culture": "sv-SE",
+    "ShopifyID": "728781979988",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "639",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782012756",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "646",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782045524",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "708",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782078292",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "712",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782111060",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "713",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782143828",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "735",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782176596",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "736",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782209364",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "738",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782242132",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "740",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782307668",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "741",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782340436",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "745",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782405972",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "754",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782438740",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "761",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782471508",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "763",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782504276",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "771",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782537044",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "846",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782569812",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "847",
+    "Culture": "nb-NO",
+    "ShopifyID": "728782569812",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "863",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782602580",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "926",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782668116",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "968",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782700884",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "982",
+    "Culture": "da-DK",
+    "ShopifyID": "728782733652",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "982",
+    "Culture": "de-DE",
+    "ShopifyID": "728782733652",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "982",
+    "Culture": "en-GB",
+    "ShopifyID": "728782733652",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "982",
+    "Culture": "fi-FI",
+    "ShopifyID": "728782733652",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "982",
+    "Culture": "nb-NO",
+    "ShopifyID": "728782733652",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "982",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782733652",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1028",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782766420",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1029",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782831956",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1030",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782864724",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1031",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782897492",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1032",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782930260",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1114",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782963028",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1115",
+    "Culture": "sv-SE",
+    "ShopifyID": "728782995796",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1117",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783028564",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1137",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783094100",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1138",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783126868",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1139",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783192404",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1140",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783225172",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1141",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783257940",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1142",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783290708",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1143",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783323476",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1144",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783356244",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1145",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783389012",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1146",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783421780",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1147",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783454548",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1184",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783487316",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1193",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783520084",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1215",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783552852",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1221",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783585620",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1222",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783618388",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1230",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783651156",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1231",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783683924",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1232",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783716692",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1291",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783782228",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1292",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783814996",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1293",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783847764",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1294",
+    "Culture": "nb-NO",
+    "ShopifyID": "728783913300",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1294",
+    "Culture": "sv-SE",
+    "ShopifyID": "728783913300",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1295",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784011604",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1344",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784077140",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1350",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784109908",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1351",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784142676",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1352",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784175444",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1367",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784208212",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1368",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784240980",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1373",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784273748",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1378",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784306516",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1379",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784339284",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1381",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784404820",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1387",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784437588",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1389",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784470356",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1390",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784503124",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1427",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784535892",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1464",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784568660",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1498",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784601428",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1509",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784634196",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1516",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784666964",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1531",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784699732",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1534",
+    "Culture": "da-DK",
+    "ShopifyID": "728784732500",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1534",
+    "Culture": "de-DE",
+    "ShopifyID": "728784732500",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1534",
+    "Culture": "en-GB",
+    "ShopifyID": "728784732500",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1534",
+    "Culture": "fi-FI",
+    "ShopifyID": "728784732500",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1534",
+    "Culture": "nb-NO",
+    "ShopifyID": "728784732500",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1534",
+    "Culture": "nl-NL",
+    "ShopifyID": "728784732500",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1534",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784732500",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1535",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784765268",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1536",
+    "Culture": "da-DK",
+    "ShopifyID": "728784798036",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1536",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784798036",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1537",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784830804",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1538",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784863572",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1539",
+    "Culture": "da-DK",
+    "ShopifyID": "728784896340",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1539",
+    "Culture": "de-DE",
+    "ShopifyID": "728784896340",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1539",
+    "Culture": "en-GB",
+    "ShopifyID": "728784896340",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1539",
+    "Culture": "fi-FI",
+    "ShopifyID": "728784896340",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1539",
+    "Culture": "nb-NO",
+    "ShopifyID": "728784896340",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1539",
+    "Culture": "nl-NL",
+    "ShopifyID": "728784896340",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1539",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784896340",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1543",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784929108",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1550",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784961876",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1551",
+    "Culture": "da-DK",
+    "ShopifyID": "728784994644",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1551",
+    "Culture": "de-DE",
+    "ShopifyID": "728784994644",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1551",
+    "Culture": "en-GB",
+    "ShopifyID": "728784994644",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1551",
+    "Culture": "fi-FI",
+    "ShopifyID": "728784994644",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1551",
+    "Culture": "nb-NO",
+    "ShopifyID": "728784994644",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1551",
+    "Culture": "nl-NL",
+    "ShopifyID": "728784994644",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1551",
+    "Culture": "sv-SE",
+    "ShopifyID": "728784994644",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1552",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785027412",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1553",
+    "Culture": "da-DK",
+    "ShopifyID": "728785060180",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1553",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785060180",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1554",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785092948",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1555",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785125716",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1556",
+    "Culture": "da-DK",
+    "ShopifyID": "728785191252",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1556",
+    "Culture": "de-DE",
+    "ShopifyID": "728785191252",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1556",
+    "Culture": "en-GB",
+    "ShopifyID": "728785191252",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1556",
+    "Culture": "fi-FI",
+    "ShopifyID": "728785191252",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1556",
+    "Culture": "nb-NO",
+    "ShopifyID": "728785191252",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1556",
+    "Culture": "nl-NL",
+    "ShopifyID": "728785191252",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1556",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785191252",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1617",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785224020",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1618",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785256788",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1620",
+    "Culture": "nb-NO",
+    "ShopifyID": "728785256788",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1629",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785289556",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1630",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785322324",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1631",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785355092",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1632",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785387860",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1633",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785420628",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1634",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785453396",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1635",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785486164",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1636",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785518932",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1637",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785551700",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1638",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785584468",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1639",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785617236",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1640",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785650004",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1684",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785682772",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1685",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785715540",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1694",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785748308",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1705",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785781076",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1707",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785846612",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1708",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785879380",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1709",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785912148",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1710",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785944916",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1711",
+    "Culture": "sv-SE",
+    "ShopifyID": "728785977684",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1712",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786010452",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1713",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786043220",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1714",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786075988",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1715",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786108756",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1716",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786141524",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1717",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786174292",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1720",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786207060",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1761",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786239828",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1764",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786272596",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1765",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786305364",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1769",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786338132",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1770",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786403668",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1771",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786436436",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1772",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786469204",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1777",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786501972",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1778",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786534740",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1779",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786567508",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1780",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786600276",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1781",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786633044",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1785",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786665812",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1787",
+    "Culture": "nb-NO",
+    "ShopifyID": "728786665812",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1800",
+    "Culture": "da-DK",
+    "ShopifyID": "728786731348",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1800",
+    "Culture": "de-DE",
+    "ShopifyID": "728786731348",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1800",
+    "Culture": "en-GB",
+    "ShopifyID": "728786731348",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1800",
+    "Culture": "fi-FI",
+    "ShopifyID": "728786731348",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1800",
+    "Culture": "nb-NO",
+    "ShopifyID": "728786731348",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1800",
+    "Culture": "nl-NL",
+    "ShopifyID": "728786731348",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1800",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786731348",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1801",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786764116",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1803",
+    "Culture": "da-DK",
+    "ShopifyID": "728786796884",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1803",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786796884",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1804",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786829652",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1806",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786862420",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1807",
+    "Culture": "da-DK",
+    "ShopifyID": "728786895188",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1807",
+    "Culture": "de-DE",
+    "ShopifyID": "728786895188",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1807",
+    "Culture": "en-GB",
+    "ShopifyID": "728786895188",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1807",
+    "Culture": "fi-FI",
+    "ShopifyID": "728786895188",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1807",
+    "Culture": "nb-NO",
+    "ShopifyID": "728786895188",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1807",
+    "Culture": "nl-NL",
+    "ShopifyID": "728786895188",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1807",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786895188",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1808",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786927956",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1809",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786960724",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1810",
+    "Culture": "sv-SE",
+    "ShopifyID": "728786993492",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1811",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787026260",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1812",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787059028",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1813",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787091796",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1814",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787124564",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1815",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787157332",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1835",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787190100",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1836",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787255636",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1844",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787288404",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1845",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787321172",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1846",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787353940",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1847",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787386708",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1848",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787419476",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1849",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787452244",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1881",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787485012",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1883",
+    "Culture": "nb-NO",
+    "ShopifyID": "728787485012",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1885",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787517780",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1886",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787550548",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1888",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787616084",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1889",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787648852",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1893",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787681620",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1894",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787714388",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1895",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787747156",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1896",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787779924",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1906",
+    "Culture": "sv-SE",
+    "ShopifyID": "728787812692",
+    "ManualApproval": "Approved"
+  },
+  {
+    "CategoryID": "1908",
+    "Culture": "nb-NO",
+    "ShopifyID": "728787812692",
+    "ManualApproval": "Approved"
+  }
+]

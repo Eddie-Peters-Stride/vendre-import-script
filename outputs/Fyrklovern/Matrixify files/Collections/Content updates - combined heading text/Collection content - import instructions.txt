@@ -1,0 +1,9 @@
+FYRKLOVERN COLLECTION CONTENT IMPORT
+
+1. The Collections workbook declares each metafield as a typed Matrixify column: Metafield: custom.<key> [<type>]. Shopify metafield definitions still need to exist before importing rich text and reference types; create them in Shopify Admin > Settings > Custom data.
+2. If Collection images - Matrixify Files import.xlsx exists, import its Files sheet first and confirm success.
+3. Import Collection content - Matrixify update.xlsx and, if present, Collection metafields only - Matrixify update.xlsx (Collections sheets). Both contain UPDATE rows; metafields are row-based to avoid clearing omitted fields.
+4. Import the Collection translations - <language>.xlsx workbooks for enabled Shopify languages.
+5. Consult the mapping/QA report for StoreAPI snapshot time, culture, CSV-only components, approved exceptions, and unresolved image/reference values. CSV-only components are excluded unless explicitly allowlisted.
+
+StoreAPI content is the publication-state snapshot used for import. No expiration or scheduling inference is made. No Shopify API calls or imports are performed by this script.

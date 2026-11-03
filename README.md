@@ -246,13 +246,48 @@ cache only. No Shopify writes occur.
 
 Fyrklövern Matrixify workbooks are grouped under `outputs/Fyrklovern/Matrixify files/Products` and `outputs/Fyrklovern/Matrixify files/Collections`. Source maps, audit reports, and mapping reviews are stored in `outputs/Fyrklovern/Reports and source maps`; Shopify's standard language-import CSV is kept separately under `outputs/Fyrklovern/Shopify language import`.
 
-Build the approved Norce collection content import with:
+Start with Swedish only. Validate category `1` from the live `sv-SE` StoreAPI snapshot, then fetch the remaining categories in `sv-SE`. The builder uses the CMS CSV for non-Swedish translated text only when its component identity exists in the Swedish publication snapshot; localized collection descriptions come from the category workbook.
 
 ```powershell
-npm.cmd run build:fyrklovern-collection-content -- --categories="C:\path\to\fyrklovern_custom_export.xlsx" --cms="C:\path\to\fyrklovern-content-export.csv" --content-map="outputs\Fyrklovern\Reports and source maps\StoreAPI category ContentId map.json" --shopify="exports\Export_2026-10-06_132403.xlsx" --approved-map="C:\path\to\approved-mappings.json"
+npm.cmd run fetch:fyrklovern-norce-published-content -- --categories="C:\path\to\fyrklovern_custom_export.xlsx" --ids=1 --culture=sv-SE --output="outputs\Fyrklovern\Reports and source maps\StoreAPI category 1 validation snapshot.json"
+npm.cmd run build:fyrklovern-collection-content -- --categories="C:\path\to\fyrklovern_custom_export.xlsx" --storeapi-snapshot="outputs\Fyrklovern\Reports and source maps\StoreAPI category 1 validation snapshot.json" --cms="C:\path\to\fyrklovern-content-export.csv" --shopify="exports\Export_2026-10-06_132403.xlsx" --approved-map="C:\path\to\approved-mappings.json" --output-dir="outputs\Fyrklovern\Matrixify files\Collections\Content updates - category 1 validation"
+
+# After reviewing category 1, fetch all category rows for Swedish
+npm.cmd run fetch:fyrklovern-norce-published-content -- --categories="C:\path\to\fyrklovern_custom_export.xlsx" --culture=sv-SE --output="outputs\Fyrklovern\Reports and source maps\Norce StoreAPI Swedish published content snapshot.json"
+npm.cmd run build:fyrklovern-collection-content -- --categories="C:\path\to\fyrklovern_custom_export.xlsx" --storeapi-snapshot="outputs\Fyrklovern\Reports and source maps\Norce StoreAPI published content snapshot.json" --shopify="exports\Export_2026-10-06_132403.xlsx" --approved-map="C:\path\to\approved-mappings.json"
 ```
 
-The report and workbooks are written to `outputs/Fyrklovern/Matrixify files/Collections/Content updates` by default. Use `--approve-url-candidates=true` only when intentionally approving every exact URL candidate. Review the generated import instructions and mapping/QA report before importing; metafield definitions must exist in Shopify first.
+The optional channel config is JSON keyed by culture (or nested under `channels`). Supply the ShopID for each market; `country` and `currency` may be omitted to use the corresponding `NORCE_DEFAULT_COUNTRY` / `NORCE_DEFAULT_CURRENCY` values. The API token remains in `NORCE_STOREAPI_TOKEN` and is never stored in the snapshot. For example:
+
+```json
+{
+  "channels": {
+    "da-DK": { "shopId": "<Danish ShopID>", "country": "DK", "currency": "DKK" },
+    "de-DE": { "shopId": "<German ShopID>", "country": "DE", "currency": "EUR" },
+    "en-GB": { "shopId": "<UK ShopID>", "country": "GB", "currency": "GBP" },
+    "fi-FI": { "shopId": "<Finnish ShopID>", "country": "FI", "currency": "EUR" },
+    "nb-NO": { "shopId": "<Norwegian ShopID>", "country": "NO", "currency": "NOK" },
+    "nl-NL": { "shopId": "<Dutch ShopID>", "country": "NL", "currency": "EUR" },
+    "sv-SE": { "shopId": "<Swedish ShopID>", "country": "SE", "currency": "SEK" }
+  }
+}
+```
+
+Each snapshot record stores its selected `shopId`, country, currency, culture, and retrieval timestamp to make the publication snapshot auditable. Use `--channel-config` only when fetching additional cultures from their respective channels.
+
+The Swedish collection import uses only components returned by the successful `sv-SE` StoreAPI snapshot. The first nonempty component `text` in StoreAPI order supplies collection `Body HTML` and is omitted from section metafields, so it is not duplicated. If StoreAPI returns no component text, the category workbook's localized `text` is the fallback. StoreAPI `data.items` supplies the ordered section rich-text, image-list, and collection-reference metafields. When localized StoreAPI snapshots are unavailable, the CMS CSV may supply translated text only for component identities present in the Swedish snapshot, including the matching first text used for translated `Body HTML`. CSV-only components remain excluded from both imports and translations unless explicitly approved in a `--component-exceptions=<json>` allowlist. They are reported as `not_returned_by_storeapi`; no expiration/schedule inference is made. Each snapshot record includes retrieval time, culture, and selected channel context. Review the generated import instructions and mapping/QA report before importing; metafield definitions must exist in Shopify first.
+
+### Norce collection content blocks with Metaobjects
+
+The existing Matrixify content builder remains available. To preview the alternate Metaobject migration, provide the Norce category workbook, Swedish StoreAPI snapshot, Shopify collection export, and approved collection mapping:
+
+```powershell
+npm.cmd run migrate:fyrklovern-collection-content -- --categories="C:\path\to\fyrklovern_custom_export.xlsx" --storeapi-snapshot="outputs\Fyrklovern\Reports and source maps\Norce StoreAPI Swedish published content snapshot.json" --shopify="C:\path\to\Shopify collections export.xlsx" --approved-map="C:\path\to\approved-mappings.json" --output="outputs\Fyrklovern\Matrixify files\Collections\Metaobject migration\Collection content metaobject migration plan.json"
+```
+
+Preview mode writes an offline plan. It maps Norce components to reusable rich text, image/text, banner, gallery, video, link, product, or fallback Metaobject definitions. Every block retains its ordered source properties in `source_payload` and its order/hierarchy in `source_order`; direct image URLs are uploaded to Shopify Files only when applying. Include `--translations-dir="outputs\Fyrklovern\Matrixify files\Collections\Content updates"` to stage translations from existing workbooks, or `--cms="C:\path\to\fyrklovern-content-export.csv"` to build them from the CMS export. Review staged translations before applying; translation workbooks may be older than the StoreAPI snapshot. The collection uses one `custom.content_blocks` (`list.mixed_reference`) metafield. Existing numbered metafields are left in place.
+
+Applying requires `SHOPIFY_STORE_DOMAIN`, `SHOPIFY_ADMIN_ACCESS_TOKEN`, and a Shopify app token with `read_products`, `write_products`, `read_files`, `write_files`, `read_metaobjects`, `write_metaobjects`, `read_metaobject_definitions`, `write_metaobject_definitions`, `read_translations`, `write_translations`, and `write_metafield_definitions` access. Add `--apply` only after reviewing the plan; translated content requires the separate `--apply-translations=true` switch. The command creates missing definitions, reuses deterministic Metaobject handles and matching Shopify Files, and refuses to replace a different existing `custom.content_blocks` list unless `--sync-content-blocks=true` is supplied. It checks stored content hashes before updating Metaobjects; changes made directly in Shopify are reported as conflicts, with `--overwrite-manual-metaobjects=true` as an explicit override. Existing translations that differ from the plan are also reported as conflicts; `--sync-translations=true` permits replacing them after review. Removed blocks are detached from a collection's ordered list but their Metaobjects are retained. Shopify permits up to 1,024 references per list metafield; storefront Liquid loops return 50 unless the theme paginates larger lists. The saved StoreAPI snapshot has no component IDs, so handles fall back to component type, name, and occurrence; repeated unnamed sections cannot be matched reliably if Norce reorders them. The plan reports unresolved component/category/image data. Existing numbered fields should be removed only after storefront verification.
 
 Create the collections-only Matrixify import workbook with:
 
@@ -274,6 +309,14 @@ npm run export:fyrklovern:products
 This creates `outputs/Fyrklovern/Matrixify files/Products/Fyrklovern products - full Matrixify import.xlsx`. The
 product rows use Matrixify's `Custom Collections` column, populated with the
 handles from `fyrklovern-categories.json`.
+
+To replace the product's Norce `custom.collection_category_id` text value with a single Shopify collection link, run:
+
+```powershell
+npm.cmd run update-product-collection-link:fyrklovern -- --live-products="C:\path\to\fresh Shopify Products export.xlsx" --categories="C:\path\to\fyrklovern_custom_export.xlsx" --collections="C:\path\to\current collection export.xlsx"
+```
+
+The script takes each product's `Collection category ID` from the `dynamicfields` tab of the Norce workbook (`sv-SE`), joining `ArticleNumber` to the fresh Shopify Products export's `custom.external_id`. That export supplies current `Handle` and `Variant SKU`; Matrixify's product `ID` column is useful but optional. The `categorieslocalized` tab and Shopify collection export provide the category-to-collection mapping. Only products present in the fresh export are included. The output uses each current Shopify handle and its actual `Variant SKU [ID]` for Matrixify identification, plus product `ID` when available. It includes `Command=UPDATE`, `Metafield: custom.collection_category [collection_reference]`, and a blank `custom.collection_category_id` column that removes the old text value on mapped products. The adjacent mapping review lists source IDs absent from the Swedish category export, candidate collections, affected products, and any differences between Norce and the existing Shopify text value. Fill the approved-map template with Shopify collection IDs and rerun with `--approved-map="C:\path\to\approved-map.json"` to include those products. Ensure `custom.collection_category` is defined in Shopify for Products as a **single Collection reference** before import.
 
 ### Shopify standard language import (Fyrklövern)
 
@@ -549,3 +592,7 @@ When adding new features:
 2. Create store-specific config in `src/config/stores.js`
 3. Follow the Transform → Export pattern
 4. Update this README with new commands
+
+# Norce product and collection extraction
+
+The resumable, read-only Norce extraction and offline Matrixify review workflow is documented in [NORCE_MIGRATION.md](NORCE_MIGRATION.md).

@@ -1,0 +1,522 @@
+{
+  "fileFormat": "fyrklovern-norce-storeapi-published-content/v1",
+  "generatedAt": "2026-10-16T09:32:45.864Z",
+  "country": "SE",
+  "currency": "SEK",
+  "sourceCategories": "C:\\Users\\Eddie Peters\\Desktop\\Fyrklövern\\fyrklovern_custom_export.xlsx",
+  "cultures": [
+    "da-DK",
+    "de-DE",
+    "en-GB",
+    "fi-FI",
+    "nb-NO",
+    "nl-NL",
+    "sv-SE"
+  ],
+  "excludedConflictCategoryIds": [],
+  "requestedCount": 7,
+  "successCount": 1,
+  "errorCount": 6,
+  "categoryNotFoundCount": 0,
+  "records": [
+    {
+      "categoryId": "1",
+      "culture": "da-DK",
+      "retrievedAt": "2026-10-16T09:32:44.466Z",
+      "contentId": null,
+      "status": "error",
+      "error": "Norce StoreAPI returned 1 GraphQL error(s): Culture 'da-DK' is not supported in channel."
+    },
+    {
+      "categoryId": "1",
+      "culture": "de-DE",
+      "retrievedAt": "2026-10-16T09:32:44.534Z",
+      "contentId": null,
+      "status": "error",
+      "error": "Norce StoreAPI returned 1 GraphQL error(s): Culture 'de-DE' is not supported in channel."
+    },
+    {
+      "categoryId": "1",
+      "culture": "en-GB",
+      "retrievedAt": "2026-10-16T09:32:44.834Z",
+      "contentId": null,
+      "status": "error",
+      "error": "Norce StoreAPI returned 1 GraphQL error(s): Culture 'en-GB' is not supported in channel."
+    },
+    {
+      "categoryId": "1",
+      "culture": "fi-FI",
+      "retrievedAt": "2026-10-16T09:32:45.029Z",
+      "contentId": null,
+      "status": "error",
+      "error": "Norce StoreAPI returned 1 GraphQL error(s): Culture 'fi-FI' is not supported in channel."
+    },
+    {
+      "categoryId": "1",
+      "culture": "nb-NO",
+      "retrievedAt": "2026-10-16T09:32:45.288Z",
+      "contentId": null,
+      "status": "error",
+      "error": "Norce StoreAPI returned 1 GraphQL error(s): Culture 'nb-NO' is not supported in channel."
+    },
+    {
+      "categoryId": "1",
+      "culture": "nl-NL",
+      "retrievedAt": "2026-10-16T09:32:45.551Z",
+      "contentId": null,
+      "status": "error",
+      "error": "Norce StoreAPI returned 1 GraphQL error(s): Culture 'nl-NL' is not supported in channel."
+    },
+    {
+      "categoryId": "1",
+      "culture": "sv-SE",
+      "retrievedAt": "2026-10-16T09:32:45.863Z",
+      "contentId": "322be0e4-0f33-48f8-9273-38ccdf9c9add",
+      "status": "fetched",
+      "category": {
+        "id": 1,
+        "parentId": null,
+        "name": "Kampanjer",
+        "mainHeader": "Kampanjer",
+        "content": "",
+        "data": {
+          "id": "322be0e4-0f33-48f8-9273-38ccdf9c9add",
+          "name": "",
+          "tags": [],
+          "items": [
+            {
+              "name": "Kampanjer",
+              "type": "Category Page Header",
+              "properties": [
+                {
+                  "name": "heading",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": null
+                },
+                {
+                  "name": "text",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "Vill du ge ditt hem en ny touch och fynda inredning? Upptäck de senaste kampanjerna på heminredning, porslin, glas och design hos Fyrklövern. Här hittar du både designklassiker och de senaste designtrenderna till kampanjpriser. Välkommen till ett fyndläge du inte vill missa, och skynda dig - erbjudandena är tidsbegränsade! "
+                  }
+                },
+                {
+                  "name": "categoryImage",
+                  "type": "image",
+                  "valueType": "SCALAR",
+                  "value": null
+                },
+                {
+                  "name": "imageFocus",
+                  "type": "dropdown",
+                  "valueType": "SCALAR",
+                  "value": null
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "Julens serviser 2026",
+              "type": "Campaign Item",
+              "properties": [
+                {
+                  "name": "heading",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "Pre X-mas Deal  Tallriksset + Gåva"
+                  }
+                },
+                {
+                  "name": "text",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "Skapa julstämning runt bordet. Hitta din favorit bland våra omtyckta serviser och låt designen förvandla dukningen. Köp tallriksset till paketpris och spara upp till 4 300 kr. Just nu får du även en serveringsskål på köpet (värde upp till 1 090 kr). Begränsat antal. Erbjudandet gäller t.o.m 22/10."
+                  }
+                },
+                {
+                  "name": "image",
+                  "type": "image",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "https://www.fyrklovern.com/pub_docs/files/dinner-setting-TJ-09.jpg"
+                  }
+                },
+                {
+                  "name": "tallImage",
+                  "type": "image",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "https://www.fyrklovern.com/pub_docs/files/dinner-setting-TJ-03.jpg"
+                  }
+                },
+                {
+                  "name": "imageFocus",
+                  "type": "dropdown",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "top center"
+                  }
+                },
+                {
+                  "name": "tagText",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": null
+                },
+                {
+                  "name": "category",
+                  "type": "category",
+                  "valueType": "OBJECT",
+                  "value": {
+                    "__typename": "Category"
+                  }
+                },
+                {
+                  "name": "catIdDK",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "1810"
+                  }
+                },
+                {
+                  "name": "catIdFI",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "1810"
+                  }
+                },
+                {
+                  "name": "catIdNO",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "1810"
+                  }
+                },
+                {
+                  "name": "catIdDE",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "1810"
+                  }
+                },
+                {
+                  "name": "catIdEU",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "1810"
+                  }
+                },
+                {
+                  "name": "catIdNL",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "1810"
+                  }
+                },
+                {
+                  "name": "catIdAT",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "1810"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "Nordic Dawn höst 2026",
+              "type": "Campaign Item",
+              "properties": [
+                {
+                  "name": "heading",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "Nordic Dawn Tallriksset + Gåva"
+                  }
+                },
+                {
+                  "name": "text",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "Duka upp med Nordic Dawn, inspirerad av nordisk natur och solens strålar. Tallriksset till paketpris (spara upp till 2 150 kr). Just nu serveringsskål på köpet (värde 629 kr) på utvalda färger. Begränsat antal. Erbjudandet gäller t.o.m 22/10."
+                  }
+                },
+                {
+                  "name": "image",
+                  "type": "image",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "https://www.fyrklovern.com/pub_docs/files/dinner-setting-ND-dew-07.jpg"
+                  }
+                },
+                {
+                  "name": "tallImage",
+                  "type": "image",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "https://www.fyrklovern.com/pub_docs/files/dinner-setting-ND-dew-08.jpg"
+                  }
+                },
+                {
+                  "name": "imageFocus",
+                  "type": "dropdown",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "top center"
+                  }
+                },
+                {
+                  "name": "tagText",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": null
+                },
+                {
+                  "name": "category",
+                  "type": "category",
+                  "valueType": "OBJECT",
+                  "value": {
+                    "__typename": "Category"
+                  }
+                },
+                {
+                  "name": "catIdDK",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "333"
+                  }
+                },
+                {
+                  "name": "catIdFI",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "333"
+                  }
+                },
+                {
+                  "name": "catIdNO",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "333"
+                  }
+                },
+                {
+                  "name": "catIdDE",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "333"
+                  }
+                },
+                {
+                  "name": "catIdEU",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "333"
+                  }
+                },
+                {
+                  "name": "catIdNL",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "333"
+                  }
+                },
+                {
+                  "name": "catIdAT",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "333"
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "Scene mars-26",
+              "type": "Campaign Item",
+              "properties": [
+                {
+                  "name": "heading",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "Scene 20% + 10% extra på paket"
+                  }
+                },
+                {
+                  "name": "text",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "Duka med restaurangkänsla hemma - varje dag! Halvmatt svart stengods låter maten ta scenen. JUST NU, 20% rabatt + 10% extra på paket för för 4, 8 eller 12 personer (spara upp till 2 732 kr). \nErbjudandet gäller t.o.m. 19/10-26. "
+                  }
+                },
+                {
+                  "name": "image",
+                  "type": "image",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "https://www.fyrklovern.com/pub_docs/files/dinner-setting-SCE-13.jpg"
+                  }
+                },
+                {
+                  "name": "tallImage",
+                  "type": "image",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "https://www.fyrklovern.com/pub_docs/files/dinner-setting-SCE-11.jpg"
+                  }
+                },
+                {
+                  "name": "imageFocus",
+                  "type": "dropdown",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "center center"
+                  }
+                },
+                {
+                  "name": "tagText",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": null
+                },
+                {
+                  "name": "category",
+                  "type": "category",
+                  "valueType": "OBJECT",
+                  "value": {
+                    "__typename": "Category"
+                  }
+                },
+                {
+                  "name": "catIdDK",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "1516"
+                  }
+                },
+                {
+                  "name": "catIdFI",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "1516"
+                  }
+                },
+                {
+                  "name": "catIdNO",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "1516"
+                  }
+                },
+                {
+                  "name": "catIdDE",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "1516"
+                  }
+                },
+                {
+                  "name": "catIdEU",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "1516"
+                  }
+                },
+                {
+                  "name": "catIdNL",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "1516"
+                  }
+                },
+                {
+                  "name": "catIdAT",
+                  "type": "text",
+                  "valueType": "SCALAR",
+                  "value": {
+                    "__typename": "StringValue",
+                    "value": "1516"
+                  }
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        "images": [],
+        "primaryRoute": {
+          "path": "/kampanjer"
+        },
+        "CategoryID": "1",
+        "ContentId": "322be0e4-0f33-48f8-9273-38ccdf9c9add",
+        "contentIds": [
+          "322be0e4-0f33-48f8-9273-38ccdf9c9add"
+        ]
+      }
+    }
+  ]
+}
