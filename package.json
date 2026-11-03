@@ -10,6 +10,7 @@
     "fetch:products": "cross-env ENV_FILE=.env.dragonslair node src/index.js --command=fetch --type=products",
     "fetch:products:mickie": "cross-env ENV_FILE=.env.mickieofsweden node src/index.js --command=fetch --type=products",
     "import:fyrklovern:productdata": "node src/importers/fyrklovern/import-productdata.js",
+    "build:fyrklovern:historical-matrixify": "node scripts/fyrklovern/buildHistoricalMatrixify.js",
     "import:fyrklovern:categories": "node src/importers/fyrklovern/import-categorieslocalized.js",
     "export:fyrklovern:collections": "node src/importers/fyrklovern/export-collections.js",
     "update-product-collection-link:fyrklovern": "node .artifact_work/build-fyrklovern-product-collection-links.mjs",

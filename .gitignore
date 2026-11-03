@@ -18,3 +18,4 @@ node_modules/
 # Local Norce extraction state and generated review files
 /cache/
 /norcemigration/
+/outputs/fyrklovern-historical/

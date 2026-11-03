@@ -596,3 +596,11 @@ When adding new features:
 # Norce product and collection extraction
 
 The resumable, read-only Norce extraction and offline Matrixify review workflow is documented in [NORCE_MIGRATION.md](NORCE_MIGRATION.md).
+
+## Fyrklövern historical customers and orders
+
+```bash
+npm run build:fyrklovern:historical-matrixify -- --orders="C:\path\orders.csv" --customers="C:\path\customers.csv"
+```
+
+This generates local Matrixify pilot workbooks and a reconciliation report. See [historical import instructions](docs/fyrklovern-historical-matrixify.md) for the full-run gate and manual import workflow.
