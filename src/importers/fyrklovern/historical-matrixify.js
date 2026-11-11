@@ -1,8 +1,10 @@
 const ORDER_HEADERS = ['orderNo', 'orderDate', 'sellToCountry', 'sellToCustomerNo', 'itemID', 'itemName', 'quantity', 'unitPriceInclVAT', 'amountInclVAT', 'discount', 'VAT', 'currencyCode'];
-const CUSTOMER_HEADERS = ['number', 'name', 'email', 'country', 'addressLine', 'city', 'postalCode', 'phoneNumber'];
-const CUSTOMER_COLUMNS = { name: 'First Name', phoneNumber: 'Phone', country: 'Address Country Code', addressLine: 'Address Line 1', city: 'Address City', postalCode: 'Address Zip' };
-const ORDER_COLUMNS = ['Name', 'Command', 'Customer: Email', 'Email', 'Processed At', 'Closed At', 'Currency', 'Shop Currency', 'Send Receipt', 'Inventory Behaviour', 'Tax: Included', 'Line: Type', 'Line: ID', 'Line: SKU', 'Line: Title', 'Line: Quantity', 'Line: Price', 'Line: Discount', 'Line: Tax 1 Title', 'Line: Tax 1 Price', 'Fulfillment: ID', 'Fulfillment: Status', 'Fulfillment: Send Receipt', 'Transaction: Kind', 'Transaction: Processed At', 'Transaction: Amount', 'Transaction: Currency', 'Transaction: Status', 'Transaction: Gateway', 'Transaction: Force Gateway'];
+const CUSTOMER_HEADERS = ['number', 'name', 'email', 'country', 'addressLine1', 'city', 'postalCode', 'phoneNumber'];
+const CUSTOMER_COLUMNS = { phoneNumber: 'Phone', country: 'Address Country Code', addressLine1: 'Address Line 1', city: 'Address City', postalCode: 'Address Zip' };
+const ORDER_COLUMNS = ['Name', 'Command', 'Customer: ID', 'Customer: Email', 'Email', 'Processed At', 'Closed At', 'Currency', 'Shop Currency', 'Send Receipt', 'Inventory Behaviour', 'Tax: Included', 'Line: Type', 'Line: ID', 'Line: SKU', 'Line: Title', 'Line: Quantity', 'Line: Price', 'Line: Discount', 'Line: Tax 1 Title', 'Line: Tax 1 Rate', 'Line: Tax 1 Price', 'Fulfillment: ID', 'Fulfillment: Status', 'Fulfillment: Send Receipt', 'Transaction: Kind', 'Transaction: Processed At', 'Transaction: Amount', 'Transaction: Currency', 'Transaction: Status', 'Transaction: Gateway', 'Transaction: Force Gateway'];
 const CUSTOMER_BASE_COLUMNS = ['Email', 'Command', 'Address Command', 'Address Is Default'];
+const SOURCE_CUSTOMER_NUMBER_COLUMN = 'Metafield: migration.fyrklovern_customer_number [single_line_text_field]';
+const SOURCE_COUNTRY_TAX_RATES = { AT: [0.20], AX: [0], BE: [0.25], DE: [0.19], DK: [0.25], FI: [0.24, 0.255], FR: [0.25], IT: [0.25], NL: [0.21], NO: [0.25], SE: [0.25] };
 
 const value = v => String(v ?? '').trim();
 const money = v => {
@@ -13,6 +15,18 @@ const money = v => {
   return sign * (Math.abs(Number(whole)) * 100 + Number(fraction.padEnd(2, '0')));
 };
 const format = cents => `${cents < 0 ? '-' : ''}${Math.floor(Math.abs(cents) / 100)}.${String(Math.abs(cents) % 100).padStart(2, '0')}`;
+const taxRate = (paid, tax, country) => {
+  if (tax === 0) return 0;
+  const taxableBase = paid - tax;
+  if (taxableBase === 0) {
+    throw new Error('Cannot infer a positive tax rate when the source taxable base is zero');
+  }
+  const observedRate = tax / taxableBase;
+  const candidates = SOURCE_COUNTRY_TAX_RATES[value(country)];
+  if (candidates?.length) return candidates.reduce((nearest, candidate) => Math.abs(candidate - observedRate) < Math.abs(nearest - observedRate) ? candidate : nearest);
+  return Math.round(observedRate * 1000) / 1000;
+};
+const proportionalPart = (amount, weight, total) => total ? Number(BigInt(amount) * BigInt(weight) / BigInt(total)) : 0;
 const emptyTotals = () => ({ source: '0.00', included: '0.00', output: '0.00', sourceVat: '0.00', includedVat: '0.00', outputVat: '0.00' });
 const emailValid = email => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 const dateValid = s => /^\d{4}-\d{2}-\d{2}$/.test(s) && !Number.isNaN(Date.parse(`${s}T12:00:00Z`)) && new Date(`${s}T12:00:00Z`).toISOString().slice(0, 10) === s;
@@ -35,17 +49,32 @@ function transform(orderRecords, customerRecords, options = {}) {
     if (e) byEmail.set(e, (byEmail.get(e) || 0) + 1);
   }
   const validCustomers = new Map();
+  const customerLinksByNumber = options.customerLinksByNumber;
+  const linkCounts = { customerId: 0, emailFallback: 0 };
   for (let i = 0; i < customerRecords.length; i++) {
     const c = customerRecords[i], n = value(c.number), e = value(c.email).toLowerCase();
     const reasons = [];
+    let association;
     if (!n) reasons.push('missing customer number');
     else if (!/^[A-Za-z0-9_-]+$/.test(n)) reasons.push('invalid customer number');
-    if (!e) reasons.push('missing email');
-    else if (!emailValid(e)) reasons.push('invalid email');
     if (n && byNumber.get(n) > 1) reasons.push('duplicate customer number');
-    if (e && byEmail.get(e) > 1) reasons.push('duplicate email');
+    if (customerLinksByNumber) {
+      const linked = customerLinksByNumber.get(n);
+      if (linked?.kind === 'customerId' && value(linked.value)) association = { kind: 'customerId', value: value(linked.value) };
+      else if (linked?.kind === 'email' && emailValid(value(linked.value))) association = { kind: 'email', value: value(linked.value).toLowerCase() };
+      else reasons.push('no customer ID mapping or unique existing Shopify email match');
+    } else {
+      if (!e) reasons.push('missing email');
+      else if (!emailValid(e)) reasons.push('invalid email');
+      if (e && byEmail.get(e) > 1) reasons.push('duplicate email');
+      if (emailValid(e)) association = { kind: 'email', value: e, includeOrderEmail: true };
+    }
     if (reasons.length) report.omitted.customers.push({ sourceId: n || `row ${i + 2}`, reasons });
-    else validCustomers.set(n, { ...c, email: e });
+    else {
+      if (association.kind === 'customerId') linkCounts.customerId++;
+      else linkCounts.emailFallback++;
+      validCustomers.set(n, { ...c, email: e, association });
+    }
   }
   const groups = new Map();
   for (let i = 0; i < orderRecords.length; i++) {
@@ -78,7 +107,6 @@ function transform(orderRecords, customerRecords, options = {}) {
       if ([pre, paid, discount, tax].some(x => x === null || !Number.isSafeInteger(x))) reasons.push('invalid money');
       else {
         if (pre < 0 || paid < 0 || discount < 0 || tax < 0 || tax > paid || pre - discount !== paid) reasons.push('invalid price, discount, or VAT equation');
-        if (!isFreight && Number.isSafeInteger(qty) && qty > 0 && pre % qty !== 0) reasons.push('pre-discount total cannot be divided into cent-precision unit price');
         total += paid; vat += tax;
         discounted ||= discount > 0;
       }
@@ -93,6 +121,7 @@ function transform(orderRecords, customerRecords, options = {}) {
     else validOrders.push({ id, rows: parsed, customerNo, currency, date, total, vat, discounted, freight, multi });
   }
   validOrders.sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }));
+  report.priceSplitOrders = validOrders.filter(order => order.rows.some(p => !p.isFreight && p.pre % p.qty !== 0)).length;
   const selected = mode === 'full' ? validOrders : selectPilot(validOrders);
   const selectedCustomerIds = mode === 'full' ? [...validCustomers.keys()] : [...new Set(selected.map(o => o.customerNo))];
   if (mode === 'pilot') {
@@ -102,30 +131,41 @@ function transform(orderRecords, customerRecords, options = {}) {
   }
   const customers = selectedCustomerIds.map(id => validCustomers.get(id));
   const customerRows = customers.map(c => {
-    const row = { Email: c.email, Command: 'MERGE' };
-    for (const [source, target] of Object.entries(CUSTOMER_COLUMNS)) {
-      if (value(c[source]) && (source === 'name' || source === 'phoneNumber' || value(c.addressLine))) row[target] = value(c[source]);
+    const row = { Email: c.email, Command: 'MERGE', [SOURCE_CUSTOMER_NUMBER_COLUMN]: value(c.number) };
+    const name = value(c.name);
+    if (name) {
+      const [firstName, ...lastName] = name.split(/\s+/u);
+      row['First Name'] = firstName;
+      if (lastName.length) row['Last Name'] = lastName.join(' ');
     }
-    if (value(c.addressLine)) Object.assign(row, { 'Address Command': 'MERGE', 'Address Is Default': 'TRUE' });
+    for (const [source, target] of Object.entries(CUSTOMER_COLUMNS)) {
+      if (value(c[source]) && (source === 'phoneNumber' || value(c.addressLine1))) row[target] = value(c[source]);
+    }
+    if (value(c.addressLine1)) Object.assign(row, { 'Address Command': 'MERGE', 'Address Is Default': 'TRUE' });
     return row;
   });
-  const batchMap = new Map();
-  const columnOrder = ['Email', 'Command', ...Object.values(CUSTOMER_COLUMNS), ...CUSTOMER_BASE_COLUMNS.slice(2)];
-  for (const row of customerRows) {
-    const columns = columnOrder.filter(column => Object.hasOwn(row, column));
-    const key = columns.join('|');
-    if (!batchMap.has(key)) batchMap.set(key, { columns, rows: [] });
-    batchMap.get(key).rows.push(row);
-  }
-  const customerBatches = [...batchMap.values()].sort((a, b) => a.columns.join('|').localeCompare(b.columns.join('|')));
+  const columnOrder = ['Email', 'Command', 'First Name', 'Last Name', ...Object.values(CUSTOMER_COLUMNS), ...CUSTOMER_BASE_COLUMNS.slice(2), SOURCE_CUSTOMER_NUMBER_COLUMN];
+  const columns = columnOrder.filter(column => customerRows.some(row => Object.hasOwn(row, column)));
+  const customerBatches = Array.from({ length: Math.ceil(customerRows.length / 20000) }, (_, i) => ({ columns, rows: customerRows.slice(i * 20000, (i + 1) * 20000) }));
   if (!customerBatches.length) customerBatches.push({ columns: ['Email', 'Command'], rows: [] });
-  if (customerBatches.length > 1) report.warnings.push(`Customer rows have ${customerBatches.length} different populated-column sets. Import every customer workbook before orders.`);
   let nextLineId = 1;
-  const orderRows = selected.flatMap(order => {
-    const rows = orderToRows(order, validCustomers.get(order.customerNo).email);
+  let nextFulfillmentFallbackId = 1;
+  const usedFulfillmentIds = new Set();
+  const orderGroups = selected.map(order => {
+    const sourceOrderNumber = value(order.id);
+    let fulfillmentId = Number(sourceOrderNumber);
+    if (!/^\d+$/u.test(sourceOrderNumber) || !Number.isSafeInteger(fulfillmentId) || usedFulfillmentIds.has(fulfillmentId)) {
+      while (usedFulfillmentIds.has(nextFulfillmentFallbackId)) nextFulfillmentFallbackId++;
+      fulfillmentId = nextFulfillmentFallbackId++;
+    }
+    usedFulfillmentIds.add(fulfillmentId);
+    const rows = orderToRows(order, validCustomers.get(order.customerNo).association, fulfillmentId);
     for (const row of rows) if (row['Line: Type'] === 'Line Item') row['Line: ID'] = nextLineId++;
     return rows;
   });
+  const orderRows = orderGroups.flat();
+  const orderBatches = Array.from({ length: Math.ceil(orderGroups.length / 10000) }, (_, i) => orderGroups.slice(i * 10000, (i + 1) * 10000).flat());
+  if (!orderBatches.length) orderBatches.push([]);
   for (const [id, rows] of groups) {
     const currency = value(rows[0].currencyCode);
     if (!/^[A-Z]{3}$/.test(currency) || rows.some(r => value(r.currencyCode) !== currency)) continue;
@@ -161,8 +201,10 @@ function transform(orderRecords, customerRecords, options = {}) {
     t.outputVat = format(money(t.outputVat) + output.vat);
   }
   report.included = { customers: customers.length, orders: selected.length };
+  report.customerAssociations = linkCounts;
+  report.batches = { customers: customerBatches.map(batch => batch.rows.length), orders: Array.from({ length: orderBatches.length }, (_, i) => Math.min(10000, Math.max(0, selected.length - i * 10000))) };
   if (mode === 'pilot' && validOrders.length > selected.length) report.warnings.push(`${validOrders.length - selected.length} valid orders excluded by pilot size/selection; generate full files only after pilot approval.`);
-  return { customerRows, customerBatches, orderRows, orderColumns: ORDER_COLUMNS, report };
+  return { customerRows, customerBatches, orderRows, orderBatches, orderColumns: ORDER_COLUMNS, report };
 }
 
 function selectPilot(orders) {
@@ -181,20 +223,34 @@ function selectPilot(orders) {
   return chosen.sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }));
 }
 
-function orderToRows(order, email) {
+function orderToRows(order, association, fulfillmentId) {
   const at = stockholmNoon(order.date);
-  const base = { Name: `F-${order.id}`, Command: 'NEW', 'Customer: Email': email, Email: email, 'Processed At': at, 'Closed At': at, Currency: order.currency, 'Shop Currency': order.currency, 'Send Receipt': 'FALSE', 'Inventory Behaviour': 'bypass', 'Tax: Included': 'TRUE' };
+  const base = { Name: `F-${order.id}`, Command: 'NEW', 'Processed At': at, 'Closed At': at, Currency: order.currency, 'Shop Currency': order.currency, 'Send Receipt': 'FALSE', 'Inventory Behaviour': 'bypass', 'Tax: Included': 'TRUE' };
+  if (association?.kind === 'customerId') base['Customer: ID'] = association.value;
+  else if (association?.kind === 'email') {
+    base['Customer: Email'] = association.value;
+    if (association.includeOrderEmail) base.Email = association.value;
+  }
   const rows = [];
   for (const p of order.rows) {
     if (p.isFreight) {
-      rows.push({ ...base, 'Line: Type': 'Shipping Line', 'Line: Title': value(p.row.itemName), 'Line: Price': format(p.pre), 'Line: Tax 1 Title': 'VAT', 'Line: Tax 1 Price': format(p.tax) });
+      rows.push({ ...base, 'Line: Type': 'Shipping Line', 'Line: Title': value(p.row.itemName), 'Line: Price': format(p.pre), 'Line: Tax 1 Title': 'VAT', 'Line: Tax 1 Rate': taxRate(p.paid, p.tax, p.row.sellToCountry), 'Line: Tax 1 Price': format(p.tax) });
       if (p.discount) rows.push({ ...base, 'Line: Type': 'Discount', 'Line: Title': 'shipping', 'Line: Discount': format(-p.discount) });
     } else {
-      const price = format(p.pre / p.qty);
-      rows.push({ ...base, 'Line: Type': 'Line Item', 'Line: SKU': value(p.row.itemID), 'Line: Title': value(p.row.itemName), 'Line: Quantity': p.qty, 'Line: Price': price, 'Line: Discount': format(-p.discount), 'Line: Tax 1 Title': 'VAT', 'Line: Tax 1 Price': format(p.tax) });
+      const lowPrice = Math.floor(p.pre / p.qty);
+      const highQuantity = p.pre % p.qty;
+      const lowQuantity = p.qty - highQuantity;
+      const lowGross = lowPrice * lowQuantity;
+      const lowDiscount = highQuantity ? proportionalPart(p.discount, lowGross, p.pre) : p.discount;
+      const lowPaid = lowGross - lowDiscount;
+      const lowTax = highQuantity ? proportionalPart(p.tax, lowPaid, p.paid) : p.tax;
+      const priceGroups = highQuantity
+        ? [{ qty: lowQuantity, price: lowPrice, discount: lowDiscount, tax: lowTax }, { qty: highQuantity, price: lowPrice + 1, discount: p.discount - lowDiscount, tax: p.tax - lowTax }]
+        : [{ qty: p.qty, price: lowPrice, discount: p.discount, tax: p.tax }];
+      for (const group of priceGroups) if (group.qty) rows.push({ ...base, 'Line: Type': 'Line Item', 'Line: SKU': value(p.row.itemID), 'Line: Title': value(p.row.itemName), 'Line: Quantity': group.qty, 'Line: Price': format(group.price), 'Line: Discount': format(-group.discount), 'Line: Tax 1 Title': 'VAT', 'Line: Tax 1 Rate': taxRate(p.paid, p.tax, p.row.sellToCountry), 'Line: Tax 1 Price': format(group.tax) });
     }
   }
-  rows.push({ ...base, 'Line: Type': 'Fulfillment Line', 'Fulfillment: ID': `F-${order.id}`, 'Fulfillment: Status': 'success', 'Fulfillment: Send Receipt': 'FALSE' });
+  rows.push({ ...base, 'Line: Type': 'Fulfillment Line', 'Fulfillment: ID': fulfillmentId, 'Fulfillment: Status': 'success', 'Fulfillment: Send Receipt': 'FALSE' });
   rows.push({ ...base, 'Line: Type': 'Transaction', 'Transaction: Kind': 'sale', 'Transaction: Processed At': at, 'Transaction: Amount': format(order.total), 'Transaction: Currency': order.currency, 'Transaction: Status': 'success', 'Transaction: Gateway': 'manual', 'Transaction: Force Gateway': 'FALSE' });
   return rows;
 }
