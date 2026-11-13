@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Dragons Lair import scripts",
   "scripts": {
+    "prototype:dashboard": "node prototypes/local-dashboard-prototype/serve.js",
     "sync": "cross-env ENV_FILE=.env.dragonslair node src/index.js --command=sync",
     "sync:store2": "cross-env ENV_FILE=.env.store2 node src/index.js --command=sync",
     "fetch": "cross-env ENV_FILE=.env.dragonslair node src/index.js --command=fetch",
